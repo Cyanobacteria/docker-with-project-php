@@ -1,79 +1,22 @@
-FROM php:5.4-fpm
-LABEL maintainer="Alterway <iac@alterway.fr>"
+FROM bitnami/php-fpm:5.6.40-debian-9-r114 as development
 
-RUN printf "deb http://archive.debian.org/debian/ jessie main\ndeb-src http://archive.debian.org/debian/ jessie main\ndeb http://security.debian.org jessie/updates main\ndeb-src http://security.debian.org jessie/updates main" > /etc/apt/sources.list
+######
 
+FROM bitnami/minideb:stretch
+LABEL maintainer "Bitnami <containers@bitnami.com>"
 
-RUN apt-get update && \
-    apt-get install -y \
-        libfreetype6-dev \
-        libjpeg62-turbo-dev \
-        libmcrypt-dev \
-        libpng12-dev \
-        libgmp-dev \
-        libxml2-dev \
-        zlib1g-dev \
-        libncurses5-dev \
-        libldap2-dev \
-        libicu-dev \
-        libmemcached-dev \
-        libcurl4-openssl-dev \
-        libssl-dev \
-        php-pear \
-        curl \
-        ssmtp \
-        mysql-client \
-        git \
-        subversion \
-        wget && \
-    rm -rf /var/lib/apt/lists/* && \
-    wget https://getcomposer.org/download/1.2.4/composer.phar -O /usr/local/bin/composer && \
-    chmod a+rx /usr/local/bin/composer
+# Install required system packages and dependencies
+RUN install_packages ca-certificates libbz2-1.0 libc6 libcomerr2 libcurl3 libffi6 libfreetype6 libgcc1 libgcrypt20 libgmp10 libgnutls30 libgpg-error0 libgssapi-krb5-2 libhogweed4 libicu57 libidn11 libidn2-0 libjpeg62-turbo libk5crypto3 libkeyutils1 libkrb5-3 libkrb5support0 libldap-2.4-2 liblzma5 libmcrypt4 libmemcached11 libmemcachedutil2 libncurses5 libnettle6 libnghttp2-14 libp11-kit0 libpng16-16 libpq5 libpsl5 libreadline7 librtmp1 libsasl2-2 libssh2-1 libssl1.0.2 libssl1.1 libstdc++6 libsybdb5 libtasn1-6 libtidy5 libtinfo5 libunistring0 libxml2 libxslt1.1 zlib1g
+RUN mkdir -p /bitnami && ln -sf /bitnami/php /bitnami/php-fpm
+RUN sed -i 's/^PASS_MAX_DAYS.*/PASS_MAX_DAYS    90/' /etc/login.defs && \
+    sed -i 's/^PASS_MIN_DAYS.*/PASS_MIN_DAYS    0/' /etc/login.defs && \
+    sed -i 's/sha512/sha512 minlen=8/' /etc/pam.d/common-password
 
-RUN ln -s /usr/include/x86_64-linux-gnu/gmp.h /usr/include/gmp.h && \
-    docker-php-ext-configure ldap --with-libdir=lib/x86_64-linux-gnu && \
-    docker-php-ext-install ldap && \
-    docker-php-ext-configure pdo_mysql --with-pdo-mysql=mysqlnd && \
-    docker-php-ext-install pdo_mysql && \
-    docker-php-ext-configure mysql --with-mysql=mysqlnd && \
-    docker-php-ext-install mysql && \
-    docker-php-ext-configure mysqli --with-mysqli=mysqlnd && \
-    docker-php-ext-install mysqli && \
-    docker-php-ext-configure gd --with-freetype-dir=/usr/include/ --with-jpeg-dir=/usr/lib && \
-    docker-php-ext-install gd && \
-    docker-php-ext-install soap && \
-    docker-php-ext-install intl && \
-    docker-php-ext-install mcrypt && \
-    docker-php-ext-install gmp && \
-    docker-php-ext-install bcmath && \
-    docker-php-ext-install mbstring && \
-    docker-php-ext-install zip && \
-    docker-php-ext-install pcntl && \
-    docker-php-ext-install ftp && \
-    docker-php-ext-install sockets && \
-    pecl install mongo && \
-    pecl install memcached-2.2.0 && \
-    pecl install redis && \
-    pecl install xdebug-2.4.1
+COPY --from=development /opt/bitnami/common /opt/bitnami/common
+COPY --from=development /opt/bitnami/php /opt/bitnami/php
 
-ADD https://blackfire.io/api/v1/releases/probe/php/linux/amd64/54 /tmp/blackfire-probe.tar.gz
-RUN tar zxpf /tmp/blackfire-probe.tar.gz -C /tmp && \
-    mv /tmp/blackfire-*.so `php -r "echo ini_get('extension_dir');"`/blackfire.so && \
-    rm /tmp/blackfire-probe.tar.gz
+ENV BITNAMI_APP_NAME="php-fpm" \
+    BITNAMI_IMAGE_VERSION="5.6.40-debian-9-r94-prod" \
+    PATH="/opt/bitnami/php/bin:/opt/bitnami/php/sbin:/opt/bitnami/php/sbin:$PATH"
 
-ENV LOCALTIME Europe/Paris
-ENV PHPFPM__access.format '"%R - %u [%t] \"%m %r\" %s %l %Q %f"'
-
-RUN rm $PHP_INI_DIR/conf.d/docker-php-ext* && \
-    echo 'sendmail_path = /usr/sbin/ssmtp -t' >> $PHP_INI_DIR/conf.d/00-default.ini && \
-    echo "\ninclude=/usr/local/etc/php-fpm.d/*.conf" >> /usr/local/etc/php-fpm.conf && \
-    mkdir -p /usr/local/etc/php-fpm.d && \
-    chmod a+w -R $PHP_INI_DIR/conf.d/ /etc/ssmtp /usr/local/etc/php-fpm.d
-
-#COPY docker-entrypoint.sh /entrypoint.sh
-
-WORKDIR /var/www
-
-#ENTRYPOINT ["/entrypoint.sh"]
-CMD ["php-fpm"]
-
+CMD [ "php-fpm", "-F", "--pid", "/opt/bitnami/php/tmp/php-fpm.pid", "-y", "/opt/bitnami/php/etc/php-fpm.conf" ]
