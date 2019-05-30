@@ -4,18 +4,20 @@ services:
   #PHP Service
   app:
     build:
-      context: .
-      dockerfile: Dockerfile
-    image: php7.3
+      context: ./dockerfiles
+      dockerfile: ${PHP_SERVICE_DOCKERFILE}
+    #image: php7.3
     #image: 'bitnami/5.6.40-debian-9-r114'
-    container_name: app
+    container_name: ${PREFIX}-app
     restart: unless-stopped
     tty: true
-    environment:
-      SERVICE_NAME: app
-      SERVICE_TAGS: dev
-    links:
-      - db  
+#    environment:
+#      SERVICE_NAME: app
+#      SERVICE_TAGS: dev
+    #links:
+    depends_on:
+      - db
+      - nginx
     working_dir: /var/www
     volumes:
       - ../project:/var/www
@@ -24,24 +26,24 @@ services:
       - app-network
 
   #Nginx Service
-  webserver:
+  nginx:
     image: nginx:alpine
-    container_name: webserver
+    container_name: ${PREFIX}-nginx
     restart: unless-stopped
     tty: true
     ports:
       - "80:80"
       - "443:443"
     volumes:
-      - ../project:/var/www
-      - ./nginx/conf.d/:/etc/nginx/conf.d/
+      #- ../project:/var/www
+      - .config/nginx/conf.d/:/etc/nginx/conf.d/
     networks:
       - app-network
 
   #MySQL Service
   db:
     image: mysql:5.7.22
-    container_name: db
+    container_name: ${PREFIX}-database
     restart: unless-stopped
     tty: true
     ports:
@@ -52,8 +54,9 @@ services:
       SERVICE_TAGS: dev
       SERVICE_NAME: mysql
     volumes:
-      - dbdata:/var/lib/mysql
-      - ./mysql/my.cnf:/etc/mysql.cnf
+      - databasedata:/var/lib/mysql
+      - .config/mysql/my.cnf:/etc/mysql.cnf
+      - ./logs/mysql:/var/log/mysql
     networks:
       - app-network
   phpmyadmin:
@@ -76,6 +79,6 @@ networks:
 
 #Volumes
 volumes:
-  dbdata:
+  databasedata:
     driver: local
 
