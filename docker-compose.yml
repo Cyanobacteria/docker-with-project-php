@@ -11,10 +11,11 @@ services:
     container_name: ${PREFIX}-app
     restart: unless-stopped
     tty: true
-#    environment:
-#      SERVICE_NAME: app
-#      SERVICE_TAGS: dev
-    #links:
+    environment:
+      SERVICE_NAME: app
+      SERVICE_TAGS: dev
+#    links:
+#      - nginx
     depends_on:
       - db
       - nginx
@@ -27,27 +28,31 @@ services:
 
   #Nginx Service
   nginx:
-    image: nginx:alpine
+    image: ${NGINX_SERVICE_DOCKERFILE}
     container_name: ${PREFIX}-nginx
     restart: unless-stopped
     tty: true
     ports:
-      - "80:80"
-      - "443:443"
+      - "${NGINX_SERVICE_MAIN_PORT}:80"
+      - "${NGINX_SERVICE_SSL_PORT}:443"
     volumes:
-      #- ../project:/var/www
-      - .config/nginx/conf.d/:/etc/nginx/conf.d/
+      - ../project:/var/www
+      - ./config/nginx/conf.d/:/etc/nginx/conf.d/
+      - ./logs/nginx/:/var/log/nginx/
     networks:
       - app-network
 
   #MySQL Service
   db:
-    image: mysql:5.7.22
+    build:
+      context: ./dockerfiles/mysql
+      dockerfile: ${MYSQL_SERVICE_DOCKERFILE}
+    #image: ${MYSQL_SERVICE_DOCKERFILE}
     container_name: ${PREFIX}-database
     restart: unless-stopped
     tty: true
     ports:
-      - "3306:3306"
+      - "${MYSQL_SERVICE_MAIN_PORT}:3306"
     environment:
       MYSQL_DATABASE: shenshou
       MYSQL_ROOT_PASSWORD: your_mysql_root_password
@@ -55,8 +60,10 @@ services:
       SERVICE_NAME: mysql
     volumes:
       - databasedata:/var/lib/mysql
-      - .config/mysql/my.cnf:/etc/mysql.cnf
+      - ./config/mysql/my.cnf:/etc/my.cnf
       - ./logs/mysql:/var/log/mysql
+    entrypoint: ""
+    command: bash -c "mkdir -p ~/var/log/mysql/slow && mkdir -p ~/var/log/mysql/general && mkdir -p ~/var/log/mysql/error && chown -R mysql:mysql /var/log/mysql && exec /entrypoint.sh mysqld"
     networks:
       - app-network
   phpmyadmin:

@@ -1,0 +1,162 @@
+2019-05-30T12:26:45.947660Z 0 [Warning] TIMESTAMP with implicit DEFAULT value is deprecated. Please use --explicit_defaults_for_timestamp server option (see documentation for more details).
+2019-05-30T12:26:45.948968Z 0 [Note] mysqld (mysqld 5.7.24-log) starting as process 1 ...
+2019-05-30T12:26:45.954166Z 0 [Note] InnoDB: PUNCH HOLE support available
+2019-05-30T12:26:45.954186Z 0 [Note] InnoDB: Mutexes and rw_locks use GCC atomic builtins
+2019-05-30T12:26:45.954192Z 0 [Note] InnoDB: Uses event mutexes
+2019-05-30T12:26:45.954197Z 0 [Note] InnoDB: GCC builtin __atomic_thread_fence() is used for memory barrier
+2019-05-30T12:26:45.954201Z 0 [Note] InnoDB: Compressed tables use zlib 1.2.11
+2019-05-30T12:26:45.954207Z 0 [Note] InnoDB: Using Linux native AIO
+2019-05-30T12:26:45.954461Z 0 [Note] InnoDB: Number of pools: 1
+2019-05-30T12:26:45.954546Z 0 [Note] InnoDB: Using CPU crc32 instructions
+2019-05-30T12:26:45.955636Z 0 [Note] InnoDB: Initializing buffer pool, total size = 128M, instances = 1, chunk size = 128M
+2019-05-30T12:26:45.969192Z 0 [Note] InnoDB: Completed initialization of buffer pool
+2019-05-30T12:26:45.972145Z 0 [Note] InnoDB: If the mysqld execution user is authorized, page cleaner thread priority can be changed. See the man page of setpriority().
+2019-05-30T12:26:45.983011Z 0 [Note] InnoDB: Highest supported file format is Barracuda.
+2019-05-30T12:26:46.000882Z 0 [Note] InnoDB: Creating shared tablespace for temporary tables
+2019-05-30T12:26:46.000936Z 0 [Note] InnoDB: Setting file './ibtmp1' size to 12 MB. Physically writing the file full; Please wait ...
+2019-05-30T12:26:46.027460Z 0 [Note] InnoDB: File './ibtmp1' size is now 12 MB.
+2019-05-30T12:26:46.028244Z 0 [Note] InnoDB: 96 redo rollback segment(s) found. 96 redo rollback segment(s) are active.
+2019-05-30T12:26:46.028259Z 0 [Note] InnoDB: 32 non-redo rollback segment(s) are active.
+2019-05-30T12:26:46.030774Z 0 [Note] InnoDB: Waiting for purge to start
+2019-05-30T12:26:46.081644Z 0 [Note] InnoDB: 5.7.24 started; log sequence number 12955293
+2019-05-30T12:26:46.081903Z 0 [Note] InnoDB: Loading buffer pool(s) from /var/lib/mysql/ib_buffer_pool
+2019-05-30T12:26:46.082042Z 0 [Note] Plugin 'FEDERATED' is disabled.
+2019-05-30T12:26:46.084946Z 0 [Note] InnoDB: Buffer pool(s) load completed at 190530 12:26:46
+2019-05-30T12:26:46.086330Z 0 [Warning] InnoDB: Table mysql/innodb_table_stats has length mismatch in the column name table_name.  Please run mysql_upgrade
+2019-05-30T12:26:46.086364Z 0 [Warning] InnoDB: Table mysql/innodb_index_stats has length mismatch in the column name table_name.  Please run mysql_upgrade
+2019-05-30T12:26:46.088312Z 0 [Note] Found ca.pem, server-cert.pem and server-key.pem in data directory. Trying to enable SSL support using them.
+2019-05-30T12:26:46.088324Z 0 [Note] Skipping generation of SSL certificates as certificate files are present in data directory.
+2019-05-30T12:26:46.089070Z 0 [Warning] CA certificate ca.pem is self signed.
+2019-05-30T12:26:46.089105Z 0 [Note] Skipping generation of RSA key pair as key files are present in data directory.
+2019-05-30T12:26:46.089355Z 0 [Note] Server hostname (bind-address): '*'; port: 3306
+2019-05-30T12:26:46.089738Z 0 [Note] IPv6 is available.
+2019-05-30T12:26:46.089758Z 0 [Note]   - '::' resolves to '::';
+2019-05-30T12:26:46.089780Z 0 [Note] Server socket created on IP: '::'.
+2019-05-30T12:26:46.108528Z 0 [Note] Event Scheduler: Loaded 0 events
+2019-05-30T12:26:46.108771Z 0 [Note] mysqld: ready for connections.
+Version: '5.7.24-log'  socket: '/var/lib/mysql/mysql.sock'  port: 3306  MySQL Community Server (GPL)
+2019-05-30T12:27:14.106922Z 16 [Warning] InnoDB: Table mysql/innodb_table_stats has length mismatch in the column name table_name.  Please run mysql_upgrade
+2019-05-30T12:27:14.106937Z 16 [Warning] InnoDB: Table mysql/innodb_index_stats has length mismatch in the column name table_name.  Please run mysql_upgrade
+2019-05-30T12:27:14.110118Z 16 [Warning] InnoDB: Table mysql/innodb_table_stats has length mismatch in the column name table_name.  Please run mysql_upgrade
+2019-05-30T12:27:14.110139Z 16 [Warning] InnoDB: Table mysql/innodb_index_stats has length mismatch in the column name table_name.  Please run mysql_upgrade
+2019-05-30T12:27:14.110441Z 16 [Warning] InnoDB: Table mysql/innodb_table_stats has length mismatch in the column name table_name.  Please run mysql_upgrade
+2019-05-30T12:27:14.110453Z 16 [Warning] InnoDB: Table mysql/innodb_index_stats has length mismatch in the column name table_name.  Please run mysql_upgrade
+2019-05-30T12:27:14.116484Z 16 [Warning] InnoDB: Table mysql/innodb_table_stats has length mismatch in the column name table_name.  Please run mysql_upgrade
+2019-05-30T12:27:14.116506Z 16 [Warning] InnoDB: Table mysql/innodb_index_stats has length mismatch in the column name table_name.  Please run mysql_upgrade
+2019-05-30T12:27:14.117019Z 16 [Warning] InnoDB: Table mysql/innodb_table_stats has length mismatch in the column name table_name.  Please run mysql_upgrade
+2019-05-30T12:27:14.117032Z 16 [Warning] InnoDB: Table mysql/innodb_index_stats has length mismatch in the column name table_name.  Please run mysql_upgrade
+2019-05-30T12:27:14.118536Z 16 [Warning] InnoDB: Table mysql/innodb_table_stats has length mismatch in the column name table_name.  Please run mysql_upgrade
+2019-05-30T12:27:14.118550Z 16 [Warning] InnoDB: Table mysql/innodb_index_stats has length mismatch in the column name table_name.  Please run mysql_upgrade
+2019-05-30T12:27:14.118832Z 16 [Warning] InnoDB: Table mysql/innodb_table_stats has length mismatch in the column name table_name.  Please run mysql_upgrade
+2019-05-30T12:27:14.118842Z 16 [Warning] InnoDB: Table mysql/innodb_index_stats has length mismatch in the column name table_name.  Please run mysql_upgrade
+2019-05-30T12:27:14.119027Z 16 [Warning] InnoDB: Table mysql/innodb_table_stats has length mismatch in the column name table_name.  Please run mysql_upgrade
+2019-05-30T12:27:14.119036Z 16 [Warning] InnoDB: Table mysql/innodb_index_stats has length mismatch in the column name table_name.  Please run mysql_upgrade
+2019-05-30T12:27:14.119250Z 16 [Warning] InnoDB: Table mysql/innodb_table_stats has length mismatch in the column name table_name.  Please run mysql_upgrade
+2019-05-30T12:27:14.119261Z 16 [Warning] InnoDB: Table mysql/innodb_index_stats has length mismatch in the column name table_name.  Please run mysql_upgrade
+2019-05-30T12:27:14.119924Z 16 [Warning] InnoDB: Table mysql/innodb_table_stats has length mismatch in the column name table_name.  Please run mysql_upgrade
+2019-05-30T12:27:14.119935Z 16 [Warning] InnoDB: Table mysql/innodb_index_stats has length mismatch in the column name table_name.  Please run mysql_upgrade
+2019-05-30T12:27:14.120279Z 16 [Warning] InnoDB: Table mysql/innodb_table_stats has length mismatch in the column name table_name.  Please run mysql_upgrade
+2019-05-30T12:27:14.120290Z 16 [Warning] InnoDB: Table mysql/innodb_index_stats has length mismatch in the column name table_name.  Please run mysql_upgrade
+2019-05-30T12:27:14.120533Z 16 [Warning] InnoDB: Table mysql/innodb_table_stats has length mismatch in the column name table_name.  Please run mysql_upgrade
+2019-05-30T12:27:14.120546Z 16 [Warning] InnoDB: Table mysql/innodb_index_stats has length mismatch in the column name table_name.  Please run mysql_upgrade
+2019-05-30T12:27:15.854056Z 22 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T12:27:46.028093Z 23 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T12:28:16.233025Z 24 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T12:28:46.412602Z 25 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T12:29:16.596010Z 26 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T12:29:46.775865Z 27 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T12:30:16.995832Z 28 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T12:30:47.186450Z 29 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T12:31:17.361557Z 30 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T12:31:47.549062Z 31 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T12:32:17.742964Z 32 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T12:32:47.947264Z 33 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T12:33:18.142433Z 34 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T12:33:48.324293Z 35 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T12:34:18.505454Z 36 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T12:34:48.681567Z 37 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T12:35:18.868436Z 38 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T12:35:49.048893Z 39 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T12:36:19.249114Z 40 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T12:36:49.440559Z 41 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T12:37:19.622244Z 42 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T12:37:49.807377Z 43 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T12:38:19.978369Z 48 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T12:38:50.157150Z 53 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T12:39:20.345175Z 76 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T12:39:50.522316Z 77 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T12:40:20.693723Z 78 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T12:40:50.887548Z 79 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T12:41:21.070871Z 80 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T12:41:51.257352Z 81 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T12:42:21.443964Z 82 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T12:42:51.642889Z 83 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T12:43:21.827721Z 84 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T12:43:52.012111Z 85 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T12:44:22.194563Z 86 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T12:44:52.375817Z 87 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T12:45:22.562387Z 88 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T12:45:52.750736Z 89 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T12:46:22.950403Z 90 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T12:46:53.155033Z 91 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T12:47:23.339868Z 92 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T12:47:53.533867Z 93 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T12:48:23.722156Z 94 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T12:48:53.895908Z 95 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T12:49:24.076699Z 96 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T12:49:37.647089Z 0 [Note] Giving 0 client threads a chance to die gracefully
+2019-05-30T12:49:37.647115Z 0 [Note] Shutting down slave threads
+2019-05-30T12:49:37.647120Z 0 [Note] Forcefully disconnecting 0 remaining clients
+2019-05-30T12:49:37.647126Z 0 [Note] Event Scheduler: Purging the queue. 0 events
+2019-05-30T12:49:37.647218Z 0 [Note] Binlog end
+2019-05-30T12:49:37.648587Z 0 [Note] Shutting down plugin 'ngram'
+2019-05-30T12:49:37.648600Z 0 [Note] Shutting down plugin 'partition'
+2019-05-30T12:49:37.648605Z 0 [Note] Shutting down plugin 'ARCHIVE'
+2019-05-30T12:49:37.648609Z 0 [Note] Shutting down plugin 'BLACKHOLE'
+2019-05-30T12:49:37.648613Z 0 [Note] Shutting down plugin 'MRG_MYISAM'
+2019-05-30T12:49:37.648617Z 0 [Note] Shutting down plugin 'CSV'
+2019-05-30T12:49:37.648622Z 0 [Note] Shutting down plugin 'PERFORMANCE_SCHEMA'
+2019-05-30T12:49:37.648645Z 0 [Note] Shutting down plugin 'MEMORY'
+2019-05-30T12:49:37.648649Z 0 [Note] Shutting down plugin 'INNODB_SYS_VIRTUAL'
+2019-05-30T12:49:37.648654Z 0 [Note] Shutting down plugin 'INNODB_SYS_DATAFILES'
+2019-05-30T12:49:37.648658Z 0 [Note] Shutting down plugin 'INNODB_SYS_TABLESPACES'
+2019-05-30T12:49:37.648661Z 0 [Note] Shutting down plugin 'INNODB_SYS_FOREIGN_COLS'
+2019-05-30T12:49:37.648665Z 0 [Note] Shutting down plugin 'INNODB_SYS_FOREIGN'
+2019-05-30T12:49:37.648669Z 0 [Note] Shutting down plugin 'INNODB_SYS_FIELDS'
+2019-05-30T12:49:37.648672Z 0 [Note] Shutting down plugin 'INNODB_SYS_COLUMNS'
+2019-05-30T12:49:37.648676Z 0 [Note] Shutting down plugin 'INNODB_SYS_INDEXES'
+2019-05-30T12:49:37.648680Z 0 [Note] Shutting down plugin 'INNODB_SYS_TABLESTATS'
+2019-05-30T12:49:37.648683Z 0 [Note] Shutting down plugin 'INNODB_SYS_TABLES'
+2019-05-30T12:49:37.648687Z 0 [Note] Shutting down plugin 'INNODB_FT_INDEX_TABLE'
+2019-05-30T12:49:37.648690Z 0 [Note] Shutting down plugin 'INNODB_FT_INDEX_CACHE'
+2019-05-30T12:49:37.648694Z 0 [Note] Shutting down plugin 'INNODB_FT_CONFIG'
+2019-05-30T12:49:37.648697Z 0 [Note] Shutting down plugin 'INNODB_FT_BEING_DELETED'
+2019-05-30T12:49:37.648701Z 0 [Note] Shutting down plugin 'INNODB_FT_DELETED'
+2019-05-30T12:49:37.648704Z 0 [Note] Shutting down plugin 'INNODB_FT_DEFAULT_STOPWORD'
+2019-05-30T12:49:37.648708Z 0 [Note] Shutting down plugin 'INNODB_METRICS'
+2019-05-30T12:49:37.648712Z 0 [Note] Shutting down plugin 'INNODB_TEMP_TABLE_INFO'
+2019-05-30T12:49:37.648715Z 0 [Note] Shutting down plugin 'INNODB_BUFFER_POOL_STATS'
+2019-05-30T12:49:37.648719Z 0 [Note] Shutting down plugin 'INNODB_BUFFER_PAGE_LRU'
+2019-05-30T12:49:37.648722Z 0 [Note] Shutting down plugin 'INNODB_BUFFER_PAGE'
+2019-05-30T12:49:37.648726Z 0 [Note] Shutting down plugin 'INNODB_CMP_PER_INDEX_RESET'
+2019-05-30T12:49:37.648729Z 0 [Note] Shutting down plugin 'INNODB_CMP_PER_INDEX'
+2019-05-30T12:49:37.648733Z 0 [Note] Shutting down plugin 'INNODB_CMPMEM_RESET'
+2019-05-30T12:49:37.648737Z 0 [Note] Shutting down plugin 'INNODB_CMPMEM'
+2019-05-30T12:49:37.648740Z 0 [Note] Shutting down plugin 'INNODB_CMP_RESET'
+2019-05-30T12:49:37.648744Z 0 [Note] Shutting down plugin 'INNODB_CMP'
+2019-05-30T12:49:37.648747Z 0 [Note] Shutting down plugin 'INNODB_LOCK_WAITS'
+2019-05-30T12:49:37.648751Z 0 [Note] Shutting down plugin 'INNODB_LOCKS'
+2019-05-30T12:49:37.648755Z 0 [Note] Shutting down plugin 'INNODB_TRX'
+2019-05-30T12:49:37.648758Z 0 [Note] Shutting down plugin 'InnoDB'
+2019-05-30T12:49:37.648928Z 0 [Note] InnoDB: FTS optimize thread exiting.
+2019-05-30T12:49:37.649159Z 0 [Note] InnoDB: Starting shutdown...
+2019-05-30T12:49:37.749286Z 0 [Note] InnoDB: Dumping buffer pool(s) to /var/lib/mysql/ib_buffer_pool
+2019-05-30T12:49:37.749870Z 0 [Note] InnoDB: Buffer pool(s) dump completed at 190530 12:49:37
+2019-05-30T12:49:38.993022Z 0 [Note] InnoDB: Shutdown completed; log sequence number 12955321
+2019-05-30T12:49:38.994651Z 0 [Note] InnoDB: Removed temporary tablespace data file: "ibtmp1"
+2019-05-30T12:49:38.994669Z 0 [Note] Shutting down plugin 'MyISAM'
+2019-05-30T12:49:38.994679Z 0 [Note] Shutting down plugin 'sha256_password'
+2019-05-30T12:49:38.994690Z 0 [Note] Shutting down plugin 'mysql_native_password'
+2019-05-30T12:49:38.994796Z 0 [Note] Shutting down plugin 'binlog'
+2019-05-30T12:49:38.996189Z 0 [Note] mysqld: Shutdown complete
+

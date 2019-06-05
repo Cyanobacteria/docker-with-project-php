@@ -1,0 +1,1798 @@
+2019-05-30T12:53:31.187157Z 0 [Warning] TIMESTAMP with implicit DEFAULT value is deprecated. Please use --explicit_defaults_for_timestamp server option (see documentation for more details).
+2019-05-30T12:53:31.188278Z 0 [Note] mysqld (mysqld 5.7.24-log) starting as process 1 ...
+2019-05-30T12:53:31.193828Z 0 [Note] InnoDB: PUNCH HOLE support available
+2019-05-30T12:53:31.193852Z 0 [Note] InnoDB: Mutexes and rw_locks use GCC atomic builtins
+2019-05-30T12:53:31.193858Z 0 [Note] InnoDB: Uses event mutexes
+2019-05-30T12:53:31.193863Z 0 [Note] InnoDB: GCC builtin __atomic_thread_fence() is used for memory barrier
+2019-05-30T12:53:31.193867Z 0 [Note] InnoDB: Compressed tables use zlib 1.2.11
+2019-05-30T12:53:31.193872Z 0 [Note] InnoDB: Using Linux native AIO
+2019-05-30T12:53:31.194137Z 0 [Note] InnoDB: Number of pools: 1
+2019-05-30T12:53:31.194293Z 0 [Note] InnoDB: Using CPU crc32 instructions
+2019-05-30T12:53:31.195642Z 0 [Note] InnoDB: Initializing buffer pool, total size = 128M, instances = 1, chunk size = 128M
+2019-05-30T12:53:31.211979Z 0 [Note] InnoDB: Completed initialization of buffer pool
+2019-05-30T12:53:31.220524Z 0 [Note] InnoDB: If the mysqld execution user is authorized, page cleaner thread priority can be changed. See the man page of setpriority().
+2019-05-30T12:53:31.228658Z 0 [Note] InnoDB: Highest supported file format is Barracuda.
+2019-05-30T12:53:31.244968Z 0 [Note] InnoDB: Creating shared tablespace for temporary tables
+2019-05-30T12:53:31.245026Z 0 [Note] InnoDB: Setting file './ibtmp1' size to 12 MB. Physically writing the file full; Please wait ...
+2019-05-30T12:53:31.272726Z 0 [Note] InnoDB: File './ibtmp1' size is now 12 MB.
+2019-05-30T12:53:31.273542Z 0 [Note] InnoDB: 96 redo rollback segment(s) found. 96 redo rollback segment(s) are active.
+2019-05-30T12:53:31.273557Z 0 [Note] InnoDB: 32 non-redo rollback segment(s) are active.
+2019-05-30T12:53:31.273770Z 0 [Note] InnoDB: Waiting for purge to start
+2019-05-30T12:53:31.323973Z 0 [Note] InnoDB: 5.7.24 started; log sequence number 12955321
+2019-05-30T12:53:31.324420Z 0 [Note] InnoDB: Loading buffer pool(s) from /var/lib/mysql/ib_buffer_pool
+2019-05-30T12:53:31.324517Z 0 [Note] Plugin 'FEDERATED' is disabled.
+2019-05-30T12:53:31.326388Z 0 [Note] InnoDB: Buffer pool(s) load completed at 190530 12:53:31
+mysqld: File '/var/log/mysql/slow/slow.logÂ Â ' not found (Errcode: 2 - No such file or directory)
+2019-05-30T12:53:31.327256Z 0 [ERROR] Could not use /var/log/mysql/slow/slow.logÂ Â Â for logging (error 2 - No such file or directory). Turning logging off for the server process. To turn it on again: fix the cause, then either restart the query logging by using "SET GLOBAL SLOW_QUERY_LOG=ON" or restart the MySQL server.
+2019-05-30T12:53:31.327774Z 0 [Warning] InnoDB: Table mysql/innodb_table_stats has length mismatch in the column name table_name.  Please run mysql_upgrade
+2019-05-30T12:53:31.327805Z 0 [Warning] InnoDB: Table mysql/innodb_index_stats has length mismatch in the column name table_name.  Please run mysql_upgrade
+2019-05-30T12:53:31.329908Z 0 [Note] Found ca.pem, server-cert.pem and server-key.pem in data directory. Trying to enable SSL support using them.
+2019-05-30T12:53:31.329924Z 0 [Note] Skipping generation of SSL certificates as certificate files are present in data directory.
+2019-05-30T12:53:31.330502Z 0 [Warning] CA certificate ca.pem is self signed.
+2019-05-30T12:53:31.330574Z 0 [Note] Skipping generation of RSA key pair as key files are present in data directory.
+2019-05-30T12:53:31.330830Z 0 [Note] Server hostname (bind-address): '*'; port: 3306
+2019-05-30T12:53:31.331009Z 0 [Note] IPv6 is available.
+2019-05-30T12:53:31.331024Z 0 [Note]   - '::' resolves to '::';
+2019-05-30T12:53:31.331042Z 0 [Note] Server socket created on IP: '::'.
+2019-05-30T12:53:31.343322Z 0 [Note] Event Scheduler: Loaded 0 events
+2019-05-30T12:53:31.346432Z 0 [Note] mysqld: ready for connections.
+Version: '5.7.24-log'  socket: '/var/lib/mysql/mysql.sock'  port: 3306  MySQL Community Server (GPL)
+2019-05-30T12:53:43.587779Z 0 [Note] Giving 0 client threads a chance to die gracefully
+2019-05-30T12:53:43.587805Z 0 [Note] Shutting down slave threads
+2019-05-30T12:53:43.587811Z 0 [Note] Forcefully disconnecting 0 remaining clients
+2019-05-30T12:53:43.587816Z 0 [Note] Event Scheduler: Purging the queue. 0 events
+2019-05-30T12:53:43.587852Z 0 [Note] Binlog end
+2019-05-30T12:53:43.588288Z 0 [Note] Shutting down plugin 'ngram'
+2019-05-30T12:53:43.588295Z 0 [Note] Shutting down plugin 'partition'
+2019-05-30T12:53:43.588299Z 0 [Note] Shutting down plugin 'ARCHIVE'
+2019-05-30T12:53:43.588302Z 0 [Note] Shutting down plugin 'BLACKHOLE'
+2019-05-30T12:53:43.588306Z 0 [Note] Shutting down plugin 'MRG_MYISAM'
+2019-05-30T12:53:43.588310Z 0 [Note] Shutting down plugin 'CSV'
+2019-05-30T12:53:43.588313Z 0 [Note] Shutting down plugin 'PERFORMANCE_SCHEMA'
+2019-05-30T12:53:43.588336Z 0 [Note] Shutting down plugin 'MEMORY'
+2019-05-30T12:53:43.588340Z 0 [Note] Shutting down plugin 'INNODB_SYS_VIRTUAL'
+2019-05-30T12:53:43.588344Z 0 [Note] Shutting down plugin 'INNODB_SYS_DATAFILES'
+2019-05-30T12:53:43.588347Z 0 [Note] Shutting down plugin 'INNODB_SYS_TABLESPACES'
+2019-05-30T12:53:43.588350Z 0 [Note] Shutting down plugin 'INNODB_SYS_FOREIGN_COLS'
+2019-05-30T12:53:43.588353Z 0 [Note] Shutting down plugin 'INNODB_SYS_FOREIGN'
+2019-05-30T12:53:43.588356Z 0 [Note] Shutting down plugin 'INNODB_SYS_FIELDS'
+2019-05-30T12:53:43.588373Z 0 [Note] Shutting down plugin 'INNODB_SYS_COLUMNS'
+2019-05-30T12:53:43.588376Z 0 [Note] Shutting down plugin 'INNODB_SYS_INDEXES'
+2019-05-30T12:53:43.588379Z 0 [Note] Shutting down plugin 'INNODB_SYS_TABLESTATS'
+2019-05-30T12:53:43.588382Z 0 [Note] Shutting down plugin 'INNODB_SYS_TABLES'
+2019-05-30T12:53:43.588385Z 0 [Note] Shutting down plugin 'INNODB_FT_INDEX_TABLE'
+2019-05-30T12:53:43.588388Z 0 [Note] Shutting down plugin 'INNODB_FT_INDEX_CACHE'
+2019-05-30T12:53:43.588391Z 0 [Note] Shutting down plugin 'INNODB_FT_CONFIG'
+2019-05-30T12:53:43.588394Z 0 [Note] Shutting down plugin 'INNODB_FT_BEING_DELETED'
+2019-05-30T12:53:43.588396Z 0 [Note] Shutting down plugin 'INNODB_FT_DELETED'
+2019-05-30T12:53:43.588399Z 0 [Note] Shutting down plugin 'INNODB_FT_DEFAULT_STOPWORD'
+2019-05-30T12:53:43.588402Z 0 [Note] Shutting down plugin 'INNODB_METRICS'
+2019-05-30T12:53:43.588405Z 0 [Note] Shutting down plugin 'INNODB_TEMP_TABLE_INFO'
+2019-05-30T12:53:43.588408Z 0 [Note] Shutting down plugin 'INNODB_BUFFER_POOL_STATS'
+2019-05-30T12:53:43.588411Z 0 [Note] Shutting down plugin 'INNODB_BUFFER_PAGE_LRU'
+2019-05-30T12:53:43.588414Z 0 [Note] Shutting down plugin 'INNODB_BUFFER_PAGE'
+2019-05-30T12:53:43.588417Z 0 [Note] Shutting down plugin 'INNODB_CMP_PER_INDEX_RESET'
+2019-05-30T12:53:43.588420Z 0 [Note] Shutting down plugin 'INNODB_CMP_PER_INDEX'
+2019-05-30T12:53:43.588439Z 0 [Note] Shutting down plugin 'INNODB_CMPMEM_RESET'
+2019-05-30T12:53:43.588442Z 0 [Note] Shutting down plugin 'INNODB_CMPMEM'
+2019-05-30T12:53:43.588502Z 0 [Note] Shutting down plugin 'INNODB_CMP_RESET'
+2019-05-30T12:53:43.588508Z 0 [Note] Shutting down plugin 'INNODB_CMP'
+2019-05-30T12:53:43.588511Z 0 [Note] Shutting down plugin 'INNODB_LOCK_WAITS'
+2019-05-30T12:53:43.588514Z 0 [Note] Shutting down plugin 'INNODB_LOCKS'
+2019-05-30T12:53:43.588517Z 0 [Note] Shutting down plugin 'INNODB_TRX'
+2019-05-30T12:53:43.588520Z 0 [Note] Shutting down plugin 'InnoDB'
+2019-05-30T12:53:43.588631Z 0 [Note] InnoDB: FTS optimize thread exiting.
+2019-05-30T12:53:43.588807Z 0 [Note] InnoDB: Starting shutdown...
+2019-05-30T12:53:43.689076Z 0 [Note] InnoDB: Dumping buffer pool(s) to /var/lib/mysql/ib_buffer_pool
+2019-05-30T12:53:43.689530Z 0 [Note] InnoDB: Buffer pool(s) dump completed at 190530 12:53:43
+2019-05-30T12:53:45.217654Z 0 [Note] InnoDB: Shutdown completed; log sequence number 12955349
+2019-05-30T12:53:45.218915Z 0 [Note] InnoDB: Removed temporary tablespace data file: "ibtmp1"
+2019-05-30T12:53:45.218927Z 0 [Note] Shutting down plugin 'MyISAM'
+2019-05-30T12:53:45.218937Z 0 [Note] Shutting down plugin 'sha256_password'
+2019-05-30T12:53:45.218941Z 0 [Note] Shutting down plugin 'mysql_native_password'
+2019-05-30T12:53:45.219046Z 0 [Note] Shutting down plugin 'binlog'
+2019-05-30T12:53:45.220575Z 0 [Note] mysqld: Shutdown complete
+
+2019-05-30T12:53:48.721884Z 0 [Warning] TIMESTAMP with implicit DEFAULT value is deprecated. Please use --explicit_defaults_for_timestamp server option (see documentation for more details).
+2019-05-30T12:53:48.722922Z 0 [Note] mysqld (mysqld 5.7.24-log) starting as process 1 ...
+2019-05-30T12:53:48.730968Z 0 [Note] InnoDB: PUNCH HOLE support available
+2019-05-30T12:53:48.731000Z 0 [Note] InnoDB: Mutexes and rw_locks use GCC atomic builtins
+2019-05-30T12:53:48.731007Z 0 [Note] InnoDB: Uses event mutexes
+2019-05-30T12:53:48.731012Z 0 [Note] InnoDB: GCC builtin __atomic_thread_fence() is used for memory barrier
+2019-05-30T12:53:48.731017Z 0 [Note] InnoDB: Compressed tables use zlib 1.2.11
+2019-05-30T12:53:48.731022Z 0 [Note] InnoDB: Using Linux native AIO
+2019-05-30T12:53:48.731304Z 0 [Note] InnoDB: Number of pools: 1
+2019-05-30T12:53:48.731482Z 0 [Note] InnoDB: Using CPU crc32 instructions
+2019-05-30T12:53:48.734284Z 0 [Note] InnoDB: Initializing buffer pool, total size = 128M, instances = 1, chunk size = 128M
+2019-05-30T12:53:48.754231Z 0 [Note] InnoDB: Completed initialization of buffer pool
+2019-05-30T12:53:48.755643Z 0 [Note] InnoDB: If the mysqld execution user is authorized, page cleaner thread priority can be changed. See the man page of setpriority().
+2019-05-30T12:53:48.767927Z 0 [Note] InnoDB: Highest supported file format is Barracuda.
+2019-05-30T12:53:48.785278Z 0 [Note] InnoDB: Creating shared tablespace for temporary tables
+2019-05-30T12:53:48.785329Z 0 [Note] InnoDB: Setting file './ibtmp1' size to 12 MB. Physically writing the file full; Please wait ...
+2019-05-30T12:53:48.813936Z 0 [Note] InnoDB: File './ibtmp1' size is now 12 MB.
+2019-05-30T12:53:48.814821Z 0 [Note] InnoDB: 96 redo rollback segment(s) found. 96 redo rollback segment(s) are active.
+2019-05-30T12:53:48.814839Z 0 [Note] InnoDB: 32 non-redo rollback segment(s) are active.
+2019-05-30T12:53:48.815178Z 0 [Note] InnoDB: Waiting for purge to start
+2019-05-30T12:53:48.868555Z 0 [Note] InnoDB: 5.7.24 started; log sequence number 12955349
+2019-05-30T12:53:48.868795Z 0 [Note] Plugin 'FEDERATED' is disabled.
+2019-05-30T12:53:48.871232Z 0 [Note] InnoDB: Loading buffer pool(s) from /var/lib/mysql/ib_buffer_pool
+2019-05-30T12:53:48.874517Z 0 [Note] InnoDB: Buffer pool(s) load completed at 190530 12:53:48
+mysqld: File '/var/log/mysql/slow/slow.logÂ Â ' not found (Errcode: 2 - No such file or directory)
+2019-05-30T12:53:48.874761Z 0 [ERROR] Could not use /var/log/mysql/slow/slow.logÂ Â Â for logging (error 2 - No such file or directory). Turning logging off for the server process. To turn it on again: fix the cause, then either restart the query logging by using "SET GLOBAL SLOW_QUERY_LOG=ON" or restart the MySQL server.
+2019-05-30T12:53:48.875303Z 0 [Warning] InnoDB: Table mysql/innodb_table_stats has length mismatch in the column name table_name.  Please run mysql_upgrade
+2019-05-30T12:53:48.875339Z 0 [Warning] InnoDB: Table mysql/innodb_index_stats has length mismatch in the column name table_name.  Please run mysql_upgrade
+2019-05-30T12:53:48.877417Z 0 [Note] Found ca.pem, server-cert.pem and server-key.pem in data directory. Trying to enable SSL support using them.
+2019-05-30T12:53:48.877429Z 0 [Note] Skipping generation of SSL certificates as certificate files are present in data directory.
+2019-05-30T12:53:48.878031Z 0 [Warning] CA certificate ca.pem is self signed.
+2019-05-30T12:53:48.878065Z 0 [Note] Skipping generation of RSA key pair as key files are present in data directory.
+2019-05-30T12:53:48.878297Z 0 [Note] Server hostname (bind-address): '*'; port: 3306
+2019-05-30T12:53:48.878391Z 0 [Note] IPv6 is available.
+2019-05-30T12:53:48.878404Z 0 [Note]   - '::' resolves to '::';
+2019-05-30T12:53:48.878420Z 0 [Note] Server socket created on IP: '::'.
+2019-05-30T12:53:48.894663Z 0 [Note] Event Scheduler: Loaded 0 events
+2019-05-30T12:53:48.895140Z 0 [Note] mysqld: ready for connections.
+Version: '5.7.24-log'  socket: '/var/lib/mysql/mysql.sock'  port: 3306  MySQL Community Server (GPL)
+2019-05-30T12:54:18.598146Z 2 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T12:54:28.747115Z 0 [Note] Giving 0 client threads a chance to die gracefully
+2019-05-30T12:54:28.747140Z 0 [Note] Shutting down slave threads
+2019-05-30T12:54:28.747146Z 0 [Note] Forcefully disconnecting 0 remaining clients
+2019-05-30T12:54:28.747152Z 0 [Note] Event Scheduler: Purging the queue. 0 events
+2019-05-30T12:54:28.747239Z 0 [Note] Binlog end
+2019-05-30T12:54:28.747583Z 0 [Note] Shutting down plugin 'ngram'
+2019-05-30T12:54:28.747591Z 0 [Note] Shutting down plugin 'partition'
+2019-05-30T12:54:28.747595Z 0 [Note] Shutting down plugin 'ARCHIVE'
+2019-05-30T12:54:28.747599Z 0 [Note] Shutting down plugin 'BLACKHOLE'
+2019-05-30T12:54:28.747603Z 0 [Note] Shutting down plugin 'MRG_MYISAM'
+2019-05-30T12:54:28.747607Z 0 [Note] Shutting down plugin 'CSV'
+2019-05-30T12:54:28.747612Z 0 [Note] Shutting down plugin 'PERFORMANCE_SCHEMA'
+2019-05-30T12:54:28.747638Z 0 [Note] Shutting down plugin 'MEMORY'
+2019-05-30T12:54:28.747643Z 0 [Note] Shutting down plugin 'INNODB_SYS_VIRTUAL'
+2019-05-30T12:54:28.747647Z 0 [Note] Shutting down plugin 'INNODB_SYS_DATAFILES'
+2019-05-30T12:54:28.747651Z 0 [Note] Shutting down plugin 'INNODB_SYS_TABLESPACES'
+2019-05-30T12:54:28.747654Z 0 [Note] Shutting down plugin 'INNODB_SYS_FOREIGN_COLS'
+2019-05-30T12:54:28.747658Z 0 [Note] Shutting down plugin 'INNODB_SYS_FOREIGN'
+2019-05-30T12:54:28.747661Z 0 [Note] Shutting down plugin 'INNODB_SYS_FIELDS'
+2019-05-30T12:54:28.747665Z 0 [Note] Shutting down plugin 'INNODB_SYS_COLUMNS'
+2019-05-30T12:54:28.747668Z 0 [Note] Shutting down plugin 'INNODB_SYS_INDEXES'
+2019-05-30T12:54:28.747672Z 0 [Note] Shutting down plugin 'INNODB_SYS_TABLESTATS'
+2019-05-30T12:54:28.747675Z 0 [Note] Shutting down plugin 'INNODB_SYS_TABLES'
+2019-05-30T12:54:28.747679Z 0 [Note] Shutting down plugin 'INNODB_FT_INDEX_TABLE'
+2019-05-30T12:54:28.747682Z 0 [Note] Shutting down plugin 'INNODB_FT_INDEX_CACHE'
+2019-05-30T12:54:28.747686Z 0 [Note] Shutting down plugin 'INNODB_FT_CONFIG'
+2019-05-30T12:54:28.747689Z 0 [Note] Shutting down plugin 'INNODB_FT_BEING_DELETED'
+2019-05-30T12:54:28.747693Z 0 [Note] Shutting down plugin 'INNODB_FT_DELETED'
+2019-05-30T12:54:28.747696Z 0 [Note] Shutting down plugin 'INNODB_FT_DEFAULT_STOPWORD'
+2019-05-30T12:54:28.747700Z 0 [Note] Shutting down plugin 'INNODB_METRICS'
+2019-05-30T12:54:28.747703Z 0 [Note] Shutting down plugin 'INNODB_TEMP_TABLE_INFO'
+2019-05-30T12:54:28.747707Z 0 [Note] Shutting down plugin 'INNODB_BUFFER_POOL_STATS'
+2019-05-30T12:54:28.747711Z 0 [Note] Shutting down plugin 'INNODB_BUFFER_PAGE_LRU'
+2019-05-30T12:54:28.747714Z 0 [Note] Shutting down plugin 'INNODB_BUFFER_PAGE'
+2019-05-30T12:54:28.747718Z 0 [Note] Shutting down plugin 'INNODB_CMP_PER_INDEX_RESET'
+2019-05-30T12:54:28.747721Z 0 [Note] Shutting down plugin 'INNODB_CMP_PER_INDEX'
+2019-05-30T12:54:28.747725Z 0 [Note] Shutting down plugin 'INNODB_CMPMEM_RESET'
+2019-05-30T12:54:28.747728Z 0 [Note] Shutting down plugin 'INNODB_CMPMEM'
+2019-05-30T12:54:28.747732Z 0 [Note] Shutting down plugin 'INNODB_CMP_RESET'
+2019-05-30T12:54:28.747735Z 0 [Note] Shutting down plugin 'INNODB_CMP'
+2019-05-30T12:54:28.747739Z 0 [Note] Shutting down plugin 'INNODB_LOCK_WAITS'
+2019-05-30T12:54:28.747742Z 0 [Note] Shutting down plugin 'INNODB_LOCKS'
+2019-05-30T12:54:28.747746Z 0 [Note] Shutting down plugin 'INNODB_TRX'
+2019-05-30T12:54:28.747749Z 0 [Note] Shutting down plugin 'InnoDB'
+2019-05-30T12:54:28.747828Z 0 [Note] InnoDB: FTS optimize thread exiting.
+2019-05-30T12:54:28.748046Z 0 [Note] InnoDB: Starting shutdown...
+2019-05-30T12:54:28.848298Z 0 [Note] InnoDB: Dumping buffer pool(s) to /var/lib/mysql/ib_buffer_pool
+2019-05-30T12:54:28.849061Z 0 [Note] InnoDB: Buffer pool(s) dump completed at 190530 12:54:28
+2019-05-30T12:54:29.775420Z 0 [Note] InnoDB: Shutdown completed; log sequence number 12955377
+2019-05-30T12:54:29.776771Z 0 [Note] InnoDB: Removed temporary tablespace data file: "ibtmp1"
+2019-05-30T12:54:29.776785Z 0 [Note] Shutting down plugin 'MyISAM'
+2019-05-30T12:54:29.776803Z 0 [Note] Shutting down plugin 'sha256_password'
+2019-05-30T12:54:29.776806Z 0 [Note] Shutting down plugin 'mysql_native_password'
+2019-05-30T12:54:29.776905Z 0 [Note] Shutting down plugin 'binlog'
+2019-05-30T12:54:29.778233Z 0 [Note] mysqld: Shutdown complete
+
+2019-05-30T12:54:36.380144Z 0 [Warning] TIMESTAMP with implicit DEFAULT value is deprecated. Please use --explicit_defaults_for_timestamp server option (see documentation for more details).
+2019-05-30T12:54:36.381295Z 0 [Note] mysqld (mysqld 5.7.24-log) starting as process 1 ...
+2019-05-30T12:54:36.387554Z 0 [Note] InnoDB: PUNCH HOLE support available
+2019-05-30T12:54:36.387578Z 0 [Note] InnoDB: Mutexes and rw_locks use GCC atomic builtins
+2019-05-30T12:54:36.387585Z 0 [Note] InnoDB: Uses event mutexes
+2019-05-30T12:54:36.387590Z 0 [Note] InnoDB: GCC builtin __atomic_thread_fence() is used for memory barrier
+2019-05-30T12:54:36.387596Z 0 [Note] InnoDB: Compressed tables use zlib 1.2.11
+2019-05-30T12:54:36.387602Z 0 [Note] InnoDB: Using Linux native AIO
+2019-05-30T12:54:36.387867Z 0 [Note] InnoDB: Number of pools: 1
+2019-05-30T12:54:36.387960Z 0 [Note] InnoDB: Using CPU crc32 instructions
+2019-05-30T12:54:36.389271Z 0 [Note] InnoDB: Initializing buffer pool, total size = 128M, instances = 1, chunk size = 128M
+2019-05-30T12:54:36.401029Z 0 [Note] InnoDB: Completed initialization of buffer pool
+2019-05-30T12:54:36.403732Z 0 [Note] InnoDB: If the mysqld execution user is authorized, page cleaner thread priority can be changed. See the man page of setpriority().
+2019-05-30T12:54:36.414656Z 0 [Note] InnoDB: Highest supported file format is Barracuda.
+2019-05-30T12:54:36.431981Z 0 [Note] InnoDB: Creating shared tablespace for temporary tables
+2019-05-30T12:54:36.432032Z 0 [Note] InnoDB: Setting file './ibtmp1' size to 12 MB. Physically writing the file full; Please wait ...
+2019-05-30T12:54:36.447807Z 0 [Note] InnoDB: File './ibtmp1' size is now 12 MB.
+2019-05-30T12:54:36.448712Z 0 [Note] InnoDB: 96 redo rollback segment(s) found. 96 redo rollback segment(s) are active.
+2019-05-30T12:54:36.448729Z 0 [Note] InnoDB: 32 non-redo rollback segment(s) are active.
+2019-05-30T12:54:36.448960Z 0 [Note] InnoDB: Waiting for purge to start
+2019-05-30T12:54:36.499419Z 0 [Note] InnoDB: 5.7.24 started; log sequence number 12955377
+2019-05-30T12:54:36.499581Z 0 [Note] InnoDB: Loading buffer pool(s) from /var/lib/mysql/ib_buffer_pool
+2019-05-30T12:54:36.499626Z 0 [Note] Plugin 'FEDERATED' is disabled.
+2019-05-30T12:54:36.501485Z 0 [Note] InnoDB: Buffer pool(s) load completed at 190530 12:54:36
+mysqld: File ''/var/log/mysql/slow/slow.log'' not found (Errcode: 2 - No such file or directory)
+2019-05-30T12:54:36.502487Z 0 [ERROR] Could not use '/var/log/mysql/slow/slow.log'Â for logging (error 2 - No such file or directory). Turning logging off for the server process. To turn it on again: fix the cause, then either restart the query logging by using "SET GLOBAL SLOW_QUERY_LOG=ON" or restart the MySQL server.
+2019-05-30T12:54:36.502994Z 0 [Warning] InnoDB: Table mysql/innodb_table_stats has length mismatch in the column name table_name.  Please run mysql_upgrade
+2019-05-30T12:54:36.503026Z 0 [Warning] InnoDB: Table mysql/innodb_index_stats has length mismatch in the column name table_name.  Please run mysql_upgrade
+2019-05-30T12:54:36.504985Z 0 [Note] Found ca.pem, server-cert.pem and server-key.pem in data directory. Trying to enable SSL support using them.
+2019-05-30T12:54:36.504994Z 0 [Note] Skipping generation of SSL certificates as certificate files are present in data directory.
+2019-05-30T12:54:36.505640Z 0 [Warning] CA certificate ca.pem is self signed.
+2019-05-30T12:54:36.505671Z 0 [Note] Skipping generation of RSA key pair as key files are present in data directory.
+2019-05-30T12:54:36.505904Z 0 [Note] Server hostname (bind-address): '*'; port: 3306
+2019-05-30T12:54:36.505993Z 0 [Note] IPv6 is available.
+2019-05-30T12:54:36.506005Z 0 [Note]   - '::' resolves to '::';
+2019-05-30T12:54:36.506020Z 0 [Note] Server socket created on IP: '::'.
+2019-05-30T12:54:36.518248Z 0 [Note] Event Scheduler: Loaded 0 events
+2019-05-30T12:54:36.518577Z 0 [Note] mysqld: ready for connections.
+Version: '5.7.24-log'  socket: '/var/lib/mysql/mysql.sock'  port: 3306  MySQL Community Server (GPL)
+2019-05-30T12:54:54.339011Z 18 [Warning] InnoDB: Table mysql/innodb_table_stats has length mismatch in the column name table_name.  Please run mysql_upgrade
+2019-05-30T12:54:54.339029Z 18 [Warning] InnoDB: Table mysql/innodb_index_stats has length mismatch in the column name table_name.  Please run mysql_upgrade
+2019-05-30T12:54:55.364058Z 22 [Warning] InnoDB: Table mysql/innodb_table_stats has length mismatch in the column name table_name.  Please run mysql_upgrade
+2019-05-30T12:54:55.364076Z 22 [Warning] InnoDB: Table mysql/innodb_index_stats has length mismatch in the column name table_name.  Please run mysql_upgrade
+2019-05-30T12:54:58.953241Z 34 [Warning] InnoDB: Table mysql/innodb_table_stats has length mismatch in the column name table_name.  Please run mysql_upgrade
+2019-05-30T12:54:58.953308Z 34 [Warning] InnoDB: Table mysql/innodb_index_stats has length mismatch in the column name table_name.  Please run mysql_upgrade
+2019-05-30T12:55:03.841635Z 46 [Warning] InnoDB: Table mysql/innodb_table_stats has length mismatch in the column name table_name.  Please run mysql_upgrade
+2019-05-30T12:55:03.841658Z 46 [Warning] InnoDB: Table mysql/innodb_index_stats has length mismatch in the column name table_name.  Please run mysql_upgrade
+2019-05-30T12:55:06.297082Z 54 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T12:55:36.502455Z 55 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T12:55:55.062125Z 0 [Note] Giving 0 client threads a chance to die gracefully
+2019-05-30T12:55:55.062157Z 0 [Note] Shutting down slave threads
+2019-05-30T12:55:55.062162Z 0 [Note] Forcefully disconnecting 0 remaining clients
+2019-05-30T12:55:55.062168Z 0 [Note] Event Scheduler: Purging the queue. 0 events
+2019-05-30T12:55:55.062237Z 0 [Note] Binlog end
+2019-05-30T12:55:55.063197Z 0 [Note] Shutting down plugin 'ngram'
+2019-05-30T12:55:55.063208Z 0 [Note] Shutting down plugin 'partition'
+2019-05-30T12:55:55.063213Z 0 [Note] Shutting down plugin 'ARCHIVE'
+2019-05-30T12:55:55.063217Z 0 [Note] Shutting down plugin 'BLACKHOLE'
+2019-05-30T12:55:55.063221Z 0 [Note] Shutting down plugin 'MRG_MYISAM'
+2019-05-30T12:55:55.063225Z 0 [Note] Shutting down plugin 'CSV'
+2019-05-30T12:55:55.063229Z 0 [Note] Shutting down plugin 'PERFORMANCE_SCHEMA'
+2019-05-30T12:55:55.063252Z 0 [Note] Shutting down plugin 'MEMORY'
+2019-05-30T12:55:55.063256Z 0 [Note] Shutting down plugin 'INNODB_SYS_VIRTUAL'
+2019-05-30T12:55:55.063260Z 0 [Note] Shutting down plugin 'INNODB_SYS_DATAFILES'
+2019-05-30T12:55:55.063264Z 0 [Note] Shutting down plugin 'INNODB_SYS_TABLESPACES'
+2019-05-30T12:55:55.063267Z 0 [Note] Shutting down plugin 'INNODB_SYS_FOREIGN_COLS'
+2019-05-30T12:55:55.063271Z 0 [Note] Shutting down plugin 'INNODB_SYS_FOREIGN'
+2019-05-30T12:55:55.063274Z 0 [Note] Shutting down plugin 'INNODB_SYS_FIELDS'
+2019-05-30T12:55:55.063278Z 0 [Note] Shutting down plugin 'INNODB_SYS_COLUMNS'
+2019-05-30T12:55:55.063281Z 0 [Note] Shutting down plugin 'INNODB_SYS_INDEXES'
+2019-05-30T12:55:55.063285Z 0 [Note] Shutting down plugin 'INNODB_SYS_TABLESTATS'
+2019-05-30T12:55:55.063288Z 0 [Note] Shutting down plugin 'INNODB_SYS_TABLES'
+2019-05-30T12:55:55.063292Z 0 [Note] Shutting down plugin 'INNODB_FT_INDEX_TABLE'
+2019-05-30T12:55:55.063295Z 0 [Note] Shutting down plugin 'INNODB_FT_INDEX_CACHE'
+2019-05-30T12:55:55.063299Z 0 [Note] Shutting down plugin 'INNODB_FT_CONFIG'
+2019-05-30T12:55:55.063302Z 0 [Note] Shutting down plugin 'INNODB_FT_BEING_DELETED'
+2019-05-30T12:55:55.063306Z 0 [Note] Shutting down plugin 'INNODB_FT_DELETED'
+2019-05-30T12:55:55.063309Z 0 [Note] Shutting down plugin 'INNODB_FT_DEFAULT_STOPWORD'
+2019-05-30T12:55:55.063313Z 0 [Note] Shutting down plugin 'INNODB_METRICS'
+2019-05-30T12:55:55.063316Z 0 [Note] Shutting down plugin 'INNODB_TEMP_TABLE_INFO'
+2019-05-30T12:55:55.063320Z 0 [Note] Shutting down plugin 'INNODB_BUFFER_POOL_STATS'
+2019-05-30T12:55:55.063330Z 0 [Note] Shutting down plugin 'INNODB_BUFFER_PAGE_LRU'
+2019-05-30T12:55:55.063334Z 0 [Note] Shutting down plugin 'INNODB_BUFFER_PAGE'
+2019-05-30T12:55:55.063337Z 0 [Note] Shutting down plugin 'INNODB_CMP_PER_INDEX_RESET'
+2019-05-30T12:55:55.063340Z 0 [Note] Shutting down plugin 'INNODB_CMP_PER_INDEX'
+2019-05-30T12:55:55.063343Z 0 [Note] Shutting down plugin 'INNODB_CMPMEM_RESET'
+2019-05-30T12:55:55.063346Z 0 [Note] Shutting down plugin 'INNODB_CMPMEM'
+2019-05-30T12:55:55.063349Z 0 [Note] Shutting down plugin 'INNODB_CMP_RESET'
+2019-05-30T12:55:55.063352Z 0 [Note] Shutting down plugin 'INNODB_CMP'
+2019-05-30T12:55:55.063355Z 0 [Note] Shutting down plugin 'INNODB_LOCK_WAITS'
+2019-05-30T12:55:55.063358Z 0 [Note] Shutting down plugin 'INNODB_LOCKS'
+2019-05-30T12:55:55.063361Z 0 [Note] Shutting down plugin 'INNODB_TRX'
+2019-05-30T12:55:55.063364Z 0 [Note] Shutting down plugin 'InnoDB'
+2019-05-30T12:55:55.063470Z 0 [Note] InnoDB: FTS optimize thread exiting.
+2019-05-30T12:55:55.063737Z 0 [Note] InnoDB: Starting shutdown...
+2019-05-30T12:55:55.164153Z 0 [Note] InnoDB: Dumping buffer pool(s) to /var/lib/mysql/ib_buffer_pool
+2019-05-30T12:55:55.164803Z 0 [Note] InnoDB: Buffer pool(s) dump completed at 190530 12:55:55
+2019-05-30T12:55:56.398636Z 0 [Note] InnoDB: Shutdown completed; log sequence number 12955405
+2019-05-30T12:55:56.399893Z 0 [Note] InnoDB: Removed temporary tablespace data file: "ibtmp1"
+2019-05-30T12:55:56.399906Z 0 [Note] Shutting down plugin 'MyISAM'
+2019-05-30T12:55:56.399917Z 0 [Note] Shutting down plugin 'sha256_password'
+2019-05-30T12:55:56.399921Z 0 [Note] Shutting down plugin 'mysql_native_password'
+2019-05-30T12:55:56.400034Z 0 [Note] Shutting down plugin 'binlog'
+2019-05-30T12:55:56.401337Z 0 [Note] mysqld: Shutdown complete
+
+2019-05-30T13:43:18.880225Z 0 [Warning] TIMESTAMP with implicit DEFAULT value is deprecated. Please use --explicit_defaults_for_timestamp server option (see documentation for more details).
+2019-05-30T13:43:18.881382Z 0 [Note] mysqld (mysqld 5.7.26-log) starting as process 1 ...
+2019-05-30T13:43:18.885749Z 0 [Note] InnoDB: PUNCH HOLE support available
+2019-05-30T13:43:18.885774Z 0 [Note] InnoDB: Mutexes and rw_locks use GCC atomic builtins
+2019-05-30T13:43:18.885780Z 0 [Note] InnoDB: Uses event mutexes
+2019-05-30T13:43:18.885786Z 0 [Note] InnoDB: GCC builtin __atomic_thread_fence() is used for memory barrier
+2019-05-30T13:43:18.885791Z 0 [Note] InnoDB: Compressed tables use zlib 1.2.11
+2019-05-30T13:43:18.885796Z 0 [Note] InnoDB: Using Linux native AIO
+2019-05-30T13:43:18.886089Z 0 [Note] InnoDB: Number of pools: 1
+2019-05-30T13:43:18.886182Z 0 [Note] InnoDB: Using CPU crc32 instructions
+2019-05-30T13:43:18.887513Z 0 [Note] InnoDB: Initializing buffer pool, total size = 128M, instances = 1, chunk size = 128M
+2019-05-30T13:43:18.898975Z 0 [Note] InnoDB: Completed initialization of buffer pool
+2019-05-30T13:43:18.900592Z 0 [Note] InnoDB: If the mysqld execution user is authorized, page cleaner thread priority can be changed. See the man page of setpriority().
+2019-05-30T13:43:18.912067Z 0 [Note] InnoDB: Highest supported file format is Barracuda.
+2019-05-30T13:43:18.934682Z 0 [Note] InnoDB: Creating shared tablespace for temporary tables
+2019-05-30T13:43:18.934742Z 0 [Note] InnoDB: Setting file './ibtmp1' size to 12 MB. Physically writing the file full; Please wait ...
+2019-05-30T13:43:18.964650Z 0 [Note] InnoDB: File './ibtmp1' size is now 12 MB.
+2019-05-30T13:43:18.965412Z 0 [Note] InnoDB: 96 redo rollback segment(s) found. 96 redo rollback segment(s) are active.
+2019-05-30T13:43:18.965468Z 0 [Note] InnoDB: 32 non-redo rollback segment(s) are active.
+2019-05-30T13:43:18.965695Z 0 [Note] InnoDB: Waiting for purge to start
+2019-05-30T13:43:19.015841Z 0 [Note] InnoDB: 5.7.26 started; log sequence number 12955405
+2019-05-30T13:43:19.016088Z 0 [Note] Plugin 'FEDERATED' is disabled.
+2019-05-30T13:43:19.021208Z 0 [Note] InnoDB: Loading buffer pool(s) from /var/lib/mysql/ib_buffer_pool
+2019-05-30T13:43:19.025277Z 0 [Note] InnoDB: Buffer pool(s) load completed at 190530 13:43:19
+mysqld: File ''/var/log/mysql/slow.log'' not found (Errcode: 2 - No such file or directory)
+2019-05-30T13:43:19.025409Z 0 [ERROR] Could not use '/var/log/mysql/slow.log'Â for logging (error 2 - No such file or directory). Turning logging off for the server process. To turn it on again: fix the cause, then either restart the query logging by using "SET GLOBAL SLOW_QUERY_LOG=ON" or restart the MySQL server.
+2019-05-30T13:43:19.025872Z 0 [Warning] InnoDB: Table mysql/innodb_table_stats has length mismatch in the column name table_name.  Please run mysql_upgrade
+2019-05-30T13:43:19.025903Z 0 [Warning] InnoDB: Table mysql/innodb_index_stats has length mismatch in the column name table_name.  Please run mysql_upgrade
+2019-05-30T13:43:19.027942Z 0 [Note] Found ca.pem, server-cert.pem and server-key.pem in data directory. Trying to enable SSL support using them.
+2019-05-30T13:43:19.027953Z 0 [Note] Skipping generation of SSL certificates as certificate files are present in data directory.
+2019-05-30T13:43:19.033030Z 0 [Warning] CA certificate ca.pem is self signed.
+2019-05-30T13:43:19.033097Z 0 [Note] Skipping generation of RSA key pair as key files are present in data directory.
+2019-05-30T13:43:19.033370Z 0 [Note] Server hostname (bind-address): '*'; port: 3306
+2019-05-30T13:43:19.033447Z 0 [Note] IPv6 is available.
+2019-05-30T13:43:19.033607Z 0 [Note]   - '::' resolves to '::';
+2019-05-30T13:43:19.033629Z 0 [Note] Server socket created on IP: '::'.
+2019-05-30T13:43:19.050063Z 0 [Note] Event Scheduler: Loaded 0 events
+2019-05-30T13:43:19.051808Z 0 [Note] mysqld: ready for connections.
+Version: '5.7.26-log'  socket: '/var/lib/mysql/mysql.sock'  port: 3306  MySQL Community Server (GPL)
+2019-05-30T13:43:48.764965Z 2 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T13:44:18.951146Z 3 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T13:44:49.146698Z 4 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T13:45:19.347140Z 5 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T13:45:49.536013Z 6 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T13:46:19.719147Z 7 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T13:46:49.894897Z 8 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T13:47:20.075475Z 9 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T13:47:50.249732Z 10 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T13:48:20.432510Z 11 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T13:48:37.199565Z 0 [Note] Giving 0 client threads a chance to die gracefully
+2019-05-30T13:48:37.199602Z 0 [Note] Shutting down slave threads
+2019-05-30T13:48:37.199608Z 0 [Note] Forcefully disconnecting 0 remaining clients
+2019-05-30T13:48:37.199614Z 0 [Note] Event Scheduler: Purging the queue. 0 events
+2019-05-30T13:48:37.199653Z 0 [Note] Binlog end
+2019-05-30T13:48:37.200000Z 0 [Note] Shutting down plugin 'ngram'
+2019-05-30T13:48:37.200007Z 0 [Note] Shutting down plugin 'partition'
+2019-05-30T13:48:37.200011Z 0 [Note] Shutting down plugin 'ARCHIVE'
+2019-05-30T13:48:37.200015Z 0 [Note] Shutting down plugin 'BLACKHOLE'
+2019-05-30T13:48:37.200019Z 0 [Note] Shutting down plugin 'MRG_MYISAM'
+2019-05-30T13:48:37.200023Z 0 [Note] Shutting down plugin 'CSV'
+2019-05-30T13:48:37.200027Z 0 [Note] Shutting down plugin 'PERFORMANCE_SCHEMA'
+2019-05-30T13:48:37.200110Z 0 [Note] Shutting down plugin 'MEMORY'
+2019-05-30T13:48:37.200118Z 0 [Note] Shutting down plugin 'INNODB_SYS_VIRTUAL'
+2019-05-30T13:48:37.200123Z 0 [Note] Shutting down plugin 'INNODB_SYS_DATAFILES'
+2019-05-30T13:48:37.200126Z 0 [Note] Shutting down plugin 'INNODB_SYS_TABLESPACES'
+2019-05-30T13:48:37.200130Z 0 [Note] Shutting down plugin 'INNODB_SYS_FOREIGN_COLS'
+2019-05-30T13:48:37.200147Z 0 [Note] Shutting down plugin 'INNODB_SYS_FOREIGN'
+2019-05-30T13:48:37.200151Z 0 [Note] Shutting down plugin 'INNODB_SYS_FIELDS'
+2019-05-30T13:48:37.200154Z 0 [Note] Shutting down plugin 'INNODB_SYS_COLUMNS'
+2019-05-30T13:48:37.200157Z 0 [Note] Shutting down plugin 'INNODB_SYS_INDEXES'
+2019-05-30T13:48:37.200160Z 0 [Note] Shutting down plugin 'INNODB_SYS_TABLESTATS'
+2019-05-30T13:48:37.200163Z 0 [Note] Shutting down plugin 'INNODB_SYS_TABLES'
+2019-05-30T13:48:37.200166Z 0 [Note] Shutting down plugin 'INNODB_FT_INDEX_TABLE'
+2019-05-30T13:48:37.200169Z 0 [Note] Shutting down plugin 'INNODB_FT_INDEX_CACHE'
+2019-05-30T13:48:37.200172Z 0 [Note] Shutting down plugin 'INNODB_FT_CONFIG'
+2019-05-30T13:48:37.200175Z 0 [Note] Shutting down plugin 'INNODB_FT_BEING_DELETED'
+2019-05-30T13:48:37.200178Z 0 [Note] Shutting down plugin 'INNODB_FT_DELETED'
+2019-05-30T13:48:37.200181Z 0 [Note] Shutting down plugin 'INNODB_FT_DEFAULT_STOPWORD'
+2019-05-30T13:48:37.200184Z 0 [Note] Shutting down plugin 'INNODB_METRICS'
+2019-05-30T13:48:37.200187Z 0 [Note] Shutting down plugin 'INNODB_TEMP_TABLE_INFO'
+2019-05-30T13:48:37.200190Z 0 [Note] Shutting down plugin 'INNODB_BUFFER_POOL_STATS'
+2019-05-30T13:48:37.200193Z 0 [Note] Shutting down plugin 'INNODB_BUFFER_PAGE_LRU'
+2019-05-30T13:48:37.200196Z 0 [Note] Shutting down plugin 'INNODB_BUFFER_PAGE'
+2019-05-30T13:48:37.200199Z 0 [Note] Shutting down plugin 'INNODB_CMP_PER_INDEX_RESET'
+2019-05-30T13:48:37.200202Z 0 [Note] Shutting down plugin 'INNODB_CMP_PER_INDEX'
+2019-05-30T13:48:37.200205Z 0 [Note] Shutting down plugin 'INNODB_CMPMEM_RESET'
+2019-05-30T13:48:37.200208Z 0 [Note] Shutting down plugin 'INNODB_CMPMEM'
+2019-05-30T13:48:37.200211Z 0 [Note] Shutting down plugin 'INNODB_CMP_RESET'
+2019-05-30T13:48:37.200214Z 0 [Note] Shutting down plugin 'INNODB_CMP'
+2019-05-30T13:48:37.200217Z 0 [Note] Shutting down plugin 'INNODB_LOCK_WAITS'
+2019-05-30T13:48:37.200220Z 0 [Note] Shutting down plugin 'INNODB_LOCKS'
+2019-05-30T13:48:37.200223Z 0 [Note] Shutting down plugin 'INNODB_TRX'
+2019-05-30T13:48:37.200226Z 0 [Note] Shutting down plugin 'InnoDB'
+2019-05-30T13:48:37.200266Z 0 [Note] InnoDB: FTS optimize thread exiting.
+2019-05-30T13:48:37.200649Z 0 [Note] InnoDB: Starting shutdown...
+2019-05-30T13:48:37.300840Z 0 [Note] InnoDB: Dumping buffer pool(s) to /var/lib/mysql/ib_buffer_pool
+2019-05-30T13:48:37.301740Z 0 [Note] InnoDB: Buffer pool(s) dump completed at 190530 13:48:37
+2019-05-30T13:48:38.315409Z 0 [Note] InnoDB: Shutdown completed; log sequence number 12955433
+2019-05-30T13:48:38.316748Z 0 [Note] InnoDB: Removed temporary tablespace data file: "ibtmp1"
+2019-05-30T13:48:38.316762Z 0 [Note] Shutting down plugin 'MyISAM'
+2019-05-30T13:48:38.316772Z 0 [Note] Shutting down plugin 'sha256_password'
+2019-05-30T13:48:38.316831Z 0 [Note] Shutting down plugin 'mysql_native_password'
+2019-05-30T13:48:38.316931Z 0 [Note] Shutting down plugin 'binlog'
+2019-05-30T13:48:38.318264Z 0 [Note] mysqld: Shutdown complete
+
+2019-05-30T16:23:38.519281Z 0 [Warning] TIMESTAMP with implicit DEFAULT value is deprecated. Please use --explicit_defaults_for_timestamp server option (see documentation for more details).
+2019-05-30T16:23:38.520402Z 0 [Note] mysqld (mysqld 5.7.24-log) starting as process 1 ...
+2019-05-30T16:23:38.526533Z 0 [Note] InnoDB: PUNCH HOLE support available
+2019-05-30T16:23:38.526564Z 0 [Note] InnoDB: Mutexes and rw_locks use GCC atomic builtins
+2019-05-30T16:23:38.526570Z 0 [Note] InnoDB: Uses event mutexes
+2019-05-30T16:23:38.526576Z 0 [Note] InnoDB: GCC builtin __atomic_thread_fence() is used for memory barrier
+2019-05-30T16:23:38.526581Z 0 [Note] InnoDB: Compressed tables use zlib 1.2.11
+2019-05-30T16:23:38.526587Z 0 [Note] InnoDB: Using Linux native AIO
+2019-05-30T16:23:38.526806Z 0 [Note] InnoDB: Number of pools: 1
+2019-05-30T16:23:38.526896Z 0 [Note] InnoDB: Using CPU crc32 instructions
+2019-05-30T16:23:38.528561Z 0 [Note] InnoDB: Initializing buffer pool, total size = 128M, instances = 1, chunk size = 128M
+2019-05-30T16:23:38.549533Z 0 [Note] InnoDB: Completed initialization of buffer pool
+2019-05-30T16:23:38.551006Z 0 [Note] InnoDB: If the mysqld execution user is authorized, page cleaner thread priority can be changed. See the man page of setpriority().
+2019-05-30T16:23:38.562454Z 0 [Note] InnoDB: Highest supported file format is Barracuda.
+2019-05-30T16:23:38.599136Z 0 [Note] InnoDB: Creating shared tablespace for temporary tables
+2019-05-30T16:23:38.599260Z 0 [Note] InnoDB: Setting file './ibtmp1' size to 12 MB. Physically writing the file full; Please wait ...
+2019-05-30T16:23:38.670977Z 0 [Note] InnoDB: File './ibtmp1' size is now 12 MB.
+2019-05-30T16:23:38.671785Z 0 [Note] InnoDB: 96 redo rollback segment(s) found. 96 redo rollback segment(s) are active.
+2019-05-30T16:23:38.671801Z 0 [Note] InnoDB: 32 non-redo rollback segment(s) are active.
+2019-05-30T16:23:38.672380Z 0 [Note] InnoDB: Waiting for purge to start
+2019-05-30T16:23:38.724545Z 0 [Note] InnoDB: 5.7.24 started; log sequence number 12955433
+2019-05-30T16:23:38.724864Z 0 [Note] InnoDB: Loading buffer pool(s) from /var/lib/mysql/ib_buffer_pool
+2019-05-30T16:23:38.725710Z 0 [Note] Plugin 'FEDERATED' is disabled.
+mysqld: File ''/var/log/mysql/slow.log'' not found (Errcode: 2 - No such file or directory)
+2019-05-30T16:23:38.728630Z 0 [ERROR] Could not use '/var/log/mysql/slow.log'Â for logging (error 2 - No such file or directory). Turning logging off for the server process. To turn it on again: fix the cause, then either restart the query logging by using "SET GLOBAL SLOW_QUERY_LOG=ON" or restart the MySQL server.
+2019-05-30T16:23:38.736164Z 0 [Note] InnoDB: Buffer pool(s) load completed at 190530 16:23:38
+2019-05-30T16:23:38.755089Z 0 [Warning] InnoDB: Table mysql/innodb_table_stats has length mismatch in the column name table_name.  Please run mysql_upgrade
+2019-05-30T16:23:38.755127Z 0 [Warning] InnoDB: Table mysql/innodb_index_stats has length mismatch in the column name table_name.  Please run mysql_upgrade
+2019-05-30T16:23:38.758177Z 0 [Note] Found ca.pem, server-cert.pem and server-key.pem in data directory. Trying to enable SSL support using them.
+2019-05-30T16:23:38.758201Z 0 [Note] Skipping generation of SSL certificates as certificate files are present in data directory.
+2019-05-30T16:23:38.761343Z 0 [Warning] CA certificate ca.pem is self signed.
+2019-05-30T16:23:38.761390Z 0 [Note] Skipping generation of RSA key pair as key files are present in data directory.
+2019-05-30T16:23:38.769098Z 0 [Note] Server hostname (bind-address): '*'; port: 3306
+2019-05-30T16:23:38.769156Z 0 [Note] IPv6 is available.
+2019-05-30T16:23:38.769169Z 0 [Note]   - '::' resolves to '::';
+2019-05-30T16:23:38.769186Z 0 [Note] Server socket created on IP: '::'.
+2019-05-30T16:23:38.789523Z 0 [Note] Event Scheduler: Loaded 0 events
+2019-05-30T16:23:38.789709Z 0 [Note] mysqld: ready for connections.
+Version: '5.7.24-log'  socket: '/var/lib/mysql/mysql.sock'  port: 3306  MySQL Community Server (GPL)
+2019-05-30T16:24:08.407602Z 2 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T16:24:38.589920Z 3 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T16:25:08.779134Z 4 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T16:25:38.964443Z 5 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T16:26:09.147338Z 6 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T16:26:39.329813Z 7 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T16:27:09.511899Z 8 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T16:27:39.713032Z 9 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T16:28:09.903214Z 10 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T16:28:21.689746Z 0 [Note] Giving 0 client threads a chance to die gracefully
+2019-05-30T16:28:21.689782Z 0 [Note] Shutting down slave threads
+2019-05-30T16:28:21.689793Z 0 [Note] Forcefully disconnecting 0 remaining clients
+2019-05-30T16:28:21.689800Z 0 [Note] Event Scheduler: Purging the queue. 0 events
+2019-05-30T16:28:21.689837Z 0 [Note] Binlog end
+2019-05-30T16:28:21.690282Z 0 [Note] Shutting down plugin 'ngram'
+2019-05-30T16:28:21.690291Z 0 [Note] Shutting down plugin 'partition'
+2019-05-30T16:28:21.690295Z 0 [Note] Shutting down plugin 'ARCHIVE'
+2019-05-30T16:28:21.690298Z 0 [Note] Shutting down plugin 'BLACKHOLE'
+2019-05-30T16:28:21.690302Z 0 [Note] Shutting down plugin 'MRG_MYISAM'
+2019-05-30T16:28:21.690306Z 0 [Note] Shutting down plugin 'CSV'
+2019-05-30T16:28:21.690310Z 0 [Note] Shutting down plugin 'PERFORMANCE_SCHEMA'
+2019-05-30T16:28:21.690335Z 0 [Note] Shutting down plugin 'MEMORY'
+2019-05-30T16:28:21.690339Z 0 [Note] Shutting down plugin 'INNODB_SYS_VIRTUAL'
+2019-05-30T16:28:21.690343Z 0 [Note] Shutting down plugin 'INNODB_SYS_DATAFILES'
+2019-05-30T16:28:21.690346Z 0 [Note] Shutting down plugin 'INNODB_SYS_TABLESPACES'
+2019-05-30T16:28:21.690350Z 0 [Note] Shutting down plugin 'INNODB_SYS_FOREIGN_COLS'
+2019-05-30T16:28:21.690353Z 0 [Note] Shutting down plugin 'INNODB_SYS_FOREIGN'
+2019-05-30T16:28:21.690356Z 0 [Note] Shutting down plugin 'INNODB_SYS_FIELDS'
+2019-05-30T16:28:21.690359Z 0 [Note] Shutting down plugin 'INNODB_SYS_COLUMNS'
+2019-05-30T16:28:21.690362Z 0 [Note] Shutting down plugin 'INNODB_SYS_INDEXES'
+2019-05-30T16:28:21.690365Z 0 [Note] Shutting down plugin 'INNODB_SYS_TABLESTATS'
+2019-05-30T16:28:21.690368Z 0 [Note] Shutting down plugin 'INNODB_SYS_TABLES'
+2019-05-30T16:28:21.690371Z 0 [Note] Shutting down plugin 'INNODB_FT_INDEX_TABLE'
+2019-05-30T16:28:21.690374Z 0 [Note] Shutting down plugin 'INNODB_FT_INDEX_CACHE'
+2019-05-30T16:28:21.690378Z 0 [Note] Shutting down plugin 'INNODB_FT_CONFIG'
+2019-05-30T16:28:21.690381Z 0 [Note] Shutting down plugin 'INNODB_FT_BEING_DELETED'
+2019-05-30T16:28:21.690384Z 0 [Note] Shutting down plugin 'INNODB_FT_DELETED'
+2019-05-30T16:28:21.690387Z 0 [Note] Shutting down plugin 'INNODB_FT_DEFAULT_STOPWORD'
+2019-05-30T16:28:21.690390Z 0 [Note] Shutting down plugin 'INNODB_METRICS'
+2019-05-30T16:28:21.690393Z 0 [Note] Shutting down plugin 'INNODB_TEMP_TABLE_INFO'
+2019-05-30T16:28:21.690396Z 0 [Note] Shutting down plugin 'INNODB_BUFFER_POOL_STATS'
+2019-05-30T16:28:21.690399Z 0 [Note] Shutting down plugin 'INNODB_BUFFER_PAGE_LRU'
+2019-05-30T16:28:21.690403Z 0 [Note] Shutting down plugin 'INNODB_BUFFER_PAGE'
+2019-05-30T16:28:21.690406Z 0 [Note] Shutting down plugin 'INNODB_CMP_PER_INDEX_RESET'
+2019-05-30T16:28:21.690409Z 0 [Note] Shutting down plugin 'INNODB_CMP_PER_INDEX'
+2019-05-30T16:28:21.690412Z 0 [Note] Shutting down plugin 'INNODB_CMPMEM_RESET'
+2019-05-30T16:28:21.690415Z 0 [Note] Shutting down plugin 'INNODB_CMPMEM'
+2019-05-30T16:28:21.690418Z 0 [Note] Shutting down plugin 'INNODB_CMP_RESET'
+2019-05-30T16:28:21.690421Z 0 [Note] Shutting down plugin 'INNODB_CMP'
+2019-05-30T16:28:21.690424Z 0 [Note] Shutting down plugin 'INNODB_LOCK_WAITS'
+2019-05-30T16:28:21.690427Z 0 [Note] Shutting down plugin 'INNODB_LOCKS'
+2019-05-30T16:28:21.690431Z 0 [Note] Shutting down plugin 'INNODB_TRX'
+2019-05-30T16:28:21.690434Z 0 [Note] Shutting down plugin 'InnoDB'
+2019-05-30T16:28:21.690546Z 0 [Note] InnoDB: FTS optimize thread exiting.
+2019-05-30T16:28:21.690864Z 0 [Note] InnoDB: Starting shutdown...
+2019-05-30T16:28:21.791554Z 0 [Note] InnoDB: Dumping buffer pool(s) to /var/lib/mysql/ib_buffer_pool
+2019-05-30T16:28:21.792099Z 0 [Note] InnoDB: Buffer pool(s) dump completed at 190530 16:28:21
+2019-05-30T16:28:23.002761Z 0 [Note] InnoDB: Shutdown completed; log sequence number 12955461
+2019-05-30T16:28:23.004234Z 0 [Note] InnoDB: Removed temporary tablespace data file: "ibtmp1"
+2019-05-30T16:28:23.004250Z 0 [Note] Shutting down plugin 'MyISAM'
+2019-05-30T16:28:23.004261Z 0 [Note] Shutting down plugin 'sha256_password'
+2019-05-30T16:28:23.004264Z 0 [Note] Shutting down plugin 'mysql_native_password'
+2019-05-30T16:28:23.004368Z 0 [Note] Shutting down plugin 'binlog'
+2019-05-30T16:28:23.005853Z 0 [Note] mysqld: Shutdown complete
+
+2019-05-30T16:28:24.392788Z 0 [Warning] TIMESTAMP with implicit DEFAULT value is deprecated. Please use --explicit_defaults_for_timestamp server option (see documentation for more details).
+2019-05-30T16:28:24.393939Z 0 [Note] mysqld (mysqld 5.7.24-log) starting as process 1 ...
+2019-05-30T16:28:24.398568Z 0 [Note] InnoDB: PUNCH HOLE support available
+2019-05-30T16:28:24.398589Z 0 [Note] InnoDB: Mutexes and rw_locks use GCC atomic builtins
+2019-05-30T16:28:24.398595Z 0 [Note] InnoDB: Uses event mutexes
+2019-05-30T16:28:24.398600Z 0 [Note] InnoDB: GCC builtin __atomic_thread_fence() is used for memory barrier
+2019-05-30T16:28:24.398605Z 0 [Note] InnoDB: Compressed tables use zlib 1.2.11
+2019-05-30T16:28:24.398610Z 0 [Note] InnoDB: Using Linux native AIO
+2019-05-30T16:28:24.398821Z 0 [Note] InnoDB: Number of pools: 1
+2019-05-30T16:28:24.398949Z 0 [Note] InnoDB: Using CPU crc32 instructions
+2019-05-30T16:28:24.400141Z 0 [Note] InnoDB: Initializing buffer pool, total size = 128M, instances = 1, chunk size = 128M
+2019-05-30T16:28:24.413217Z 0 [Note] InnoDB: Completed initialization of buffer pool
+2019-05-30T16:28:24.414738Z 0 [Note] InnoDB: If the mysqld execution user is authorized, page cleaner thread priority can be changed. See the man page of setpriority().
+2019-05-30T16:28:24.426162Z 0 [Note] InnoDB: Highest supported file format is Barracuda.
+2019-05-30T16:28:24.464838Z 0 [Note] InnoDB: Creating shared tablespace for temporary tables
+2019-05-30T16:28:24.464891Z 0 [Note] InnoDB: Setting file './ibtmp1' size to 12 MB. Physically writing the file full; Please wait ...
+2019-05-30T16:28:24.490340Z 0 [Note] InnoDB: File './ibtmp1' size is now 12 MB.
+2019-05-30T16:28:24.491284Z 0 [Note] InnoDB: 96 redo rollback segment(s) found. 96 redo rollback segment(s) are active.
+2019-05-30T16:28:24.491309Z 0 [Note] InnoDB: 32 non-redo rollback segment(s) are active.
+2019-05-30T16:28:24.491887Z 0 [Note] InnoDB: Waiting for purge to start
+2019-05-30T16:28:24.543989Z 0 [Note] InnoDB: 5.7.24 started; log sequence number 12955461
+2019-05-30T16:28:24.548745Z 0 [Note] InnoDB: Loading buffer pool(s) from /var/lib/mysql/ib_buffer_pool
+2019-05-30T16:28:24.550839Z 0 [Note] Plugin 'FEDERATED' is disabled.
+2019-05-30T16:28:24.552485Z 0 [Note] InnoDB: Buffer pool(s) load completed at 190530 16:28:24
+mysqld: File ''/var/log/mysql/slow.log'' not found (Errcode: 2 - No such file or directory)
+2019-05-30T16:28:24.555642Z 0 [ERROR] Could not use '/var/log/mysql/slow.log'Â for logging (error 2 - No such file or directory). Turning logging off for the server process. To turn it on again: fix the cause, then either restart the query logging by using "SET GLOBAL SLOW_QUERY_LOG=ON" or restart the MySQL server.
+2019-05-30T16:28:24.556170Z 0 [Warning] InnoDB: Table mysql/innodb_table_stats has length mismatch in the column name table_name.  Please run mysql_upgrade
+2019-05-30T16:28:24.556201Z 0 [Warning] InnoDB: Table mysql/innodb_index_stats has length mismatch in the column name table_name.  Please run mysql_upgrade
+2019-05-30T16:28:24.558461Z 0 [Note] Found ca.pem, server-cert.pem and server-key.pem in data directory. Trying to enable SSL support using them.
+2019-05-30T16:28:24.558477Z 0 [Note] Skipping generation of SSL certificates as certificate files are present in data directory.
+2019-05-30T16:28:24.559111Z 0 [Warning] CA certificate ca.pem is self signed.
+2019-05-30T16:28:24.559142Z 0 [Note] Skipping generation of RSA key pair as key files are present in data directory.
+2019-05-30T16:28:24.559379Z 0 [Note] Server hostname (bind-address): '*'; port: 3306
+2019-05-30T16:28:24.559469Z 0 [Note] IPv6 is available.
+2019-05-30T16:28:24.559483Z 0 [Note]   - '::' resolves to '::';
+2019-05-30T16:28:24.559498Z 0 [Note] Server socket created on IP: '::'.
+2019-05-30T16:28:24.574998Z 0 [Note] Event Scheduler: Loaded 0 events
+2019-05-30T16:28:24.575119Z 0 [Note] mysqld: ready for connections.
+Version: '5.7.24-log'  socket: '/var/lib/mysql/mysql.sock'  port: 3306  MySQL Community Server (GPL)
+2019-05-30T16:45:40.057186Z 0 [Warning] TIMESTAMP with implicit DEFAULT value is deprecated. Please use --explicit_defaults_for_timestamp server option (see documentation for more details).
+2019-05-30T16:45:40.058346Z 0 [Note] mysqld (mysqld 5.7.24-log) starting as process 1 ...
+2019-05-30T16:45:40.067397Z 0 [Note] InnoDB: PUNCH HOLE support available
+2019-05-30T16:45:40.067427Z 0 [Note] InnoDB: Mutexes and rw_locks use GCC atomic builtins
+2019-05-30T16:45:40.067436Z 0 [Note] InnoDB: Uses event mutexes
+2019-05-30T16:45:40.067441Z 0 [Note] InnoDB: GCC builtin __atomic_thread_fence() is used for memory barrier
+2019-05-30T16:45:40.067446Z 0 [Note] InnoDB: Compressed tables use zlib 1.2.11
+2019-05-30T16:45:40.067451Z 0 [Note] InnoDB: Using Linux native AIO
+2019-05-30T16:45:40.067669Z 0 [Note] InnoDB: Number of pools: 1
+2019-05-30T16:45:40.067769Z 0 [Note] InnoDB: Using CPU crc32 instructions
+2019-05-30T16:45:40.069236Z 0 [Note] InnoDB: Initializing buffer pool, total size = 128M, instances = 1, chunk size = 128M
+2019-05-30T16:45:40.085838Z 0 [Note] InnoDB: Completed initialization of buffer pool
+2019-05-30T16:45:40.087338Z 0 [Note] InnoDB: If the mysqld execution user is authorized, page cleaner thread priority can be changed. See the man page of setpriority().
+2019-05-30T16:45:40.101577Z 0 [Note] InnoDB: Highest supported file format is Barracuda.
+2019-05-30T16:45:40.103765Z 0 [Note] InnoDB: Log scan progressed past the checkpoint lsn 12955480
+2019-05-30T16:45:40.103797Z 0 [Note] InnoDB: Doing recovery: scanned up to log sequence number 12955489
+2019-05-30T16:45:40.103804Z 0 [Note] InnoDB: Database was not shutdown normally!
+2019-05-30T16:45:40.103810Z 0 [Note] InnoDB: Starting crash recovery.
+2019-05-30T16:45:40.233208Z 0 [Note] InnoDB: Removed temporary tablespace data file: "ibtmp1"
+2019-05-30T16:45:40.233245Z 0 [Note] InnoDB: Creating shared tablespace for temporary tables
+2019-05-30T16:45:40.233287Z 0 [Note] InnoDB: Setting file './ibtmp1' size to 12 MB. Physically writing the file full; Please wait ...
+2019-05-30T16:45:40.249596Z 0 [Note] InnoDB: File './ibtmp1' size is now 12 MB.
+2019-05-30T16:45:40.250556Z 0 [Note] InnoDB: 96 redo rollback segment(s) found. 96 redo rollback segment(s) are active.
+2019-05-30T16:45:40.250569Z 0 [Note] InnoDB: 32 non-redo rollback segment(s) are active.
+2019-05-30T16:45:40.251034Z 0 [Note] InnoDB: Waiting for purge to start
+2019-05-30T16:45:40.301258Z 0 [Note] InnoDB: 5.7.24 started; log sequence number 12955489
+2019-05-30T16:45:40.301575Z 0 [Note] Plugin 'FEDERATED' is disabled.
+2019-05-30T16:45:40.312495Z 0 [Note] InnoDB: Loading buffer pool(s) from /var/lib/mysql/ib_buffer_pool
+mysqld: File ''/var/log/mysql/slow.log'' not found (Errcode: 2 - No such file or directory)
+2019-05-30T16:45:40.314368Z 0 [ERROR] Could not use '/var/log/mysql/slow.log'Â for logging (error 2 - No such file or directory). Turning logging off for the server process. To turn it on again: fix the cause, then either restart the query logging by using "SET GLOBAL SLOW_QUERY_LOG=ON" or restart the MySQL server.
+2019-05-30T16:45:40.315152Z 0 [Warning] InnoDB: Table mysql/innodb_table_stats has length mismatch in the column name table_name.  Please run mysql_upgrade
+2019-05-30T16:45:40.315240Z 0 [Warning] InnoDB: Table mysql/innodb_index_stats has length mismatch in the column name table_name.  Please run mysql_upgrade
+2019-05-30T16:45:40.316329Z 0 [Note] InnoDB: Buffer pool(s) load completed at 190530 16:45:40
+2019-05-30T16:45:40.317699Z 0 [Note] Found ca.pem, server-cert.pem and server-key.pem in data directory. Trying to enable SSL support using them.
+2019-05-30T16:45:40.317715Z 0 [Note] Skipping generation of SSL certificates as certificate files are present in data directory.
+2019-05-30T16:45:40.318512Z 0 [Warning] CA certificate ca.pem is self signed.
+2019-05-30T16:45:40.318551Z 0 [Note] Skipping generation of RSA key pair as key files are present in data directory.
+2019-05-30T16:45:40.323990Z 0 [Note] Server hostname (bind-address): '*'; port: 3306
+2019-05-30T16:45:40.324175Z 0 [Note] IPv6 is available.
+2019-05-30T16:45:40.324191Z 0 [Note]   - '::' resolves to '::';
+2019-05-30T16:45:40.324216Z 0 [Note] Server socket created on IP: '::'.
+2019-05-30T16:45:40.353217Z 0 [Note] Event Scheduler: Loaded 0 events
+2019-05-30T16:45:40.353354Z 0 [Note] mysqld: ready for connections.
+Version: '5.7.24-log'  socket: '/var/lib/mysql/mysql.sock'  port: 3306  MySQL Community Server (GPL)
+2019-05-30T16:46:09.948152Z 3 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T16:46:40.138535Z 6 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T16:47:10.327411Z 7 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T16:47:40.515472Z 8 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T16:48:10.699202Z 9 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T16:48:40.875212Z 10 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T16:49:11.075472Z 11 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T16:49:41.257607Z 12 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T16:50:11.435323Z 13 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T16:50:41.621530Z 14 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T16:51:11.805334Z 15 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T16:51:42.019736Z 16 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T16:52:12.252181Z 17 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T16:52:42.475355Z 18 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T16:53:12.652144Z 19 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T16:53:42.848836Z 20 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T16:54:13.042695Z 21 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T16:54:43.218478Z 22 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T16:55:13.407275Z 23 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T16:55:43.588944Z 24 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T16:56:13.772188Z 25 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T16:56:43.964858Z 26 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T16:57:14.154404Z 27 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T16:57:44.340467Z 28 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T16:58:14.526131Z 29 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T16:58:44.711690Z 30 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T16:59:14.895741Z 31 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T16:59:45.096244Z 32 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T17:00:15.266210Z 33 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T17:00:45.440223Z 34 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T17:01:15.621007Z 35 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T17:01:45.798504Z 36 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T17:02:15.999120Z 37 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T17:02:46.161027Z 38 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T17:03:16.339621Z 39 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T17:03:46.516400Z 40 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T17:04:16.707696Z 41 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T17:04:46.916264Z 42 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T17:05:17.124869Z 43 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T17:05:47.317550Z 44 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T17:06:17.488617Z 45 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T17:06:47.680977Z 46 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T17:07:17.859546Z 47 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T17:07:48.058523Z 48 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T17:08:18.228633Z 49 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T17:08:48.421667Z 50 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T17:09:18.606879Z 51 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T17:09:48.778174Z 52 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T17:10:18.986824Z 53 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T17:10:49.160409Z 54 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T17:11:19.353683Z 55 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T17:11:49.517820Z 56 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T17:12:19.722814Z 57 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T17:12:49.906435Z 58 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T17:13:20.085637Z 59 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T17:13:50.261953Z 60 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T17:14:20.433985Z 61 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T17:14:50.610057Z 62 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T17:15:20.795525Z 63 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T17:15:50.971477Z 64 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T17:16:21.171068Z 65 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T17:16:51.341289Z 66 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T17:17:21.525778Z 67 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T17:17:51.728502Z 68 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T17:18:21.908492Z 69 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T17:18:52.078692Z 70 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T17:19:22.265174Z 71 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T17:19:52.453039Z 72 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T17:20:22.625532Z 73 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T17:20:52.801651Z 74 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T17:21:22.974435Z 75 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T17:21:53.149285Z 76 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T17:22:23.324829Z 77 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T17:22:53.499844Z 78 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T17:23:23.680640Z 79 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T17:23:53.874611Z 80 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T17:24:24.060679Z 81 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T17:24:54.243650Z 82 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T17:25:24.435986Z 83 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T17:25:54.611467Z 84 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T17:26:24.799225Z 85 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T17:26:54.992856Z 86 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T17:27:25.177692Z 87 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T17:27:55.350836Z 88 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T17:28:25.546639Z 89 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T17:28:55.733550Z 90 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T17:29:25.931686Z 91 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T17:29:56.115977Z 92 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T17:30:26.304553Z 93 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T17:30:56.486377Z 94 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T17:31:26.674138Z 95 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T17:31:56.859497Z 96 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T17:32:27.040049Z 97 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T17:32:57.215920Z 98 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T17:33:27.388988Z 99 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T17:33:57.567382Z 100 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T17:34:27.760996Z 101 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T17:34:57.942909Z 102 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T17:35:28.124018Z 103 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T17:35:58.306957Z 104 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T17:36:28.492242Z 105 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T17:36:58.668552Z 106 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T17:37:28.850650Z 107 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T17:37:59.032022Z 108 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T17:38:29.207918Z 109 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T17:38:59.373848Z 110 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T17:39:29.548077Z 111 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T17:39:59.724297Z 112 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T17:40:29.920544Z 113 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T17:41:00.111412Z 114 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T17:41:30.295074Z 115 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T17:42:00.484868Z 116 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T17:42:30.667621Z 117 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T17:43:00.858825Z 118 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T17:43:31.053109Z 119 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T17:44:01.233126Z 120 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T17:44:31.422030Z 121 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T17:45:01.609040Z 122 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T17:45:31.784203Z 123 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T17:46:01.963695Z 124 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T17:46:32.154369Z 125 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T17:47:02.329045Z 126 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T17:47:32.508801Z 127 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T17:48:02.682286Z 128 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T17:48:32.851055Z 129 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T17:49:03.023107Z 130 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T17:49:33.221923Z 131 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T17:50:03.397719Z 132 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T17:50:33.574363Z 133 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T17:51:03.741814Z 134 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T17:51:33.923316Z 135 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T17:52:04.096760Z 136 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T17:52:34.285793Z 137 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T17:53:04.477448Z 138 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T17:53:34.660035Z 139 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T17:54:04.839972Z 140 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T17:54:35.029131Z 141 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T17:55:05.222615Z 142 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T17:55:35.408138Z 143 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T17:56:05.593258Z 144 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T17:56:35.771463Z 145 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T17:57:05.957231Z 146 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T17:57:36.126471Z 147 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T17:58:06.307404Z 148 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T17:58:36.496212Z 149 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T17:59:06.681022Z 150 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T17:59:36.861338Z 151 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T18:00:07.039570Z 152 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T18:00:37.222502Z 153 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T18:01:07.402509Z 154 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T18:01:37.579214Z 155 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T18:02:07.760467Z 156 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T18:02:37.932278Z 157 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T18:03:08.132991Z 158 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T18:03:38.326993Z 159 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T18:04:08.505819Z 160 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T18:04:38.682581Z 161 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T18:05:08.860348Z 162 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T18:05:39.032244Z 163 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T18:06:09.204269Z 164 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T18:06:39.409628Z 165 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T18:07:09.578945Z 166 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T18:07:39.755364Z 167 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T18:08:09.928463Z 168 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T18:08:40.103978Z 169 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T18:09:10.293083Z 170 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T18:09:40.472940Z 171 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T18:10:10.647320Z 172 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T18:10:40.826660Z 173 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T18:11:11.015755Z 174 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T18:11:41.197574Z 175 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T18:12:11.400081Z 176 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T18:12:41.580359Z 177 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T18:13:11.767595Z 178 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T18:13:41.947860Z 179 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T18:14:12.111630Z 180 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T18:14:42.285177Z 181 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T18:15:12.458812Z 182 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T18:15:42.644655Z 183 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T18:16:12.811706Z 184 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T18:16:42.991202Z 185 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T18:17:13.162438Z 186 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T18:17:43.347637Z 187 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T18:18:13.535785Z 188 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T18:18:43.699564Z 189 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T18:19:13.878222Z 190 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T18:19:44.051167Z 191 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T18:20:14.242821Z 192 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T18:20:44.433036Z 193 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T18:21:14.610402Z 194 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T18:21:44.783918Z 195 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T18:22:14.954146Z 196 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T18:22:45.118978Z 197 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T18:23:15.310920Z 198 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T18:23:45.490867Z 199 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T18:24:15.689535Z 200 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T18:24:45.867116Z 201 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T18:25:16.051834Z 202 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T18:25:46.221859Z 203 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T18:26:16.409745Z 204 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T18:26:46.595691Z 205 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T18:27:16.768922Z 206 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T18:27:46.950881Z 207 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T18:28:17.114842Z 208 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T18:28:47.328886Z 209 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T18:29:17.512760Z 210 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T18:29:47.704261Z 211 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T18:30:17.892693Z 212 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T18:30:48.076526Z 213 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T18:31:18.255471Z 214 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T18:31:48.451423Z 215 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T18:32:18.631606Z 216 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T18:32:48.808442Z 217 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T18:33:18.988322Z 218 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T18:33:49.168354Z 219 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T18:34:19.353386Z 220 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T18:34:49.528509Z 221 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T18:35:19.709444Z 222 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T18:35:49.892453Z 223 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T18:36:20.060103Z 224 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T18:36:50.232410Z 225 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T18:37:20.412295Z 226 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T18:37:50.581897Z 227 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T18:38:20.771885Z 228 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T18:38:50.951273Z 229 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T18:39:21.131590Z 230 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T18:39:51.329768Z 231 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T18:40:21.512015Z 232 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T18:40:51.704336Z 233 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T18:41:21.890441Z 234 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T18:41:52.077232Z 235 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T18:42:22.260892Z 236 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T18:42:52.450639Z 237 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T18:43:22.639397Z 238 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T18:43:52.829172Z 239 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T18:44:23.000895Z 240 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T18:44:53.194172Z 241 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T18:45:23.377479Z 242 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T18:45:53.550782Z 243 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T18:46:23.726642Z 244 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T18:46:53.902078Z 245 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T18:47:24.081802Z 246 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T18:47:54.256142Z 247 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T18:48:24.443755Z 248 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T18:48:54.605896Z 249 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T18:49:24.787010Z 250 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T18:49:54.964545Z 251 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T18:50:25.142151Z 252 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T18:50:55.326863Z 253 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T18:51:25.513684Z 254 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T18:51:55.692399Z 255 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T18:52:25.868168Z 256 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T18:52:56.047475Z 257 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T18:53:26.216729Z 258 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T18:53:56.406761Z 259 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T18:54:26.581864Z 260 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T18:54:56.754041Z 261 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T18:55:26.923934Z 262 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T18:55:57.110710Z 263 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T18:56:27.298501Z 264 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T18:56:57.469336Z 265 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T18:57:27.660997Z 266 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T18:57:57.850086Z 267 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T18:58:28.028162Z 268 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T18:58:58.216358Z 269 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T18:59:28.406314Z 270 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T18:59:58.587836Z 271 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T19:00:28.759770Z 272 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T19:00:58.930349Z 273 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T19:01:29.102574Z 274 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T19:01:59.282916Z 275 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T19:02:29.457301Z 276 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T19:02:59.639512Z 277 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T19:03:29.812213Z 278 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T19:03:59.989237Z 279 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T19:04:30.174184Z 280 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T19:05:00.349065Z 281 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T19:05:30.523786Z 282 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T19:06:00.708503Z 283 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T19:06:30.884412Z 284 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T19:07:01.067411Z 285 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T19:07:31.253257Z 286 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T19:08:01.461372Z 287 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T19:08:31.641826Z 288 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T19:09:01.818585Z 289 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T19:09:32.005978Z 290 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T19:10:02.196154Z 291 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T19:10:32.380931Z 292 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T19:11:02.564610Z 293 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T19:11:32.752621Z 294 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T19:12:02.943124Z 295 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T19:12:33.128045Z 296 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T19:13:03.325725Z 297 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T19:13:33.505931Z 298 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T19:14:03.681318Z 299 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T19:14:33.862683Z 300 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T19:15:04.034847Z 301 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T19:15:34.207824Z 302 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T19:16:04.407116Z 303 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T19:16:34.585640Z 304 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T19:17:04.776547Z 305 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T19:17:34.960909Z 306 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T19:18:05.138829Z 307 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T19:18:35.349000Z 308 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T19:19:05.529852Z 309 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T19:19:35.713008Z 310 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T19:20:05.891167Z 311 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T19:20:36.075962Z 312 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T19:21:06.245673Z 313 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T19:21:36.432119Z 314 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T19:22:06.607141Z 315 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T19:22:36.774307Z 316 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T19:23:06.964058Z 317 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T19:23:37.163995Z 318 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T19:24:07.368637Z 319 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T19:24:37.541194Z 320 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T19:25:07.715116Z 321 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T19:25:37.895503Z 322 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T19:26:08.080267Z 323 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T19:26:38.271917Z 324 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T19:27:08.458014Z 325 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T19:27:38.648977Z 326 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T19:28:08.835465Z 327 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T19:28:39.021140Z 328 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T19:29:09.204865Z 329 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T19:29:39.404333Z 330 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T19:30:09.605634Z 331 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T19:30:39.784393Z 332 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T19:31:09.977115Z 333 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T19:31:40.159541Z 334 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T19:32:10.346278Z 335 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T19:32:40.516495Z 336 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T19:33:10.696115Z 337 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T19:33:40.879766Z 338 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T19:34:11.053117Z 339 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T19:34:41.245286Z 340 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T19:35:11.430717Z 341 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T19:35:41.601888Z 342 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T19:36:11.782191Z 343 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T19:36:41.975033Z 344 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T19:37:12.160829Z 345 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T19:37:42.343071Z 346 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T19:38:12.525125Z 347 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T19:38:42.706758Z 348 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T19:39:12.879858Z 349 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T19:39:43.054788Z 350 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T19:40:13.235075Z 351 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T19:40:43.417218Z 352 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T19:41:13.596280Z 353 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T19:41:43.773656Z 354 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T19:42:13.959499Z 355 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T19:42:44.135300Z 356 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T19:43:14.323495Z 357 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T19:43:44.505608Z 358 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T19:44:14.686411Z 359 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T19:44:44.849341Z 360 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T19:45:15.023683Z 361 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T19:45:45.197780Z 362 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T19:46:15.386191Z 363 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T19:46:45.571443Z 364 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T19:47:15.756067Z 365 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T19:47:45.932651Z 366 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T19:48:16.114067Z 367 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T19:48:46.312481Z 368 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T19:49:16.490928Z 369 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T19:49:46.665533Z 370 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T19:50:16.854196Z 371 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T19:50:47.021827Z 372 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T19:51:17.193860Z 373 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T19:51:47.373327Z 374 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T19:52:17.551999Z 375 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T19:52:47.726544Z 376 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T19:53:17.917765Z 377 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T19:53:48.091702Z 378 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T19:54:18.272242Z 379 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T19:54:48.460326Z 380 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T19:55:18.652663Z 381 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T19:55:48.825949Z 382 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T19:56:19.000027Z 383 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T19:56:49.188473Z 384 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T19:57:19.375907Z 385 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T19:57:49.556244Z 386 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T19:58:19.741833Z 387 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T19:58:49.923643Z 388 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T19:59:20.095885Z 389 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T19:59:50.281464Z 390 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T20:00:20.459326Z 391 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T20:00:50.658824Z 392 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T20:01:20.849106Z 393 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T20:01:51.027988Z 394 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T20:02:21.203640Z 395 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T20:02:51.409555Z 396 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T20:03:21.597896Z 397 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T20:03:51.776304Z 398 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T20:04:21.947501Z 399 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T20:04:52.127135Z 400 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T20:05:22.325094Z 401 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T20:05:52.510820Z 402 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T20:06:22.696958Z 403 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T20:06:52.887771Z 404 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T20:07:23.083347Z 405 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T20:07:53.272068Z 406 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T20:08:23.458763Z 407 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T20:08:53.638097Z 408 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T20:09:23.819272Z 409 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T20:09:53.999187Z 410 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T20:10:24.187998Z 411 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T20:10:54.377997Z 412 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T20:11:24.557771Z 413 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T20:11:54.733404Z 414 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T20:12:24.909940Z 415 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T20:12:55.084482Z 416 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T20:13:25.261690Z 417 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T20:13:55.453523Z 418 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T20:14:25.643959Z 419 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T20:14:55.820082Z 420 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T20:15:26.003727Z 421 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T20:15:56.184389Z 422 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T20:16:26.380720Z 423 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T20:16:56.560968Z 424 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T20:17:26.767475Z 425 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T20:17:56.947319Z 426 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T20:18:27.113897Z 427 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T20:18:57.308652Z 428 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T20:19:27.482819Z 429 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T20:19:57.668203Z 430 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T20:20:27.844200Z 431 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T20:20:58.027938Z 432 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T20:21:28.226205Z 433 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T20:21:58.406664Z 434 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T20:22:28.586945Z 435 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T20:22:58.769933Z 436 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T20:23:28.944602Z 437 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T20:23:59.121580Z 438 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T20:24:29.309710Z 439 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T20:24:59.489090Z 440 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T20:25:29.659874Z 441 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T20:25:59.837064Z 442 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T20:26:30.020701Z 443 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T20:27:00.201018Z 444 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T20:27:30.380336Z 445 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T20:28:00.562346Z 446 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T20:28:30.746011Z 447 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T20:29:00.923056Z 448 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T20:29:31.110797Z 449 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T20:30:01.298918Z 450 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T20:30:31.479975Z 451 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T20:31:01.665709Z 452 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T20:31:31.837047Z 453 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T20:32:02.021342Z 454 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T20:32:32.189776Z 455 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T20:33:02.388421Z 456 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T20:33:32.569172Z 457 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T20:34:02.746210Z 458 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T20:34:32.930759Z 459 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T20:35:03.112629Z 460 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T20:35:33.309329Z 461 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T20:36:03.489012Z 462 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T20:36:33.659645Z 463 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T20:37:03.837209Z 464 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T20:37:34.035919Z 465 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T20:38:04.231479Z 466 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T20:38:34.423593Z 467 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T20:39:04.615176Z 468 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T20:39:34.790003Z 469 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T20:40:04.973509Z 470 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T20:40:35.151904Z 471 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T20:41:05.356061Z 472 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T20:41:35.542110Z 473 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T20:42:05.733168Z 474 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T20:42:35.907361Z 475 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T20:43:06.076703Z 476 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T20:43:36.263453Z 477 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T20:44:06.446022Z 478 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T20:44:36.624159Z 479 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T20:45:06.807155Z 480 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T20:45:36.980146Z 481 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T20:46:07.148990Z 482 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T20:46:37.343120Z 483 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T20:47:07.528017Z 484 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T20:47:37.706268Z 485 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T20:48:07.885036Z 486 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T20:48:38.065104Z 487 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T20:49:08.244841Z 488 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T20:49:38.441294Z 489 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T20:50:08.622341Z 490 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T20:50:38.801590Z 491 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T20:51:08.983808Z 492 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T20:51:39.162927Z 493 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T20:52:09.352437Z 494 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T20:52:39.536836Z 495 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T20:53:09.719261Z 496 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T20:53:39.890137Z 497 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T20:54:10.076914Z 498 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T20:54:40.257820Z 499 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T20:55:10.447679Z 500 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T20:55:40.623421Z 501 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T20:56:10.808144Z 502 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T20:56:40.987881Z 503 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T20:57:11.157944Z 504 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T20:57:41.348267Z 505 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T20:58:11.522839Z 506 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T20:58:41.703172Z 507 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T20:59:11.883477Z 508 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T20:59:42.077193Z 509 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T21:00:12.255196Z 510 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T21:00:42.438850Z 511 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T21:01:12.607918Z 512 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T21:01:42.781419Z 513 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T21:02:12.953637Z 514 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T21:02:43.141664Z 515 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T21:03:13.329134Z 516 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T21:03:43.514348Z 517 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T21:04:13.683105Z 518 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T21:04:43.864438Z 519 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T21:05:14.027509Z 520 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T21:05:44.201152Z 521 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T21:06:14.396528Z 522 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T21:06:44.580750Z 523 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T21:07:14.770869Z 524 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T21:07:44.946878Z 525 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T21:08:15.128836Z 526 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T21:08:45.323116Z 527 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T21:09:15.501030Z 528 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T21:09:45.721856Z 529 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T21:10:15.908568Z 530 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T21:10:46.089480Z 531 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T21:11:16.262797Z 532 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T21:11:46.445985Z 533 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T21:12:16.634947Z 534 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T21:12:46.811789Z 535 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T21:13:17.001327Z 536 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T21:13:47.180866Z 537 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T21:14:17.372014Z 538 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T21:14:47.553966Z 539 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T21:15:17.733219Z 540 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T21:15:47.915073Z 541 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T21:16:18.090896Z 542 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T21:16:48.259882Z 543 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T21:17:18.444618Z 544 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T21:17:48.623963Z 545 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T21:18:18.796336Z 546 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T21:18:48.958699Z 547 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T21:19:19.129666Z 548 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T21:19:49.340666Z 549 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T21:20:19.520808Z 550 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T21:20:49.710495Z 551 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T21:21:19.893165Z 552 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T21:21:50.074744Z 553 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T21:22:20.272507Z 554 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T21:22:50.473281Z 555 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T21:23:20.644197Z 556 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T21:23:50.826549Z 557 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T21:24:20.995797Z 558 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T21:24:51.175615Z 559 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T21:25:21.355933Z 560 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T21:25:51.532229Z 561 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T21:26:21.706128Z 562 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T21:26:51.884652Z 563 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T21:27:22.068704Z 564 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T21:27:52.242142Z 565 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T21:28:22.450115Z 566 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T21:28:52.628823Z 567 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T21:29:22.808457Z 568 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T21:29:52.992486Z 569 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T21:30:23.190189Z 570 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T21:30:53.396277Z 571 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T21:31:23.581510Z 572 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T21:31:53.779393Z 573 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T21:32:23.954550Z 574 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T21:32:54.138205Z 575 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T21:33:24.348920Z 576 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T21:33:54.534455Z 577 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T21:34:24.721417Z 578 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T21:34:54.905386Z 579 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T21:35:25.077277Z 580 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T21:35:55.266574Z 581 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T21:36:25.447331Z 582 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T21:36:55.623993Z 583 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T21:37:25.807018Z 584 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T21:37:55.991317Z 585 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T21:38:26.164193Z 586 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T21:38:56.375882Z 587 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T21:39:26.550765Z 588 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T21:39:56.728278Z 589 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T21:40:26.906815Z 590 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T21:40:57.090831Z 591 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T21:41:27.257828Z 592 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T21:41:57.455791Z 593 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T21:42:27.636097Z 594 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T21:42:57.814442Z 595 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T21:43:28.001391Z 596 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T21:43:58.185390Z 597 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T21:44:28.387151Z 598 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T21:44:58.568147Z 599 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T21:45:28.747917Z 600 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T21:45:58.926303Z 601 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T21:46:29.104603Z 602 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T21:46:59.311412Z 603 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T21:47:29.496945Z 604 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T21:47:59.668098Z 605 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T21:48:29.853380Z 606 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T21:49:00.036564Z 607 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T21:49:30.208053Z 608 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T21:50:00.389497Z 609 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T21:50:30.562635Z 610 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T21:51:00.735637Z 611 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T21:51:30.912286Z 612 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T21:52:01.105666Z 613 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T21:52:31.276506Z 614 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T21:53:01.463040Z 615 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T21:53:31.649877Z 616 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T21:54:01.825472Z 617 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T21:54:32.000496Z 618 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T21:55:02.178417Z 619 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T21:55:32.359290Z 620 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T21:56:02.525551Z 621 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T21:56:32.710628Z 622 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T21:57:02.883732Z 623 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T21:57:33.050767Z 624 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T21:58:03.228933Z 625 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T21:58:33.423222Z 626 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T21:59:03.609034Z 627 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T21:59:33.794947Z 628 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T22:00:03.963945Z 629 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T22:00:34.137586Z 630 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T22:01:04.324969Z 631 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T22:01:34.494410Z 632 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T22:02:04.672388Z 633 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T22:02:34.855167Z 634 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T22:03:05.043646Z 635 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T22:03:35.226854Z 636 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T22:04:05.418681Z 637 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T22:04:35.596291Z 638 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T22:05:05.783574Z 639 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T22:05:35.951114Z 640 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T22:06:06.135011Z 641 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T22:06:36.327305Z 642 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T22:07:06.494983Z 643 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T22:07:36.675631Z 644 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T22:08:06.850611Z 645 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T22:08:37.048514Z 646 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T22:09:07.239546Z 647 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T22:09:37.428279Z 648 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T22:10:07.595606Z 649 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T22:10:37.779577Z 650 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T22:11:07.947338Z 651 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T22:11:38.127494Z 652 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T22:12:08.315849Z 653 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T22:12:38.490616Z 654 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T22:13:08.678775Z 655 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T22:13:38.862688Z 656 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T22:14:09.031826Z 657 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T22:14:39.204715Z 658 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T22:15:09.381637Z 659 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T22:15:39.565298Z 660 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T22:16:09.745151Z 661 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T22:16:39.919415Z 662 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T22:17:10.099177Z 663 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T22:17:40.275539Z 664 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T22:18:10.447927Z 665 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T22:18:40.632756Z 666 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T22:19:10.815281Z 667 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T22:19:40.985425Z 668 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T22:20:11.161006Z 669 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T22:20:41.340515Z 670 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T22:21:11.529761Z 671 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T22:21:41.712137Z 672 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T22:22:11.894245Z 673 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T22:22:42.071490Z 674 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T22:23:12.251368Z 675 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T22:23:42.444503Z 676 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T22:24:12.638238Z 677 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T22:24:42.820831Z 678 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T22:25:12.989330Z 679 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T22:25:43.163826Z 680 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T22:26:13.346507Z 681 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T22:26:43.533881Z 682 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T22:27:13.719204Z 683 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T22:27:43.900882Z 684 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T22:28:14.088074Z 685 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T22:28:44.264301Z 686 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T22:29:14.444044Z 687 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T22:29:44.624299Z 688 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T22:30:14.799546Z 689 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T22:30:44.977385Z 690 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T22:31:15.145072Z 691 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T22:31:45.328393Z 692 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T22:32:15.500699Z 693 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T22:32:45.680663Z 694 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T22:33:15.860710Z 695 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T22:33:46.036212Z 696 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T22:34:16.213570Z 697 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T22:34:46.403993Z 698 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T22:35:16.579998Z 699 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T22:35:46.757705Z 700 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T22:36:16.941083Z 701 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T22:36:47.119054Z 702 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T22:37:17.318411Z 703 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T22:37:47.506279Z 704 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T22:38:17.679168Z 705 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T22:38:47.857498Z 706 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T22:39:18.036524Z 707 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T22:39:48.216150Z 708 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T22:40:18.403669Z 709 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T22:40:48.599635Z 710 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T22:41:18.779398Z 711 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T22:41:48.941872Z 712 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T22:42:19.123886Z 713 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T22:42:49.306684Z 714 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T22:43:19.486195Z 715 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T22:43:49.670558Z 716 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T22:44:19.845743Z 717 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T22:44:50.011423Z 718 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T22:45:20.193963Z 719 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T22:45:50.381888Z 720 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T22:46:20.565159Z 721 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T22:46:50.735897Z 722 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T22:47:20.910254Z 723 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T22:47:51.088863Z 724 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T22:48:21.259722Z 725 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T22:48:51.443896Z 726 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T22:49:21.619261Z 727 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T22:49:51.797662Z 728 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T22:50:21.972567Z 729 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T22:50:52.145219Z 730 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T22:51:22.330026Z 731 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T22:51:52.510410Z 732 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T22:52:22.675745Z 733 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T22:52:52.861707Z 734 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T22:53:23.048536Z 735 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T22:53:53.230351Z 736 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T22:54:23.419828Z 737 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T22:54:53.596200Z 738 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T22:55:23.806500Z 739 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T22:55:53.988826Z 740 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T22:56:24.168350Z 741 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T22:56:54.358215Z 742 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T22:57:24.545540Z 743 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T22:57:54.731662Z 744 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T22:58:24.926116Z 745 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T22:58:55.100736Z 746 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T22:59:25.279431Z 747 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T22:59:55.451996Z 748 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T23:00:25.634653Z 749 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T23:00:55.827582Z 750 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T23:01:26.009041Z 751 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T23:01:56.178876Z 752 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T23:02:26.368237Z 753 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T23:02:56.548697Z 754 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T23:03:26.733009Z 755 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T23:03:56.902943Z 756 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T23:04:27.094943Z 757 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T23:04:57.278778Z 758 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T23:05:27.465773Z 759 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T23:05:57.635914Z 760 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T23:06:27.821224Z 761 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T23:06:58.002652Z 762 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T23:07:28.192106Z 763 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T23:07:58.364961Z 764 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T23:08:28.539978Z 765 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T23:08:58.724106Z 766 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T23:09:28.894599Z 767 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T23:09:59.063285Z 768 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T23:10:29.251293Z 769 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T23:10:59.431208Z 770 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T23:11:29.618394Z 771 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T23:11:59.792448Z 772 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T23:12:29.959864Z 773 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T23:13:00.142725Z 774 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T23:13:30.324135Z 775 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T23:14:00.503056Z 776 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T23:14:30.680418Z 777 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T23:15:00.863391Z 778 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T23:15:31.056442Z 779 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T23:16:01.237635Z 780 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T23:16:31.426737Z 781 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T23:17:01.609450Z 782 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T23:17:31.783317Z 783 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T23:18:01.953981Z 784 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T23:18:32.129296Z 785 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T23:19:02.314545Z 786 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T23:19:32.494702Z 787 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T23:20:02.673683Z 788 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T23:20:32.867483Z 789 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T23:21:03.052673Z 790 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T23:21:33.235785Z 791 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T23:22:03.423460Z 792 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T23:22:33.588101Z 793 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T23:23:03.779492Z 794 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T23:23:33.959273Z 795 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T23:24:04.135650Z 796 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T23:24:34.331031Z 797 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T23:25:04.500842Z 798 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T23:25:34.681224Z 799 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T23:26:04.875296Z 800 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T23:26:35.042075Z 801 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T23:27:05.224542Z 802 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T23:27:35.411461Z 803 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T23:28:05.588998Z 804 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T23:28:35.772655Z 805 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T23:29:05.948875Z 806 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T23:29:36.124141Z 807 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T23:30:06.289953Z 808 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T23:30:36.468507Z 809 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T23:31:06.647465Z 810 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T23:31:36.845312Z 811 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T23:32:07.019052Z 812 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T23:32:37.196591Z 813 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T23:33:07.373222Z 814 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T23:33:37.542491Z 815 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T23:34:07.709454Z 816 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T23:34:37.884840Z 817 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T23:35:08.059764Z 818 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T23:35:38.231848Z 819 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T23:36:08.414882Z 820 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T23:36:38.596545Z 821 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T23:37:08.776490Z 822 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T23:37:38.943781Z 823 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T23:38:09.124563Z 824 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T23:38:39.307896Z 825 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T23:39:09.500818Z 826 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T23:39:39.677404Z 827 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T23:40:09.859646Z 828 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T23:40:40.034898Z 829 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T23:41:10.210707Z 830 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T23:41:40.382500Z 831 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T23:42:10.580785Z 832 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T23:42:40.779642Z 833 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T23:43:10.955940Z 834 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T23:43:41.150468Z 835 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T23:44:11.325266Z 836 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T23:44:41.506288Z 837 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T23:45:11.684815Z 838 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T23:45:41.876177Z 839 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T23:46:12.052257Z 840 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T23:46:42.223248Z 841 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T23:47:12.412370Z 842 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T23:47:42.584325Z 843 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T23:48:12.750473Z 844 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T23:48:42.936852Z 845 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T23:49:13.115425Z 846 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T23:49:43.293949Z 847 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T23:50:13.478739Z 848 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T23:50:43.661332Z 849 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T23:51:13.846044Z 850 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T23:51:44.043742Z 851 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T23:52:14.243606Z 852 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T23:52:44.443130Z 853 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T23:53:14.623556Z 854 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T23:53:44.805478Z 855 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T23:54:14.984716Z 856 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T23:54:45.173726Z 857 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T23:55:15.351664Z 858 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T23:55:45.519763Z 859 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T23:56:15.685148Z 860 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T23:56:45.856251Z 861 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T23:57:16.046373Z 862 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T23:57:46.228839Z 863 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T23:58:16.401289Z 864 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T23:58:46.595360Z 865 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T23:59:16.769480Z 866 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-30T23:59:46.947717Z 867 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-31T00:00:17.149135Z 868 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-31T00:00:47.331469Z 869 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-31T00:01:17.503920Z 870 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-31T00:01:47.689037Z 871 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-31T00:02:17.879338Z 872 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-31T00:02:48.057822Z 873 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-31T00:03:18.234472Z 874 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-31T00:03:48.410126Z 875 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-31T00:04:18.585686Z 876 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-31T00:04:48.770131Z 877 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-31T00:05:18.952149Z 878 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-31T00:05:49.135416Z 879 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-31T00:06:19.313884Z 880 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-31T00:06:49.485674Z 881 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-31T00:07:19.659582Z 882 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-31T00:07:49.858115Z 883 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-31T00:08:20.027130Z 884 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-31T00:08:50.216193Z 885 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-31T00:09:20.398524Z 886 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-31T00:09:50.576355Z 887 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-31T00:10:20.775581Z 888 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-31T00:10:50.957164Z 889 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-31T00:11:21.155365Z 890 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-31T00:11:51.348211Z 891 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-31T00:12:21.549264Z 892 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-31T00:12:51.728628Z 893 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-31T00:13:21.904247Z 894 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-31T00:13:52.102186Z 895 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-31T00:14:22.286054Z 896 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-31T00:14:52.469687Z 897 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-31T00:15:22.653922Z 898 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-31T00:15:52.838879Z 899 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-31T00:16:23.024917Z 900 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-31T00:16:53.208631Z 901 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-31T00:17:23.398566Z 902 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-31T00:17:53.562109Z 903 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-31T00:18:23.747068Z 904 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-31T00:18:53.936118Z 905 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-31T00:19:24.117180Z 906 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-31T00:19:54.288724Z 907 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-31T00:20:24.468447Z 908 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-31T00:20:54.641480Z 909 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-31T00:21:24.824974Z 910 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-31T00:21:55.019631Z 911 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-31T00:22:25.207917Z 912 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-31T00:22:55.391697Z 913 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-31T00:23:25.570091Z 914 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-31T00:23:55.750793Z 915 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-31T00:24:25.930842Z 916 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-31T00:24:56.118714Z 917 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-31T00:25:26.296990Z 918 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-31T00:25:56.488543Z 919 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-31T00:26:26.664760Z 920 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-31T00:26:56.840674Z 921 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-31T00:27:27.034947Z 922 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-31T00:27:57.217989Z 923 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-31T00:28:27.403141Z 924 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-31T00:28:57.584133Z 925 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-31T00:29:27.759222Z 926 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-31T00:29:57.956378Z 927 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-31T00:30:28.135864Z 928 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-31T00:30:58.308313Z 929 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-31T00:31:28.483397Z 930 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-31T00:31:58.676003Z 931 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-31T00:32:28.845705Z 932 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-31T00:32:59.028050Z 933 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-31T00:33:29.220544Z 934 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-31T00:33:59.396569Z 935 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-31T00:34:29.576913Z 936 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-31T00:34:59.748309Z 937 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-31T00:35:29.957490Z 938 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-31T00:36:00.142705Z 939 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-31T00:36:30.309394Z 940 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-31T00:37:00.483513Z 941 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-31T00:37:30.672133Z 942 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-31T00:38:00.851716Z 943 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-31T00:38:31.079165Z 944 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-31T00:39:01.255183Z 945 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-31T00:39:31.453882Z 946 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-31T00:40:01.645235Z 947 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-31T00:40:31.815177Z 948 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-31T00:41:02.009487Z 949 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-31T00:41:32.188785Z 950 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-31T00:42:02.373226Z 951 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-31T00:42:32.551274Z 952 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-31T00:43:02.723877Z 953 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-31T00:43:32.908745Z 954 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-31T00:44:03.091044Z 955 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-31T00:44:33.278802Z 956 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-31T00:45:03.480886Z 957 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-31T00:45:33.674108Z 958 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-31T00:46:03.860139Z 959 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-31T00:46:34.050107Z 960 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-31T00:47:04.239247Z 961 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-31T00:47:34.422432Z 962 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-31T00:48:04.611292Z 963 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-31T00:48:34.798979Z 964 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-31T00:49:04.984244Z 965 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-31T00:49:35.175686Z 966 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-31T00:50:05.349211Z 967 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-31T00:50:35.530770Z 968 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-31T00:51:05.702423Z 969 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-31T00:51:35.880717Z 970 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-31T00:52:06.064968Z 971 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-31T00:52:36.251917Z 972 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-31T00:53:06.436640Z 973 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-31T00:53:36.608490Z 974 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-31T00:54:06.787386Z 975 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-31T00:54:36.983670Z 976 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-31T00:55:07.169127Z 977 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-31T00:55:37.344754Z 978 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-31T00:56:07.528948Z 979 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-31T00:56:37.710912Z 980 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-31T00:57:07.904072Z 981 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-31T00:57:38.070432Z 982 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-31T00:58:08.242610Z 983 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-31T00:58:38.432365Z 984 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-31T00:59:08.604718Z 985 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-31T00:59:38.787960Z 986 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-31T01:00:08.980073Z 987 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-31T01:00:39.155834Z 988 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-31T01:01:09.331547Z 989 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-31T01:01:39.530210Z 990 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-31T01:02:09.713534Z 991 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-31T01:02:39.888007Z 992 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-31T01:03:10.110622Z 993 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-31T01:03:40.293561Z 994 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-31T01:04:10.481141Z 995 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-31T01:04:40.684895Z 996 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-31T01:05:10.854118Z 997 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-31T01:05:41.050726Z 998 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-31T01:06:11.223172Z 999 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-31T01:06:41.405034Z 1000 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-31T01:07:11.577015Z 1001 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-31T01:07:41.750557Z 1002 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-31T01:08:11.936749Z 1003 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-31T01:08:42.127879Z 1004 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-31T01:09:12.303772Z 1005 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-31T01:09:42.484424Z 1006 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-31T01:10:12.660317Z 1007 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-31T01:10:42.843254Z 1008 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-31T01:11:13.034766Z 1009 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-31T01:11:43.224358Z 1010 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-31T01:12:13.403026Z 1011 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-31T01:12:43.589734Z 1012 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-31T01:13:13.765580Z 1013 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-31T01:13:43.949997Z 1014 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-31T01:14:14.127249Z 1015 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-31T01:14:44.323633Z 1016 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-31T01:15:14.503016Z 1017 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-31T01:15:44.682632Z 1018 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-31T01:16:14.856313Z 1019 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-31T01:16:45.036042Z 1020 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-31T01:17:15.221225Z 1021 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-31T01:17:45.407123Z 1022 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-31T01:18:15.589354Z 1023 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-31T01:18:45.766230Z 1024 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-31T01:19:15.959358Z 1025 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-31T01:19:46.132403Z 1026 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-31T01:20:16.322980Z 1027 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-31T01:20:46.500568Z 1028 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-31T01:21:16.681520Z 1029 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-31T01:21:46.848437Z 1030 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-31T01:22:17.030883Z 1031 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-31T01:22:47.212541Z 1032 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-31T01:23:17.391254Z 1033 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-31T01:23:47.571365Z 1034 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-31T01:24:17.765094Z 1035 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-31T01:24:47.951292Z 1036 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-31T01:25:18.137478Z 1037 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-31T01:25:48.316843Z 1038 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-31T01:26:18.493160Z 1039 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-31T01:26:48.670816Z 1040 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-31T01:27:18.848832Z 1041 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-31T01:27:49.024486Z 1042 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-31T01:28:19.207166Z 1043 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-31T01:28:49.387283Z 1044 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-31T01:29:19.574796Z 1045 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-31T01:29:49.745832Z 1046 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-31T01:30:19.933032Z 1047 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-31T01:30:50.116653Z 1048 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-31T01:31:20.307077Z 1049 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-31T01:31:50.480239Z 1050 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-31T01:32:20.663192Z 1051 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-31T01:32:50.844284Z 1052 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-31T01:33:21.028010Z 1053 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-31T01:33:51.203888Z 1054 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-31T01:34:21.379766Z 1055 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-31T01:34:51.573927Z 1056 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-31T01:35:21.743955Z 1057 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-31T01:35:51.941110Z 1058 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-31T01:36:22.125433Z 1059 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-31T01:36:52.299604Z 1060 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-31T01:37:22.468657Z 1061 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-31T01:37:52.654864Z 1062 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-31T01:38:22.835883Z 1063 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-31T01:38:53.043558Z 1064 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-31T01:39:23.212664Z 1065 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-31T01:39:53.391768Z 1066 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-31T01:40:23.572465Z 1067 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-31T01:40:53.746557Z 1068 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-31T01:41:23.943656Z 1069 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-31T01:41:54.115126Z 1070 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-31T01:42:24.299923Z 1071 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-31T01:42:54.478801Z 1072 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-31T01:43:24.654154Z 1073 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-31T01:43:54.827825Z 1074 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-31T01:44:25.015398Z 1075 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-31T01:44:55.198104Z 1076 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-31T01:45:25.384697Z 1077 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-31T01:45:55.571491Z 1078 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-31T01:46:25.762521Z 1079 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-31T01:46:55.959378Z 1080 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-31T01:47:26.147100Z 1081 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-31T01:47:56.332473Z 1082 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-31T01:48:26.533098Z 1083 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-31T01:48:56.733161Z 1084 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-31T01:49:26.945230Z 1085 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-31T01:49:57.131222Z 1086 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-31T01:50:27.319444Z 1087 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-31T01:50:57.509084Z 1088 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-31T01:51:27.704905Z 1089 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-31T01:51:57.908819Z 1090 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-31T01:52:28.086663Z 1091 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-31T01:52:58.273671Z 1092 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-31T01:53:28.463969Z 1093 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-31T01:53:58.641242Z 1094 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-31T01:54:28.852177Z 1095 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-31T01:54:59.043144Z 1096 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-31T01:55:29.212795Z 1097 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-31T01:55:59.399192Z 1098 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-31T01:56:29.572812Z 1099 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-31T01:56:59.780144Z 1100 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-31T01:57:29.969470Z 1101 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-31T01:58:00.148593Z 1102 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-31T01:58:30.322292Z 1103 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-31T01:59:00.504554Z 1104 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-31T01:59:30.689194Z 1105 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-31T02:00:00.895233Z 1106 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-31T02:00:31.080107Z 1107 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-31T02:01:01.271135Z 1108 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-31T02:01:31.440360Z 1109 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-31T02:02:01.620490Z 1110 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-31T02:02:31.810077Z 1111 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-31T02:03:02.004195Z 1112 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-31T02:03:32.176231Z 1113 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-31T02:04:02.344475Z 1114 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-31T02:04:32.522762Z 1115 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-31T02:05:02.722580Z 1116 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-31T02:05:32.919232Z 1117 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-31T02:06:03.111885Z 1118 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-31T02:06:33.309119Z 1119 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-31T02:07:03.491414Z 1120 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-31T02:07:33.671041Z 1121 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-31T02:08:03.847178Z 1122 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-31T02:08:34.047296Z 1123 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-31T02:09:04.228357Z 1124 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-31T02:09:34.409954Z 1125 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-31T02:10:04.595388Z 1126 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-31T02:10:34.778599Z 1127 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-31T02:11:04.975109Z 1128 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-31T02:11:35.156390Z 1129 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-31T02:12:05.334469Z 1130 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-31T02:12:35.508950Z 1131 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-31T02:13:05.685307Z 1132 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-31T02:13:35.861306Z 1133 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-31T02:14:06.037325Z 1134 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-31T02:14:36.221081Z 1135 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-31T02:15:06.413308Z 1136 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-31T02:15:36.602831Z 1137 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-31T02:16:06.787655Z 1138 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-31T02:16:36.970069Z 1139 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-31T02:17:07.150159Z 1140 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-31T02:17:37.342384Z 1141 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-31T02:18:07.532238Z 1142 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-31T02:18:37.711370Z 1143 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-31T02:19:07.901998Z 1144 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-31T02:19:38.074201Z 1145 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-31T02:20:08.257567Z 1146 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-31T02:20:38.442242Z 1147 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-31T02:21:08.627611Z 1148 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-31T02:21:38.819487Z 1149 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-31T02:22:08.996148Z 1150 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-31T02:22:39.175902Z 1151 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-31T02:23:09.376353Z 1152 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-31T02:23:39.556285Z 1153 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-31T02:24:09.778665Z 1154 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-31T02:24:39.972860Z 1155 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-31T02:25:10.156530Z 1156 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-31T02:25:40.349560Z 1157 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-31T02:26:10.533091Z 1158 [Note] Access denied for user 'healthchecker'@'localhost' (using password: YES)
+2019-05-31T02:26:32.529032Z 0 [Note] Giving 0 client threads a chance to die gracefully
+2019-05-31T02:26:32.529102Z 0 [Note] Shutting down slave threads
+2019-05-31T02:26:32.529111Z 0 [Note] Forcefully disconnecting 0 remaining clients
+2019-05-31T02:26:32.529117Z 0 [Note] Event Scheduler: Purging the queue. 0 events
+2019-05-31T02:26:32.529183Z 0 [Note] Binlog end
+2019-05-31T02:26:32.530138Z 0 [Note] Shutting down plugin 'ngram'
+2019-05-31T02:26:32.530147Z 0 [Note] Shutting down plugin 'partition'
+2019-05-31T02:26:32.530151Z 0 [Note] Shutting down plugin 'ARCHIVE'
+2019-05-31T02:26:32.530155Z 0 [Note] Shutting down plugin 'BLACKHOLE'
+2019-05-31T02:26:32.530159Z 0 [Note] Shutting down plugin 'MRG_MYISAM'
+2019-05-31T02:26:32.530163Z 0 [Note] Shutting down plugin 'CSV'
+2019-05-31T02:26:32.530166Z 0 [Note] Shutting down plugin 'PERFORMANCE_SCHEMA'
+2019-05-31T02:26:32.530189Z 0 [Note] Shutting down plugin 'MEMORY'
+2019-05-31T02:26:32.530193Z 0 [Note] Shutting down plugin 'INNODB_SYS_VIRTUAL'
+2019-05-31T02:26:32.530197Z 0 [Note] Shutting down plugin 'INNODB_SYS_DATAFILES'
+2019-05-31T02:26:32.530200Z 0 [Note] Shutting down plugin 'INNODB_SYS_TABLESPACES'
+2019-05-31T02:26:32.530203Z 0 [Note] Shutting down plugin 'INNODB_SYS_FOREIGN_COLS'
+2019-05-31T02:26:32.530207Z 0 [Note] Shutting down plugin 'INNODB_SYS_FOREIGN'
+2019-05-31T02:26:32.530210Z 0 [Note] Shutting down plugin 'INNODB_SYS_FIELDS'
+2019-05-31T02:26:32.530213Z 0 [Note] Shutting down plugin 'INNODB_SYS_COLUMNS'
+2019-05-31T02:26:32.530222Z 0 [Note] Shutting down plugin 'INNODB_SYS_INDEXES'
+2019-05-31T02:26:32.530225Z 0 [Note] Shutting down plugin 'INNODB_SYS_TABLESTATS'
+2019-05-31T02:26:32.530228Z 0 [Note] Shutting down plugin 'INNODB_SYS_TABLES'
+2019-05-31T02:26:32.530231Z 0 [Note] Shutting down plugin 'INNODB_FT_INDEX_TABLE'
+2019-05-31T02:26:32.530233Z 0 [Note] Shutting down plugin 'INNODB_FT_INDEX_CACHE'
+2019-05-31T02:26:32.530236Z 0 [Note] Shutting down plugin 'INNODB_FT_CONFIG'
+2019-05-31T02:26:32.530239Z 0 [Note] Shutting down plugin 'INNODB_FT_BEING_DELETED'
+2019-05-31T02:26:32.530243Z 0 [Note] Shutting down plugin 'INNODB_FT_DELETED'
+2019-05-31T02:26:32.530246Z 0 [Note] Shutting down plugin 'INNODB_FT_DEFAULT_STOPWORD'
+2019-05-31T02:26:32.530249Z 0 [Note] Shutting down plugin 'INNODB_METRICS'
+2019-05-31T02:26:32.530252Z 0 [Note] Shutting down plugin 'INNODB_TEMP_TABLE_INFO'
+2019-05-31T02:26:32.530255Z 0 [Note] Shutting down plugin 'INNODB_BUFFER_POOL_STATS'
+2019-05-31T02:26:32.530257Z 0 [Note] Shutting down plugin 'INNODB_BUFFER_PAGE_LRU'
+2019-05-31T02:26:32.530260Z 0 [Note] Shutting down plugin 'INNODB_BUFFER_PAGE'
+2019-05-31T02:26:32.530263Z 0 [Note] Shutting down plugin 'INNODB_CMP_PER_INDEX_RESET'
+2019-05-31T02:26:32.530266Z 0 [Note] Shutting down plugin 'INNODB_CMP_PER_INDEX'
+2019-05-31T02:26:32.530268Z 0 [Note] Shutting down plugin 'INNODB_CMPMEM_RESET'
+2019-05-31T02:26:32.530271Z 0 [Note] Shutting down plugin 'INNODB_CMPMEM'
+2019-05-31T02:26:32.530274Z 0 [Note] Shutting down plugin 'INNODB_CMP_RESET'
+2019-05-31T02:26:32.530277Z 0 [Note] Shutting down plugin 'INNODB_CMP'
+2019-05-31T02:26:32.530279Z 0 [Note] Shutting down plugin 'INNODB_LOCK_WAITS'
+2019-05-31T02:26:32.530282Z 0 [Note] Shutting down plugin 'INNODB_LOCKS'
+2019-05-31T02:26:32.530285Z 0 [Note] Shutting down plugin 'INNODB_TRX'
+2019-05-31T02:26:32.530288Z 0 [Note] Shutting down plugin 'InnoDB'
+2019-05-31T02:26:32.530325Z 0 [Note] InnoDB: FTS optimize thread exiting.
+2019-05-31T02:26:32.530616Z 0 [Note] InnoDB: Starting shutdown...
+2019-05-31T02:26:32.630888Z 0 [Note] InnoDB: Dumping buffer pool(s) to /var/lib/mysql/ib_buffer_pool
+2019-05-31T02:26:32.631807Z 0 [Note] InnoDB: Buffer pool(s) dump completed at 190531  2:26:32
+2019-05-31T02:26:33.959729Z 0 [Note] InnoDB: Shutdown completed; log sequence number 12955517
+2019-05-31T02:26:33.960790Z 0 [Note] InnoDB: Removed temporary tablespace data file: "ibtmp1"
+2019-05-31T02:26:33.960802Z 0 [Note] Shutting down plugin 'MyISAM'
+2019-05-31T02:26:33.960811Z 0 [Note] Shutting down plugin 'sha256_password'
+2019-05-31T02:26:33.960815Z 0 [Note] Shutting down plugin 'mysql_native_password'
+2019-05-31T02:26:33.960920Z 0 [Note] Shutting down plugin 'binlog'
+2019-05-31T02:26:33.962197Z 0 [Note] mysqld: Shutdown complete
+
