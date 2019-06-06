@@ -1,4 +1,4 @@
-version: '3'
+version: '3.3'
 services:
 
   #PHP Service
@@ -14,8 +14,9 @@ services:
     environment:
       SERVICE_NAME: app
       SERVICE_TAGS: dev
-#    links:
-#      - nginx
+    links:
+      - nginx
+      - db
     depends_on:
       - db
       - nginx
@@ -53,9 +54,14 @@ services:
     tty: true
     ports:
       - "${MYSQL_SERVICE_MAIN_PORT}:3306"
+    expose:
+      - "3309"
     environment:
-      MYSQL_DATABASE: shenshou
-      MYSQL_ROOT_PASSWORD: your_mysql_root_password
+      MYSQL_DATABASE: test
+      MYSQL_ROOT_PASSWORD: test
+      MYSQL_USER: test
+      MYSQL_PASSWORD: test
+      #MYSQL_ROOT_HOST: localhost
       SERVICE_TAGS: dev
       SERVICE_NAME: mysql
     volumes:
@@ -63,7 +69,10 @@ services:
       - ./config/mysql/my.cnf:/etc/my.cnf
       - ./logs/mysql:/var/log/mysql
     entrypoint: ""
-    command: bash -c "mkdir -p ~/var/log/mysql/slow && mkdir -p ~/var/log/mysql/general && mkdir -p ~/var/log/mysql/error && chown -R mysql:mysql /var/log/mysql && exec /entrypoint.sh mysqld"
+    command: 
+      bash -c "exec /entrypoint.sh mysqld"
+      --character-set-server=utf8
+      --default_authentication_plugin=mysql_native_password
     networks:
       - app-network
   phpmyadmin:
@@ -75,7 +84,7 @@ services:
       - '8080:80'
     environment:
       PMA_HOST: db
-      MYSQL_ROOT_PASSWORD: your_mysql_root_password
+      MYSQL_ROOT_PASSWORD: test
     networks:
     - app-network
 

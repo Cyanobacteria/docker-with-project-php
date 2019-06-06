@@ -35,3 +35,13 @@
 2019/05/30 16:29:00 [emerg] 1#1: host not found in upstream "app" in /etc/nginx/conf.d/app.conf:10
 2019/05/30 16:31:14 [emerg] 1#1: host not found in upstream "app" in /etc/nginx/conf.d/app.conf:10
 2019/05/30 16:45:39 [emerg] 1#1: host not found in upstream "app" in /etc/nginx/conf.d/app.conf:10
+2019/06/05 16:42:27 [emerg] 1#1: host not found in upstream "app" in /etc/nginx/conf.d/app.conf:10
+2019/06/05 16:42:33 [emerg] 1#1: host not found in upstream "app" in /etc/nginx/conf.d/app.conf:10
+2019/06/05 16:42:39 [emerg] 1#1: host not found in upstream "app" in /etc/nginx/conf.d/app.conf:10
+2019/06/05 16:42:45 [emerg] 1#1: host not found in upstream "app" in /etc/nginx/conf.d/app.conf:10
+2019/06/05 16:42:52 [emerg] 1#1: host not found in upstream "app" in /etc/nginx/conf.d/app.conf:10
+2019/06/05 16:42:59 [emerg] 1#1: host not found in upstream "app" in /etc/nginx/conf.d/app.conf:10
+2019/06/05 16:43:09 [emerg] 1#1: host not found in upstream "app" in /etc/nginx/conf.d/app.conf:10
+2019/06/05 16:43:21 [emerg] 1#1: host not found in upstream "app" in /etc/nginx/conf.d/app.conf:10
+2019/06/05 16:43:39 [emerg] 1#1: host not found in upstream "app" in /etc/nginx/conf.d/app.conf:10
+2019/06/05 16:44:11 [emerg] 1#1: host not found in upstream "app" in /etc/nginx/conf.d/app.conf:10

@@ -1796,3 +1796,383 @@ Version: '5.7.24-log'  socket: '/var/lib/mysql/mysql.sock'  port: 3306  MySQL Co
 2019-05-31T02:26:33.960920Z 0 [Note] Shutting down plugin 'binlog'
 2019-05-31T02:26:33.962197Z 0 [Note] mysqld: Shutdown complete
 
+2019-06-05T08:55:20.043616Z 0 [System] [MY-010116] [Server] /usr/sbin/mysqld (mysqld 8.0.13) starting as process 1
+mysqld: File ''/var/log/mysql/slow.log'?' not found (OS errno 2 - No such file or directory)
+2019-06-05T08:55:22.435437Z 0 [ERROR] [MY-011263] [Server] Could not use '/var/log/mysql/slow.log'Â for logging (error 2 - No such file or directory). Turning logging off for the server process. To turn it on again: fix the cause, then either restart the query logging by using "SET GLOBAL SLOW_QUERY_LOG=ON" or restart the MySQL server.
+2019-06-05T08:55:22.452653Z 0 [Warning] [MY-010068] [Server] CA certificate ca.pem is self signed.
+2019-06-05T08:55:22.454735Z 0 [ERROR] [MY-013129] [Server] A message intended for a client cannot be sent there as no client-session is attached. Therefore, we're sending the information to the error-log instead: MY-001146 - Table 'mysql.component' doesn't exist
+2019-06-05T08:55:22.454770Z 0 [Warning] [MY-013129] [Server] A message intended for a client cannot be sent there as no client-session is attached. Therefore, we're sending the information to the error-log instead: MY-003543 - The mysql.component table is missing or has an incorrect definition.
+2019-06-05T08:55:22.458480Z 0 [Warning] [MY-010929] [Server] Storage engine 'MyISAM' does not support system tables. [mysql.user].
+2019-06-05T08:55:22.458500Z 0 [Warning] [MY-010929] [Server] Storage engine 'MyISAM' does not support system tables. [mysql.db].
+2019-06-05T08:55:22.458507Z 0 [Warning] [MY-010929] [Server] Storage engine 'MyISAM' does not support system tables. [mysql.tables_priv].
+2019-06-05T08:55:22.458512Z 0 [Warning] [MY-010929] [Server] Storage engine 'MyISAM' does not support system tables. [mysql.columns_priv].
+2019-06-05T08:55:22.458517Z 0 [Warning] [MY-010929] [Server] Storage engine 'MyISAM' does not support system tables. [mysql.procs_priv].
+2019-06-05T08:55:22.458521Z 0 [Warning] [MY-010929] [Server] Storage engine 'MyISAM' does not support system tables. [mysql.proxies_priv].
+2019-06-05T08:55:22.458915Z 0 [ERROR] [MY-013143] [Server] Column count of mysql.user is wrong. Expected 50, found 45. The table is probably corrupted
+2019-06-05T08:55:22.458942Z 0 [Warning] [MY-010966] [Server] ACL table mysql.role_edges missing. Some operations may fail.
+2019-06-05T08:55:22.458948Z 0 [Warning] [MY-010966] [Server] ACL table mysql.default_roles missing. Some operations may fail.
+2019-06-05T08:55:22.458953Z 0 [Warning] [MY-010966] [Server] ACL table mysql.global_grants missing. Some operations may fail.
+2019-06-05T08:55:22.458957Z 0 [Warning] [MY-010966] [Server] ACL table mysql.password_history missing. Some operations may fail.
+2019-06-05T08:55:22.459254Z 0 [ERROR] [MY-010965] [Server] Missing system table mysql.global_grants; please run mysql_upgrade to create it.
+2019-06-05T08:55:22.462330Z 0 [Warning] [MY-010727] [Server] System table 'func' is expected to be transactional.
+2019-06-05T08:55:22.463734Z 0 [Warning] [MY-010405] [Repl] Info table is not ready to be used. Table 'mysql.slave_master_info' cannot be opened.
+2019-06-05T08:55:22.463766Z 0 [ERROR] [MY-010422] [Repl] Error in checking mysql.slave_master_info repository info type of TABLE.
+2019-06-05T08:55:22.463778Z 0 [ERROR] [MY-010415] [Repl] Error creating master info: Error checking repositories.
+2019-06-05T08:55:22.463783Z 0 [ERROR] [MY-010426] [Repl] Slave: Failed to initialize the master info structure for channel ''; its record may still be present in 'mysql.slave_master_info' table, consider deleting it.
+2019-06-05T08:55:22.463789Z 0 [ERROR] [MY-010529] [Repl] Failed to create or recover replication info repositories.
+2019-06-05T08:55:22.465061Z 0 [System] [MY-010931] [Server] /usr/sbin/mysqld: ready for connections. Version: '8.0.13'  socket: '/var/lib/mysql/mysql.sock'  port: 3306  MySQL Community Server - GPL.
+2019-06-05T08:55:22.630424Z 0 [System] [MY-011323] [Server] X Plugin ready for connections. Socket: '/var/run/mysqld/mysqlx.sock' bind-address: '::' port: 33060
+2019-06-05T08:56:57.819988Z 0 [System] [MY-010910] [Server] /usr/sbin/mysqld: Shutdown complete (mysqld 8.0.13)  MySQL Community Server - GPL.
+2019-06-05T08:59:47.445139Z 0 [System] [MY-013169] [Server] /usr/sbin/mysqld (mysqld 8.0.13) initializing of server in progress as process 26
+mysqld: File ''/var/log/mysql/slow.log'?' not found (OS errno 2 - No such file or directory)
+2019-06-05T08:59:48.348365Z 0 [ERROR] [MY-011263] [Server] Could not use '/var/log/mysql/slow.log'Â for logging (error 2 - No such file or directory). Turning logging off for the server process. To turn it on again: fix the cause, then either restart the query logging by using "SET GLOBAL SLOW_QUERY_LOG=ON" or restart the MySQL server.
+2019-06-05T08:59:48.641200Z 5 [Warning] [MY-010453] [Server] root@localhost is created with an empty password ! Please consider switching off the --initialize-insecure option.
+2019-06-05T08:59:49.452087Z 0 [System] [MY-013170] [Server] /usr/sbin/mysqld (mysqld 8.0.13) initializing of server has completed
+2019-06-05T08:59:51.583870Z 0 [System] [MY-010116] [Server] /usr/sbin/mysqld (mysqld 8.0.13) starting as process 72
+mysqld: File ''/var/log/mysql/slow.log'?' not found (OS errno 2 - No such file or directory)
+2019-06-05T08:59:51.880671Z 0 [ERROR] [MY-011263] [Server] Could not use '/var/log/mysql/slow.log'Â for logging (error 2 - No such file or directory). Turning logging off for the server process. To turn it on again: fix the cause, then either restart the query logging by using "SET GLOBAL SLOW_QUERY_LOG=ON" or restart the MySQL server.
+2019-06-05T08:59:51.943297Z 0 [Warning] [MY-010068] [Server] CA certificate ca.pem is self signed.
+2019-06-05T08:59:51.959108Z 0 [System] [MY-010931] [Server] /usr/sbin/mysqld: ready for connections. Version: '8.0.13'  socket: '/var/lib/mysql/mysql.sock'  port: 0  MySQL Community Server - GPL.
+2019-06-05T08:59:52.093607Z 0 [System] [MY-011323] [Server] X Plugin ready for connections. Socket: '/var/run/mysqld/mysqlx.sock'
+2019-06-05T08:59:53.024472Z 11 [System] [MY-013172] [Server] Received SHUTDOWN from user root. Shutting down mysqld (Version: 8.0.13).
+2019-06-05T08:59:54.740315Z 0 [System] [MY-010910] [Server] /usr/sbin/mysqld: Shutdown complete (mysqld 8.0.13)  MySQL Community Server - GPL.
+2019-06-05T08:59:55.275915Z 0 [System] [MY-010116] [Server] /usr/sbin/mysqld (mysqld 8.0.13) starting as process 1
+mysqld: File ''/var/log/mysql/slow.log'?' not found (OS errno 2 - No such file or directory)
+2019-06-05T08:59:55.502070Z 0 [ERROR] [MY-011263] [Server] Could not use '/var/log/mysql/slow.log'Â for logging (error 2 - No such file or directory). Turning logging off for the server process. To turn it on again: fix the cause, then either restart the query logging by using "SET GLOBAL SLOW_QUERY_LOG=ON" or restart the MySQL server.
+2019-06-05T08:59:55.568598Z 0 [Warning] [MY-010068] [Server] CA certificate ca.pem is self signed.
+2019-06-05T08:59:55.608838Z 0 [System] [MY-010931] [Server] /usr/sbin/mysqld: ready for connections. Version: '8.0.13'  socket: '/var/lib/mysql/mysql.sock'  port: 3306  MySQL Community Server - GPL.
+2019-06-05T08:59:55.746320Z 0 [System] [MY-011323] [Server] X Plugin ready for connections. Socket: '/var/run/mysqld/mysqlx.sock' bind-address: '::' port: 33060
+2019-06-05T09:06:12.057689Z 0 [System] [MY-010910] [Server] /usr/sbin/mysqld: Shutdown complete (mysqld 8.0.13)  MySQL Community Server - GPL.
+2019-06-05T09:08:35.558214Z 0 [System] [MY-010116] [Server] /usr/sbin/mysqld (mysqld 8.0.13) starting as process 1
+mysqld: File ''/var/log/mysql/slow.log'?' not found (OS errno 2 - No such file or directory)
+2019-06-05T09:08:35.777574Z 0 [ERROR] [MY-011263] [Server] Could not use '/var/log/mysql/slow.log'Â for logging (error 2 - No such file or directory). Turning logging off for the server process. To turn it on again: fix the cause, then either restart the query logging by using "SET GLOBAL SLOW_QUERY_LOG=ON" or restart the MySQL server.
+2019-06-05T09:08:35.842107Z 0 [Warning] [MY-010068] [Server] CA certificate ca.pem is self signed.
+2019-06-05T09:08:35.883621Z 0 [System] [MY-010931] [Server] /usr/sbin/mysqld: ready for connections. Version: '8.0.13'  socket: '/var/lib/mysql/mysql.sock'  port: 3306  MySQL Community Server - GPL.
+2019-06-05T09:08:36.022756Z 0 [System] [MY-011323] [Server] X Plugin ready for connections. Socket: '/var/run/mysqld/mysqlx.sock' bind-address: '::' port: 33060
+2019-06-05T09:35:27.584051Z 0 [System] [MY-010910] [Server] /usr/sbin/mysqld: Shutdown complete (mysqld 8.0.13)  MySQL Community Server - GPL.
+2019-06-05T09:36:05.458068Z 0 [System] [MY-010116] [Server] /usr/sbin/mysqld (mysqld 8.0.13) starting as process 1
+mysqld: File ''/var/log/mysql/slow.log'?' not found (OS errno 2 - No such file or directory)
+2019-06-05T09:36:05.708723Z 0 [ERROR] [MY-011263] [Server] Could not use '/var/log/mysql/slow.log'Â for logging (error 2 - No such file or directory). Turning logging off for the server process. To turn it on again: fix the cause, then either restart the query logging by using "SET GLOBAL SLOW_QUERY_LOG=ON" or restart the MySQL server.
+2019-06-05T09:36:05.771426Z 0 [Warning] [MY-010068] [Server] CA certificate ca.pem is self signed.
+2019-06-05T09:36:05.807722Z 0 [System] [MY-010931] [Server] /usr/sbin/mysqld: ready for connections. Version: '8.0.13'  socket: '/var/lib/mysql/mysql.sock'  port: 3306  MySQL Community Server - GPL.
+2019-06-05T09:36:05.953251Z 0 [System] [MY-011323] [Server] X Plugin ready for connections. Socket: '/var/run/mysqld/mysqlx.sock' bind-address: '::' port: 33060
+2019-06-05T09:48:14.811680Z 0 [Warning] [MY-010909] [Server] /usr/sbin/mysqld: Forcing close of thread 15  user: 'root'.
+2019-06-05T09:48:16.339179Z 0 [System] [MY-010910] [Server] /usr/sbin/mysqld: Shutdown complete (mysqld 8.0.13)  MySQL Community Server - GPL.
+2019-06-05T09:48:50.602908Z 0 [System] [MY-010116] [Server] /usr/sbin/mysqld (mysqld 8.0.13) starting as process 1
+mysqld: File ''/var/log/mysql/slow.log'?' not found (OS errno 2 - No such file or directory)
+2019-06-05T09:48:50.836233Z 0 [ERROR] [MY-011263] [Server] Could not use '/var/log/mysql/slow.log'Â for logging (error 2 - No such file or directory). Turning logging off for the server process. To turn it on again: fix the cause, then either restart the query logging by using "SET GLOBAL SLOW_QUERY_LOG=ON" or restart the MySQL server.
+2019-06-05T09:48:50.898041Z 0 [Warning] [MY-010068] [Server] CA certificate ca.pem is self signed.
+2019-06-05T09:48:50.916816Z 0 [System] [MY-010931] [Server] /usr/sbin/mysqld: ready for connections. Version: '8.0.13'  socket: '/var/lib/mysql/mysql.sock'  port: 3306  MySQL Community Server - GPL.
+2019-06-05T09:48:51.079402Z 0 [System] [MY-011323] [Server] X Plugin ready for connections. Socket: '/var/run/mysqld/mysqlx.sock' bind-address: '::' port: 33060
+2019-06-05T15:20:52.337981Z 0 [Warning] [MY-010909] [Server] /usr/sbin/mysqld: Forcing close of thread 795  user: 'root'.
+2019-06-05T15:20:53.662511Z 0 [System] [MY-010910] [Server] /usr/sbin/mysqld: Shutdown complete (mysqld 8.0.13)  MySQL Community Server - GPL.
+2019-06-05T15:20:58.416330Z 0 [System] [MY-010116] [Server] /usr/sbin/mysqld (mysqld 8.0.13) starting as process 1
+mysqld: File ''/var/log/mysql/slow.log'?' not found (OS errno 2 - No such file or directory)
+2019-06-05T15:20:58.643442Z 0 [ERROR] [MY-011263] [Server] Could not use '/var/log/mysql/slow.log'Â for logging (error 2 - No such file or directory). Turning logging off for the server process. To turn it on again: fix the cause, then either restart the query logging by using "SET GLOBAL SLOW_QUERY_LOG=ON" or restart the MySQL server.
+2019-06-05T15:20:58.710830Z 0 [Warning] [MY-010068] [Server] CA certificate ca.pem is self signed.
+2019-06-05T15:20:58.737339Z 0 [System] [MY-010931] [Server] /usr/sbin/mysqld: ready for connections. Version: '8.0.13'  socket: '/var/lib/mysql/mysql.sock'  port: 3306  MySQL Community Server - GPL.
+2019-06-05T15:20:58.885976Z 0 [System] [MY-011323] [Server] X Plugin ready for connections. Socket: '/var/run/mysqld/mysqlx.sock' bind-address: '::' port: 33060
+2019-06-05T15:55:23.823766Z 0 [System] [MY-010910] [Server] /usr/sbin/mysqld: Shutdown complete (mysqld 8.0.13)  MySQL Community Server - GPL.
+2019-06-05T15:56:26.204426Z 0 [System] [MY-010116] [Server] /usr/sbin/mysqld (mysqld 8.0.13) starting as process 1
+mysqld: File ''/var/log/mysql/slow.log'?' not found (OS errno 2 - No such file or directory)
+2019-06-05T15:56:26.451333Z 0 [ERROR] [MY-011263] [Server] Could not use '/var/log/mysql/slow.log'Â for logging (error 2 - No such file or directory). Turning logging off for the server process. To turn it on again: fix the cause, then either restart the query logging by using "SET GLOBAL SLOW_QUERY_LOG=ON" or restart the MySQL server.
+2019-06-05T15:56:26.514677Z 0 [Warning] [MY-010068] [Server] CA certificate ca.pem is self signed.
+2019-06-05T15:56:26.556523Z 0 [System] [MY-010931] [Server] /usr/sbin/mysqld: ready for connections. Version: '8.0.13'  socket: '/var/lib/mysql/mysql.sock'  port: 3306  MySQL Community Server - GPL.
+2019-06-05T15:56:26.694813Z 0 [System] [MY-011323] [Server] X Plugin ready for connections. Socket: '/var/run/mysqld/mysqlx.sock' bind-address: '::' port: 33060
+2019-06-05T15:58:38.921088Z 0 [System] [MY-010910] [Server] /usr/sbin/mysqld: Shutdown complete (mysqld 8.0.13)  MySQL Community Server - GPL.
+2019-06-05T15:58:44.162235Z 0 [System] [MY-010116] [Server] /usr/sbin/mysqld (mysqld 8.0.13) starting as process 1
+mysqld: File ''/var/log/mysql/slow.log'?' not found (OS errno 2 - No such file or directory)
+2019-06-05T15:58:44.392570Z 0 [ERROR] [MY-011263] [Server] Could not use '/var/log/mysql/slow.log'Â for logging (error 2 - No such file or directory). Turning logging off for the server process. To turn it on again: fix the cause, then either restart the query logging by using "SET GLOBAL SLOW_QUERY_LOG=ON" or restart the MySQL server.
+2019-06-05T15:58:44.459776Z 0 [Warning] [MY-010068] [Server] CA certificate ca.pem is self signed.
+2019-06-05T15:58:44.499237Z 0 [System] [MY-010931] [Server] /usr/sbin/mysqld: ready for connections. Version: '8.0.13'  socket: '/var/lib/mysql/mysql.sock'  port: 3306  MySQL Community Server - GPL.
+2019-06-05T15:58:44.634170Z 0 [System] [MY-011323] [Server] X Plugin ready for connections. Socket: '/var/run/mysqld/mysqlx.sock' bind-address: '::' port: 33060
+2019-06-05T16:14:48.042685Z 0 [System] [MY-010910] [Server] /usr/sbin/mysqld: Shutdown complete (mysqld 8.0.13)  MySQL Community Server - GPL.
+2019-06-05T16:14:52.054926Z 0 [System] [MY-010116] [Server] /usr/sbin/mysqld (mysqld 8.0.13) starting as process 1
+mysqld: File ''/var/log/mysql/slow.log'?' not found (OS errno 2 - No such file or directory)
+2019-06-05T16:14:52.294180Z 0 [ERROR] [MY-011263] [Server] Could not use '/var/log/mysql/slow.log'Â for logging (error 2 - No such file or directory). Turning logging off for the server process. To turn it on again: fix the cause, then either restart the query logging by using "SET GLOBAL SLOW_QUERY_LOG=ON" or restart the MySQL server.
+2019-06-05T16:14:52.363307Z 0 [Warning] [MY-010068] [Server] CA certificate ca.pem is self signed.
+2019-06-05T16:14:52.403955Z 0 [System] [MY-010931] [Server] /usr/sbin/mysqld: ready for connections. Version: '8.0.13'  socket: '/var/lib/mysql/mysql.sock'  port: 3306  MySQL Community Server - GPL.
+2019-06-05T16:14:52.529343Z 0 [System] [MY-011323] [Server] X Plugin ready for connections. Socket: '/var/run/mysqld/mysqlx.sock' bind-address: '::' port: 33060
+2019-06-05T16:16:22.797449Z 0 [System] [MY-010910] [Server] /usr/sbin/mysqld: Shutdown complete (mysqld 8.0.13)  MySQL Community Server - GPL.
+2019-06-05T16:20:05.416357Z 0 [System] [MY-010116] [Server] /usr/sbin/mysqld (mysqld 8.0.13) starting as process 1
+mysqld: File ''/var/log/mysql/slow.log'?' not found (OS errno 2 - No such file or directory)
+2019-06-05T16:20:05.643586Z 0 [ERROR] [MY-011263] [Server] Could not use '/var/log/mysql/slow.log'Â for logging (error 2 - No such file or directory). Turning logging off for the server process. To turn it on again: fix the cause, then either restart the query logging by using "SET GLOBAL SLOW_QUERY_LOG=ON" or restart the MySQL server.
+2019-06-05T16:20:05.708580Z 0 [Warning] [MY-010068] [Server] CA certificate ca.pem is self signed.
+2019-06-05T16:20:05.750956Z 0 [System] [MY-010931] [Server] /usr/sbin/mysqld: ready for connections. Version: '8.0.13'  socket: '/var/lib/mysql/mysql.sock'  port: 3306  MySQL Community Server - GPL.
+2019-06-05T16:20:05.888462Z 0 [System] [MY-011323] [Server] X Plugin ready for connections. Socket: '/var/run/mysqld/mysqlx.sock' bind-address: '::' port: 33060
+2019-06-05T16:20:34.112601Z 0 [System] [MY-010910] [Server] /usr/sbin/mysqld: Shutdown complete (mysqld 8.0.13)  MySQL Community Server - GPL.
+2019-06-05T16:27:06.349491Z 0 [System] [MY-010116] [Server] /usr/sbin/mysqld (mysqld 8.0.13) starting as process 1
+mysqld: File ''/var/log/mysql/slow.log'?' not found (OS errno 2 - No such file or directory)
+2019-06-05T16:27:06.600380Z 0 [ERROR] [MY-011263] [Server] Could not use '/var/log/mysql/slow.log'Â for logging (error 2 - No such file or directory). Turning logging off for the server process. To turn it on again: fix the cause, then either restart the query logging by using "SET GLOBAL SLOW_QUERY_LOG=ON" or restart the MySQL server.
+2019-06-05T16:27:06.662181Z 0 [Warning] [MY-010068] [Server] CA certificate ca.pem is self signed.
+2019-06-05T16:27:06.687930Z 0 [System] [MY-010931] [Server] /usr/sbin/mysqld: ready for connections. Version: '8.0.13'  socket: '/var/lib/mysql/mysql.sock'  port: 3306  MySQL Community Server - GPL.
+2019-06-05T16:27:06.844753Z 0 [System] [MY-011323] [Server] X Plugin ready for connections. Socket: '/var/run/mysqld/mysqlx.sock' bind-address: '::' port: 33060
+2019-06-05T16:37:38.646146Z 0 [System] [MY-010116] [Server] /usr/sbin/mysqld (mysqld 8.0.13) starting as process 1
+mysqld: File ''/var/log/mysql/slow.log'?' not found (OS errno 2 - No such file or directory)
+2019-06-05T16:37:39.595316Z 0 [ERROR] [MY-011263] [Server] Could not use '/var/log/mysql/slow.log'Â for logging (error 2 - No such file or directory). Turning logging off for the server process. To turn it on again: fix the cause, then either restart the query logging by using "SET GLOBAL SLOW_QUERY_LOG=ON" or restart the MySQL server.
+2019-06-05T16:37:39.657335Z 0 [Warning] [MY-010068] [Server] CA certificate ca.pem is self signed.
+2019-06-05T16:37:39.674154Z 0 [System] [MY-010931] [Server] /usr/sbin/mysqld: ready for connections. Version: '8.0.13'  socket: '/var/lib/mysql/mysql.sock'  port: 3306  MySQL Community Server - GPL.
+2019-06-05T16:37:39.837782Z 0 [System] [MY-011323] [Server] X Plugin ready for connections. Socket: '/var/run/mysqld/mysqlx.sock' bind-address: '::' port: 33060
+2019-06-05T16:41:18.407394Z 0 [System] [MY-010910] [Server] /usr/sbin/mysqld: Shutdown complete (mysqld 8.0.13)  MySQL Community Server - GPL.
+2019-06-05T16:45:04.591491Z 0 [System] [MY-010116] [Server] /usr/sbin/mysqld (mysqld 8.0.13) starting as process 1
+mysqld: File ''/var/log/mysql/slow.log'?' not found (OS errno 2 - No such file or directory)
+2019-06-05T16:45:04.821211Z 0 [ERROR] [MY-011263] [Server] Could not use '/var/log/mysql/slow.log'Â for logging (error 2 - No such file or directory). Turning logging off for the server process. To turn it on again: fix the cause, then either restart the query logging by using "SET GLOBAL SLOW_QUERY_LOG=ON" or restart the MySQL server.
+2019-06-05T16:45:04.888492Z 0 [Warning] [MY-010068] [Server] CA certificate ca.pem is self signed.
+2019-06-05T16:45:04.931438Z 0 [System] [MY-010931] [Server] /usr/sbin/mysqld: ready for connections. Version: '8.0.13'  socket: '/var/lib/mysql/mysql.sock'  port: 3306  MySQL Community Server - GPL.
+2019-06-05T16:45:05.065288Z 0 [System] [MY-011323] [Server] X Plugin ready for connections. Socket: '/var/run/mysqld/mysqlx.sock' bind-address: '::' port: 33060
+2019-06-05T16:48:31.068133Z 14 [Warning] [MY-010058] [Server] Hostname 'funcity-server' does not resolve to '172.19.0.1'.
+2019-06-05T16:48:31.068172Z 15 [Warning] [MY-010058] [Server] Hostname 'funcity-server' does not resolve to '172.19.0.1'.
+2019-06-05T16:51:28.381131Z 0 [System] [MY-010910] [Server] /usr/sbin/mysqld: Shutdown complete (mysqld 8.0.13)  MySQL Community Server - GPL.
+2019-06-05T16:51:31.454842Z 0 [System] [MY-010116] [Server] /usr/sbin/mysqld (mysqld 8.0.13) starting as process 1
+mysqld: File ''/var/log/mysql/slow.log'?' not found (OS errno 2 - No such file or directory)
+2019-06-05T16:51:31.711897Z 0 [ERROR] [MY-011263] [Server] Could not use '/var/log/mysql/slow.log'Â for logging (error 2 - No such file or directory). Turning logging off for the server process. To turn it on again: fix the cause, then either restart the query logging by using "SET GLOBAL SLOW_QUERY_LOG=ON" or restart the MySQL server.
+2019-06-05T16:51:31.780981Z 0 [Warning] [MY-010068] [Server] CA certificate ca.pem is self signed.
+2019-06-05T16:51:31.823889Z 0 [System] [MY-010931] [Server] /usr/sbin/mysqld: ready for connections. Version: '8.0.13'  socket: '/var/lib/mysql/mysql.sock'  port: 3306  MySQL Community Server - GPL.
+2019-06-05T16:51:31.959194Z 0 [System] [MY-011323] [Server] X Plugin ready for connections. Socket: '/var/run/mysqld/mysqlx.sock' bind-address: '::' port: 33060
+2019-06-05T16:52:33.143851Z 0 [System] [MY-010116] [Server] /usr/sbin/mysqld (mysqld 8.0.13) starting as process 1
+mysqld: File ''/var/log/mysql/slow.log'?' not found (OS errno 2 - No such file or directory)
+2019-06-05T16:52:33.518539Z 0 [ERROR] [MY-011263] [Server] Could not use '/var/log/mysql/slow.log'Â for logging (error 2 - No such file or directory). Turning logging off for the server process. To turn it on again: fix the cause, then either restart the query logging by using "SET GLOBAL SLOW_QUERY_LOG=ON" or restart the MySQL server.
+2019-06-05T16:52:33.518641Z 0 [System] [MY-010229] [Server] Starting crash recovery...
+2019-06-05T16:52:33.524758Z 0 [System] [MY-010232] [Server] Crash recovery finished.
+2019-06-05T16:52:33.584966Z 0 [Warning] [MY-010068] [Server] CA certificate ca.pem is self signed.
+2019-06-05T16:52:33.597417Z 0 [System] [MY-010931] [Server] /usr/sbin/mysqld: ready for connections. Version: '8.0.13'  socket: '/var/lib/mysql/mysql.sock'  port: 3306  MySQL Community Server - GPL.
+2019-06-05T16:52:33.762631Z 0 [System] [MY-011323] [Server] X Plugin ready for connections. Socket: '/var/run/mysqld/mysqlx.sock' bind-address: '::' port: 33060
+2019-06-05T16:54:54.823329Z 0 [System] [MY-010910] [Server] /usr/sbin/mysqld: Shutdown complete (mysqld 8.0.13)  MySQL Community Server - GPL.
+2019-06-05T16:54:58.787614Z 0 [System] [MY-010116] [Server] /usr/sbin/mysqld (mysqld 8.0.13) starting as process 1
+mysqld: File ''/var/log/mysql/slow.log'?' not found (OS errno 2 - No such file or directory)
+2019-06-05T16:54:59.015729Z 0 [ERROR] [MY-011263] [Server] Could not use '/var/log/mysql/slow.log'Â for logging (error 2 - No such file or directory). Turning logging off for the server process. To turn it on again: fix the cause, then either restart the query logging by using "SET GLOBAL SLOW_QUERY_LOG=ON" or restart the MySQL server.
+2019-06-05T16:54:59.082495Z 0 [Warning] [MY-010068] [Server] CA certificate ca.pem is self signed.
+2019-06-05T16:54:59.125032Z 0 [System] [MY-010931] [Server] /usr/sbin/mysqld: ready for connections. Version: '8.0.13'  socket: '/var/lib/mysql/mysql.sock'  port: 3306  MySQL Community Server - GPL.
+2019-06-05T16:54:59.260965Z 0 [System] [MY-011323] [Server] X Plugin ready for connections. Socket: '/var/run/mysqld/mysqlx.sock' bind-address: '::' port: 33060
+2019-06-05T16:55:06.133889Z 9 [Warning] [MY-010058] [Server] Hostname 'funcity-server' does not resolve to '172.19.0.1'.
+2019-06-05T16:55:06.134257Z 8 [Warning] [MY-010058] [Server] Hostname 'funcity-server' does not resolve to '172.19.0.1'.
+2019-06-05T16:55:27.486274Z 0 [System] [MY-010910] [Server] /usr/sbin/mysqld: Shutdown complete (mysqld 8.0.13)  MySQL Community Server - GPL.
+2019-06-05T17:10:41.638098Z 0 [System] [MY-010116] [Server] /usr/sbin/mysqld (mysqld 8.0.13) starting as process 1
+mysqld: File ''/var/log/mysql/slow.log'?' not found (OS errno 2 - No such file or directory)
+2019-06-05T17:10:41.883509Z 0 [ERROR] [MY-011263] [Server] Could not use '/var/log/mysql/slow.log'Â for logging (error 2 - No such file or directory). Turning logging off for the server process. To turn it on again: fix the cause, then either restart the query logging by using "SET GLOBAL SLOW_QUERY_LOG=ON" or restart the MySQL server.
+2019-06-05T17:10:41.959732Z 0 [Warning] [MY-010068] [Server] CA certificate ca.pem is self signed.
+2019-06-05T17:10:41.999946Z 0 [System] [MY-010931] [Server] /usr/sbin/mysqld: ready for connections. Version: '8.0.13'  socket: '/var/lib/mysql/mysql.sock'  port: 3306  MySQL Community Server - GPL.
+2019-06-05T17:10:42.113942Z 0 [System] [MY-011323] [Server] X Plugin ready for connections. Socket: '/var/run/mysqld/mysqlx.sock' bind-address: '::' port: 33060
+2019-06-05T17:11:47.282550Z 0 [System] [MY-010910] [Server] /usr/sbin/mysqld: Shutdown complete (mysqld 8.0.13)  MySQL Community Server - GPL.
+2019-06-05T17:11:51.439167Z 0 [System] [MY-010116] [Server] /usr/sbin/mysqld (mysqld 8.0.13) starting as process 1
+mysqld: File ''/var/log/mysql/slow.log'?' not found (OS errno 2 - No such file or directory)
+2019-06-05T17:11:51.682081Z 0 [ERROR] [MY-011263] [Server] Could not use '/var/log/mysql/slow.log'Â for logging (error 2 - No such file or directory). Turning logging off for the server process. To turn it on again: fix the cause, then either restart the query logging by using "SET GLOBAL SLOW_QUERY_LOG=ON" or restart the MySQL server.
+2019-06-05T17:11:51.743734Z 0 [Warning] [MY-010068] [Server] CA certificate ca.pem is self signed.
+2019-06-05T17:11:51.766942Z 0 [System] [MY-010931] [Server] /usr/sbin/mysqld: ready for connections. Version: '8.0.13'  socket: '/var/lib/mysql/mysql.sock'  port: 3306  MySQL Community Server - GPL.
+2019-06-05T17:11:51.926595Z 0 [System] [MY-011323] [Server] X Plugin ready for connections. Socket: '/var/run/mysqld/mysqlx.sock' bind-address: '::' port: 33060
+2019-06-05T17:14:34.211097Z 13 [Warning] [MY-010058] [Server] Hostname 'funcity-server' does not resolve to '172.19.0.1'.
+2019-06-05T17:16:33.237229Z 0 [System] [MY-010910] [Server] /usr/sbin/mysqld: Shutdown complete (mysqld 8.0.13)  MySQL Community Server - GPL.
+2019-06-05T17:17:31.836982Z 0 [System] [MY-010116] [Server] /usr/sbin/mysqld (mysqld 8.0.13) starting as process 1
+mysqld: File ''/var/log/mysql/slow.log'?' not found (OS errno 2 - No such file or directory)
+2019-06-05T17:17:32.068065Z 0 [ERROR] [MY-011263] [Server] Could not use '/var/log/mysql/slow.log'Â for logging (error 2 - No such file or directory). Turning logging off for the server process. To turn it on again: fix the cause, then either restart the query logging by using "SET GLOBAL SLOW_QUERY_LOG=ON" or restart the MySQL server.
+2019-06-05T17:17:32.078847Z 0 [Warning] [MY-010068] [Server] CA certificate ca.pem is self signed.
+2019-06-05T17:17:32.091696Z 0 [System] [MY-010931] [Server] /usr/sbin/mysqld: ready for connections. Version: '8.0.13'  socket: '/var/lib/mysql/mysql.sock'  port: 3306  MySQL Community Server - GPL.
+2019-06-05T17:17:32.310793Z 0 [System] [MY-011323] [Server] X Plugin ready for connections. Socket: '/var/run/mysqld/mysqlx.sock' bind-address: '::' port: 33060
+2019-06-05T17:18:39.495553Z 0 [System] [MY-010910] [Server] /usr/sbin/mysqld: Shutdown complete (mysqld 8.0.13)  MySQL Community Server - GPL.
+2019-06-05T17:20:55.917946Z 0 [System] [MY-010116] [Server] /usr/sbin/mysqld (mysqld 8.0.13) starting as process 1
+mysqld: File ''/var/log/mysql/slow.log'?' not found (OS errno 2 - No such file or directory)
+2019-06-05T17:20:56.146424Z 0 [ERROR] [MY-011263] [Server] Could not use '/var/log/mysql/slow.log'Â for logging (error 2 - No such file or directory). Turning logging off for the server process. To turn it on again: fix the cause, then either restart the query logging by using "SET GLOBAL SLOW_QUERY_LOG=ON" or restart the MySQL server.
+2019-06-05T17:20:56.208234Z 0 [Warning] [MY-010068] [Server] CA certificate ca.pem is self signed.
+2019-06-05T17:20:56.211698Z 0 [ERROR] [MY-000068] [Server] unknown option '--bind-address 127.0.0.1'.
+2019-06-05T17:20:56.211720Z 0 [Warning] [MY-010952] [Server] The privilege system failed to initialize correctly. If you have upgraded your server, make sure you're executing mysql_upgrade to correct the issue.
+2019-06-05T17:20:56.211788Z 0 [ERROR] [MY-010119] [Server] Aborting
+2019-06-05T17:20:57.605205Z 0 [System] [MY-010910] [Server] /usr/sbin/mysqld: Shutdown complete (mysqld 8.0.13)  MySQL Community Server - GPL.
+2019-06-05T17:20:59.245587Z 0 [System] [MY-010116] [Server] /usr/sbin/mysqld (mysqld 8.0.13) starting as process 1
+mysqld: File ''/var/log/mysql/slow.log'?' not found (OS errno 2 - No such file or directory)
+2019-06-05T17:20:59.480942Z 0 [ERROR] [MY-011263] [Server] Could not use '/var/log/mysql/slow.log'Â for logging (error 2 - No such file or directory). Turning logging off for the server process. To turn it on again: fix the cause, then either restart the query logging by using "SET GLOBAL SLOW_QUERY_LOG=ON" or restart the MySQL server.
+2019-06-05T17:20:59.550614Z 0 [Warning] [MY-010068] [Server] CA certificate ca.pem is self signed.
+2019-06-05T17:20:59.559151Z 0 [ERROR] [MY-000068] [Server] unknown option '--bind-address 127.0.0.1'.
+2019-06-05T17:20:59.559204Z 0 [Warning] [MY-010952] [Server] The privilege system failed to initialize correctly. If you have upgraded your server, make sure you're executing mysql_upgrade to correct the issue.
+2019-06-05T17:20:59.559382Z 0 [ERROR] [MY-010119] [Server] Aborting
+2019-06-05T17:21:00.956984Z 0 [System] [MY-010910] [Server] /usr/sbin/mysqld: Shutdown complete (mysqld 8.0.13)  MySQL Community Server - GPL.
+2019-06-05T17:21:02.603841Z 0 [System] [MY-010116] [Server] /usr/sbin/mysqld (mysqld 8.0.13) starting as process 1
+mysqld: File ''/var/log/mysql/slow.log'?' not found (OS errno 2 - No such file or directory)
+2019-06-05T17:21:02.911649Z 0 [ERROR] [MY-011263] [Server] Could not use '/var/log/mysql/slow.log'Â for logging (error 2 - No such file or directory). Turning logging off for the server process. To turn it on again: fix the cause, then either restart the query logging by using "SET GLOBAL SLOW_QUERY_LOG=ON" or restart the MySQL server.
+2019-06-05T17:21:02.992194Z 0 [Warning] [MY-010068] [Server] CA certificate ca.pem is self signed.
+2019-06-05T17:21:03.001859Z 0 [ERROR] [MY-000068] [Server] unknown option '--bind-address 127.0.0.1'.
+2019-06-05T17:21:03.001918Z 0 [Warning] [MY-010952] [Server] The privilege system failed to initialize correctly. If you have upgraded your server, make sure you're executing mysql_upgrade to correct the issue.
+2019-06-05T17:21:03.002121Z 0 [ERROR] [MY-010119] [Server] Aborting
+2019-06-05T17:21:04.273973Z 0 [System] [MY-010910] [Server] /usr/sbin/mysqld: Shutdown complete (mysqld 8.0.13)  MySQL Community Server - GPL.
+2019-06-05T17:21:05.973111Z 0 [System] [MY-010116] [Server] /usr/sbin/mysqld (mysqld 8.0.13) starting as process 1
+mysqld: File ''/var/log/mysql/slow.log'?' not found (OS errno 2 - No such file or directory)
+2019-06-05T17:21:06.203523Z 0 [ERROR] [MY-011263] [Server] Could not use '/var/log/mysql/slow.log'Â for logging (error 2 - No such file or directory). Turning logging off for the server process. To turn it on again: fix the cause, then either restart the query logging by using "SET GLOBAL SLOW_QUERY_LOG=ON" or restart the MySQL server.
+2019-06-05T17:21:06.266064Z 0 [Warning] [MY-010068] [Server] CA certificate ca.pem is self signed.
+2019-06-05T17:21:06.269183Z 0 [ERROR] [MY-000068] [Server] unknown option '--bind-address 127.0.0.1'.
+2019-06-05T17:21:06.269201Z 0 [Warning] [MY-010952] [Server] The privilege system failed to initialize correctly. If you have upgraded your server, make sure you're executing mysql_upgrade to correct the issue.
+2019-06-05T17:21:06.269257Z 0 [ERROR] [MY-010119] [Server] Aborting
+2019-06-05T17:21:07.683013Z 0 [System] [MY-010910] [Server] /usr/sbin/mysqld: Shutdown complete (mysqld 8.0.13)  MySQL Community Server - GPL.
+2019-06-05T17:21:09.759678Z 0 [System] [MY-010116] [Server] /usr/sbin/mysqld (mysqld 8.0.13) starting as process 1
+mysqld: File ''/var/log/mysql/slow.log'?' not found (OS errno 2 - No such file or directory)
+2019-06-05T17:21:09.995888Z 0 [ERROR] [MY-011263] [Server] Could not use '/var/log/mysql/slow.log'Â for logging (error 2 - No such file or directory). Turning logging off for the server process. To turn it on again: fix the cause, then either restart the query logging by using "SET GLOBAL SLOW_QUERY_LOG=ON" or restart the MySQL server.
+2019-06-05T17:21:10.063602Z 0 [Warning] [MY-010068] [Server] CA certificate ca.pem is self signed.
+2019-06-05T17:21:10.071585Z 0 [ERROR] [MY-000068] [Server] unknown option '--bind-address 127.0.0.1'.
+2019-06-05T17:21:10.071633Z 0 [Warning] [MY-010952] [Server] The privilege system failed to initialize correctly. If you have upgraded your server, make sure you're executing mysql_upgrade to correct the issue.
+2019-06-05T17:21:10.071803Z 0 [ERROR] [MY-010119] [Server] Aborting
+2019-06-05T17:21:11.474419Z 0 [System] [MY-010910] [Server] /usr/sbin/mysqld: Shutdown complete (mysqld 8.0.13)  MySQL Community Server - GPL.
+2019-06-05T17:21:14.296013Z 0 [System] [MY-010116] [Server] /usr/sbin/mysqld (mysqld 8.0.13) starting as process 1
+mysqld: File ''/var/log/mysql/slow.log'?' not found (OS errno 2 - No such file or directory)
+2019-06-05T17:21:14.504981Z 0 [ERROR] [MY-011263] [Server] Could not use '/var/log/mysql/slow.log'Â for logging (error 2 - No such file or directory). Turning logging off for the server process. To turn it on again: fix the cause, then either restart the query logging by using "SET GLOBAL SLOW_QUERY_LOG=ON" or restart the MySQL server.
+2019-06-05T17:21:14.572377Z 0 [Warning] [MY-010068] [Server] CA certificate ca.pem is self signed.
+2019-06-05T17:21:14.581196Z 0 [ERROR] [MY-000068] [Server] unknown option '--bind-address 127.0.0.1'.
+2019-06-05T17:21:14.581250Z 0 [Warning] [MY-010952] [Server] The privilege system failed to initialize correctly. If you have upgraded your server, make sure you're executing mysql_upgrade to correct the issue.
+2019-06-05T17:21:14.581452Z 0 [ERROR] [MY-010119] [Server] Aborting
+2019-06-05T17:21:15.965093Z 0 [System] [MY-010910] [Server] /usr/sbin/mysqld: Shutdown complete (mysqld 8.0.13)  MySQL Community Server - GPL.
+2019-06-05T17:22:41.996545Z 0 [System] [MY-010116] [Server] /usr/sbin/mysqld (mysqld 8.0.13) starting as process 1
+mysqld: File ''/var/log/mysql/slow.log'?' not found (OS errno 2 - No such file or directory)
+2019-06-05T17:22:42.223930Z 0 [ERROR] [MY-011263] [Server] Could not use '/var/log/mysql/slow.log'Â for logging (error 2 - No such file or directory). Turning logging off for the server process. To turn it on again: fix the cause, then either restart the query logging by using "SET GLOBAL SLOW_QUERY_LOG=ON" or restart the MySQL server.
+2019-06-05T17:22:42.288210Z 0 [Warning] [MY-010068] [Server] CA certificate ca.pem is self signed.
+2019-06-05T17:22:42.291034Z 0 [ERROR] [MY-000068] [Server] unknown option '--bind-address 127.0.0.1'.
+2019-06-05T17:22:42.291050Z 0 [Warning] [MY-010952] [Server] The privilege system failed to initialize correctly. If you have upgraded your server, make sure you're executing mysql_upgrade to correct the issue.
+2019-06-05T17:22:42.291103Z 0 [ERROR] [MY-010119] [Server] Aborting
+2019-06-05T17:22:43.701192Z 0 [System] [MY-010910] [Server] /usr/sbin/mysqld: Shutdown complete (mysqld 8.0.13)  MySQL Community Server - GPL.
+2019-06-05T17:22:45.262724Z 0 [System] [MY-010116] [Server] /usr/sbin/mysqld (mysqld 8.0.13) starting as process 1
+mysqld: File ''/var/log/mysql/slow.log'?' not found (OS errno 2 - No such file or directory)
+2019-06-05T17:22:45.584237Z 0 [ERROR] [MY-011263] [Server] Could not use '/var/log/mysql/slow.log'Â for logging (error 2 - No such file or directory). Turning logging off for the server process. To turn it on again: fix the cause, then either restart the query logging by using "SET GLOBAL SLOW_QUERY_LOG=ON" or restart the MySQL server.
+2019-06-05T17:22:45.655272Z 0 [Warning] [MY-010068] [Server] CA certificate ca.pem is self signed.
+2019-06-05T17:22:45.663590Z 0 [ERROR] [MY-000068] [Server] unknown option '--bind-address 127.0.0.1'.
+2019-06-05T17:22:45.663640Z 0 [Warning] [MY-010952] [Server] The privilege system failed to initialize correctly. If you have upgraded your server, make sure you're executing mysql_upgrade to correct the issue.
+2019-06-05T17:22:45.663819Z 0 [ERROR] [MY-010119] [Server] Aborting
+2019-06-05T17:22:46.920853Z 0 [System] [MY-010910] [Server] /usr/sbin/mysqld: Shutdown complete (mysqld 8.0.13)  MySQL Community Server - GPL.
+2019-06-05T17:22:48.583849Z 0 [System] [MY-010116] [Server] /usr/sbin/mysqld (mysqld 8.0.13) starting as process 1
+mysqld: File ''/var/log/mysql/slow.log'?' not found (OS errno 2 - No such file or directory)
+2019-06-05T17:22:48.792594Z 0 [ERROR] [MY-011263] [Server] Could not use '/var/log/mysql/slow.log'Â for logging (error 2 - No such file or directory). Turning logging off for the server process. To turn it on again: fix the cause, then either restart the query logging by using "SET GLOBAL SLOW_QUERY_LOG=ON" or restart the MySQL server.
+2019-06-05T17:22:48.855577Z 0 [Warning] [MY-010068] [Server] CA certificate ca.pem is self signed.
+2019-06-05T17:22:48.861117Z 0 [ERROR] [MY-000068] [Server] unknown option '--bind-address 127.0.0.1'.
+2019-06-05T17:22:48.861153Z 0 [Warning] [MY-010952] [Server] The privilege system failed to initialize correctly. If you have upgraded your server, make sure you're executing mysql_upgrade to correct the issue.
+2019-06-05T17:22:48.861279Z 0 [ERROR] [MY-010119] [Server] Aborting
+2019-06-05T17:22:50.273735Z 0 [System] [MY-010910] [Server] /usr/sbin/mysqld: Shutdown complete (mysqld 8.0.13)  MySQL Community Server - GPL.
+2019-06-05T17:22:51.823395Z 0 [System] [MY-010116] [Server] /usr/sbin/mysqld (mysqld 8.0.13) starting as process 1
+mysqld: File ''/var/log/mysql/slow.log'?' not found (OS errno 2 - No such file or directory)
+2019-06-05T17:22:52.051620Z 0 [ERROR] [MY-011263] [Server] Could not use '/var/log/mysql/slow.log'Â for logging (error 2 - No such file or directory). Turning logging off for the server process. To turn it on again: fix the cause, then either restart the query logging by using "SET GLOBAL SLOW_QUERY_LOG=ON" or restart the MySQL server.
+2019-06-05T17:22:52.118522Z 0 [Warning] [MY-010068] [Server] CA certificate ca.pem is self signed.
+2019-06-05T17:22:52.126969Z 0 [ERROR] [MY-000068] [Server] unknown option '--bind-address 127.0.0.1'.
+2019-06-05T17:22:52.127022Z 0 [Warning] [MY-010952] [Server] The privilege system failed to initialize correctly. If you have upgraded your server, make sure you're executing mysql_upgrade to correct the issue.
+2019-06-05T17:22:52.127207Z 0 [ERROR] [MY-010119] [Server] Aborting
+2019-06-05T17:22:53.511172Z 0 [System] [MY-010910] [Server] /usr/sbin/mysqld: Shutdown complete (mysqld 8.0.13)  MySQL Community Server - GPL.
+2019-06-05T17:22:55.504911Z 0 [System] [MY-010116] [Server] /usr/sbin/mysqld (mysqld 8.0.13) starting as process 1
+mysqld: File ''/var/log/mysql/slow.log'?' not found (OS errno 2 - No such file or directory)
+2019-06-05T17:22:55.751077Z 0 [ERROR] [MY-011263] [Server] Could not use '/var/log/mysql/slow.log'Â for logging (error 2 - No such file or directory). Turning logging off for the server process. To turn it on again: fix the cause, then either restart the query logging by using "SET GLOBAL SLOW_QUERY_LOG=ON" or restart the MySQL server.
+2019-06-05T17:22:55.827233Z 0 [Warning] [MY-010068] [Server] CA certificate ca.pem is self signed.
+2019-06-05T17:22:55.835687Z 0 [ERROR] [MY-000068] [Server] unknown option '--bind-address 127.0.0.1'.
+2019-06-05T17:22:55.835739Z 0 [Warning] [MY-010952] [Server] The privilege system failed to initialize correctly. If you have upgraded your server, make sure you're executing mysql_upgrade to correct the issue.
+2019-06-05T17:22:55.835921Z 0 [ERROR] [MY-010119] [Server] Aborting
+2019-06-05T17:22:57.216563Z 0 [System] [MY-010910] [Server] /usr/sbin/mysqld: Shutdown complete (mysqld 8.0.13)  MySQL Community Server - GPL.
+2019-06-05T17:22:59.955487Z 0 [System] [MY-010116] [Server] /usr/sbin/mysqld (mysqld 8.0.13) starting as process 1
+mysqld: File ''/var/log/mysql/slow.log'?' not found (OS errno 2 - No such file or directory)
+2019-06-05T17:23:00.181506Z 0 [ERROR] [MY-011263] [Server] Could not use '/var/log/mysql/slow.log'Â for logging (error 2 - No such file or directory). Turning logging off for the server process. To turn it on again: fix the cause, then either restart the query logging by using "SET GLOBAL SLOW_QUERY_LOG=ON" or restart the MySQL server.
+2019-06-05T17:23:00.243490Z 0 [Warning] [MY-010068] [Server] CA certificate ca.pem is self signed.
+2019-06-05T17:23:00.247240Z 0 [ERROR] [MY-000068] [Server] unknown option '--bind-address 127.0.0.1'.
+2019-06-05T17:23:00.247265Z 0 [Warning] [MY-010952] [Server] The privilege system failed to initialize correctly. If you have upgraded your server, make sure you're executing mysql_upgrade to correct the issue.
+2019-06-05T17:23:00.247354Z 0 [ERROR] [MY-010119] [Server] Aborting
+2019-06-05T17:23:01.640932Z 0 [System] [MY-010910] [Server] /usr/sbin/mysqld: Shutdown complete (mysqld 8.0.13)  MySQL Community Server - GPL.
+2019-06-05T17:23:06.054483Z 0 [System] [MY-010116] [Server] /usr/sbin/mysqld (mysqld 8.0.13) starting as process 1
+mysqld: File ''/var/log/mysql/slow.log'?' not found (OS errno 2 - No such file or directory)
+2019-06-05T17:23:06.289056Z 0 [ERROR] [MY-011263] [Server] Could not use '/var/log/mysql/slow.log'Â for logging (error 2 - No such file or directory). Turning logging off for the server process. To turn it on again: fix the cause, then either restart the query logging by using "SET GLOBAL SLOW_QUERY_LOG=ON" or restart the MySQL server.
+2019-06-05T17:23:06.356828Z 0 [Warning] [MY-010068] [Server] CA certificate ca.pem is self signed.
+2019-06-05T17:23:06.365265Z 0 [ERROR] [MY-000068] [Server] unknown option '--bind-address 127.0.0.1'.
+2019-06-05T17:23:06.365315Z 0 [Warning] [MY-010952] [Server] The privilege system failed to initialize correctly. If you have upgraded your server, make sure you're executing mysql_upgrade to correct the issue.
+2019-06-05T17:23:06.365529Z 0 [ERROR] [MY-010119] [Server] Aborting
+2019-06-05T17:23:07.767039Z 0 [System] [MY-010910] [Server] /usr/sbin/mysqld: Shutdown complete (mysqld 8.0.13)  MySQL Community Server - GPL.
+2019-06-05T17:23:15.363687Z 0 [System] [MY-010116] [Server] /usr/sbin/mysqld (mysqld 8.0.13) starting as process 1
+mysqld: File ''/var/log/mysql/slow.log'?' not found (OS errno 2 - No such file or directory)
+2019-06-05T17:23:15.610851Z 0 [ERROR] [MY-011263] [Server] Could not use '/var/log/mysql/slow.log'Â for logging (error 2 - No such file or directory). Turning logging off for the server process. To turn it on again: fix the cause, then either restart the query logging by using "SET GLOBAL SLOW_QUERY_LOG=ON" or restart the MySQL server.
+2019-06-05T17:23:15.672893Z 0 [Warning] [MY-010068] [Server] CA certificate ca.pem is self signed.
+2019-06-05T17:23:15.676593Z 0 [ERROR] [MY-000068] [Server] unknown option '--bind-address 127.0.0.1'.
+2019-06-05T17:23:15.676616Z 0 [Warning] [MY-010952] [Server] The privilege system failed to initialize correctly. If you have upgraded your server, make sure you're executing mysql_upgrade to correct the issue.
+2019-06-05T17:23:15.676702Z 0 [ERROR] [MY-010119] [Server] Aborting
+2019-06-05T17:23:17.070304Z 0 [System] [MY-010910] [Server] /usr/sbin/mysqld: Shutdown complete (mysqld 8.0.13)  MySQL Community Server - GPL.
+2019-06-05T17:23:31.142819Z 0 [System] [MY-010116] [Server] /usr/sbin/mysqld (mysqld 8.0.13) starting as process 1
+mysqld: File ''/var/log/mysql/slow.log'?' not found (OS errno 2 - No such file or directory)
+2019-06-05T17:23:31.369290Z 0 [ERROR] [MY-011263] [Server] Could not use '/var/log/mysql/slow.log'Â for logging (error 2 - No such file or directory). Turning logging off for the server process. To turn it on again: fix the cause, then either restart the query logging by using "SET GLOBAL SLOW_QUERY_LOG=ON" or restart the MySQL server.
+2019-06-05T17:23:31.434929Z 0 [Warning] [MY-010068] [Server] CA certificate ca.pem is self signed.
+2019-06-05T17:23:31.443368Z 0 [ERROR] [MY-000068] [Server] unknown option '--bind-address 127.0.0.1'.
+2019-06-05T17:23:31.443420Z 0 [Warning] [MY-010952] [Server] The privilege system failed to initialize correctly. If you have upgraded your server, make sure you're executing mysql_upgrade to correct the issue.
+2019-06-05T17:23:31.443601Z 0 [ERROR] [MY-010119] [Server] Aborting
+2019-06-05T17:23:32.830304Z 0 [System] [MY-010910] [Server] /usr/sbin/mysqld: Shutdown complete (mysqld 8.0.13)  MySQL Community Server - GPL.
+2019-06-05T17:23:47.387963Z 0 [System] [MY-010116] [Server] /usr/sbin/mysqld (mysqld 8.0.13) starting as process 1
+mysqld: File ''/var/log/mysql/slow.log'?' not found (OS errno 2 - No such file or directory)
+2019-06-05T17:23:47.614667Z 0 [ERROR] [MY-011263] [Server] Could not use '/var/log/mysql/slow.log'Â for logging (error 2 - No such file or directory). Turning logging off for the server process. To turn it on again: fix the cause, then either restart the query logging by using "SET GLOBAL SLOW_QUERY_LOG=ON" or restart the MySQL server.
+2019-06-05T17:23:47.677671Z 0 [Warning] [MY-010068] [Server] CA certificate ca.pem is self signed.
+2019-06-05T17:23:47.720479Z 0 [System] [MY-010931] [Server] /usr/sbin/mysqld: ready for connections. Version: '8.0.13'  socket: '/var/lib/mysql/mysql.sock'  port: 3306  MySQL Community Server - GPL.
+2019-06-05T17:23:47.859501Z 0 [System] [MY-011323] [Server] X Plugin ready for connections. Socket: '/var/run/mysqld/mysqlx.sock' bind-address: '::' port: 33060
+2019-06-05T17:25:03.066808Z 0 [System] [MY-010910] [Server] /usr/sbin/mysqld: Shutdown complete (mysqld 8.0.13)  MySQL Community Server - GPL.
+2019-06-05T17:28:35.565592Z 0 [System] [MY-010116] [Server] /usr/sbin/mysqld (mysqld 8.0.13) starting as process 1
+mysqld: File ''/var/log/mysql/slow.log'?' not found (OS errno 2 - No such file or directory)
+2019-06-05T17:28:35.822242Z 0 [ERROR] [MY-011263] [Server] Could not use '/var/log/mysql/slow.log'Â for logging (error 2 - No such file or directory). Turning logging off for the server process. To turn it on again: fix the cause, then either restart the query logging by using "SET GLOBAL SLOW_QUERY_LOG=ON" or restart the MySQL server.
+2019-06-05T17:28:35.885490Z 0 [Warning] [MY-010068] [Server] CA certificate ca.pem is self signed.
+2019-06-05T17:28:35.906387Z 0 [System] [MY-010931] [Server] /usr/sbin/mysqld: ready for connections. Version: '8.0.13'  socket: '/var/lib/mysql/mysql.sock'  port: 3306  MySQL Community Server - GPL.
+2019-06-05T17:28:36.064692Z 0 [System] [MY-011323] [Server] X Plugin ready for connections. Socket: '/var/run/mysqld/mysqlx.sock' bind-address: '::' port: 33060
+2019-06-05T17:32:08.322778Z 0 [System] [MY-010910] [Server] /usr/sbin/mysqld: Shutdown complete (mysqld 8.0.13)  MySQL Community Server - GPL.
+2019-06-05T17:35:20.195589Z 0 [System] [MY-010116] [Server] /usr/sbin/mysqld (mysqld 8.0.13) starting as process 1
+mysqld: File ''/var/log/mysql/slow.log'?' not found (OS errno 2 - No such file or directory)
+2019-06-05T17:35:20.409459Z 0 [ERROR] [MY-011263] [Server] Could not use '/var/log/mysql/slow.log'Â for logging (error 2 - No such file or directory). Turning logging off for the server process. To turn it on again: fix the cause, then either restart the query logging by using "SET GLOBAL SLOW_QUERY_LOG=ON" or restart the MySQL server.
+2019-06-05T17:35:20.476868Z 0 [Warning] [MY-010068] [Server] CA certificate ca.pem is self signed.
+2019-06-05T17:35:20.520589Z 0 [System] [MY-010931] [Server] /usr/sbin/mysqld: ready for connections. Version: '8.0.13'  socket: '/var/lib/mysql/mysql.sock'  port: 3306  MySQL Community Server - GPL.
+2019-06-05T17:35:20.656977Z 0 [System] [MY-011323] [Server] X Plugin ready for connections. Socket: '/var/run/mysqld/mysqlx.sock' bind-address: '::' port: 33060
+2019-06-05T17:45:02.049328Z 0 [System] [MY-010910] [Server] /usr/sbin/mysqld: Shutdown complete (mysqld 8.0.13)  MySQL Community Server - GPL.
+2019-06-05T17:46:49.895705Z 0 [System] [MY-010116] [Server] /usr/sbin/mysqld (mysqld 8.0.13) starting as process 1
+mysqld: File ''/var/log/mysql/slow.log'?' not found (OS errno 2 - No such file or directory)
+2019-06-05T17:46:50.143828Z 0 [ERROR] [MY-011263] [Server] Could not use '/var/log/mysql/slow.log'Â for logging (error 2 - No such file or directory). Turning logging off for the server process. To turn it on again: fix the cause, then either restart the query logging by using "SET GLOBAL SLOW_QUERY_LOG=ON" or restart the MySQL server.
+2019-06-05T17:46:50.211327Z 0 [Warning] [MY-010068] [Server] CA certificate ca.pem is self signed.
+2019-06-05T17:46:50.252070Z 0 [System] [MY-010931] [Server] /usr/sbin/mysqld: ready for connections. Version: '8.0.13'  socket: '/var/lib/mysql/mysql.sock'  port: 3306  MySQL Community Server - GPL.
+2019-06-05T17:46:50.386285Z 0 [System] [MY-011323] [Server] X Plugin ready for connections. Socket: '/var/run/mysqld/mysqlx.sock' bind-address: '::' port: 33060
+2019-06-05T17:56:15.732951Z 0 [System] [MY-010910] [Server] /usr/sbin/mysqld: Shutdown complete (mysqld 8.0.13)  MySQL Community Server - GPL.
+2019-06-05T17:56:44.475448Z 0 [System] [MY-010116] [Server] /usr/sbin/mysqld (mysqld 8.0.13) starting as process 1
+mysqld: File ''/var/log/mysql/slow.log'?' not found (OS errno 2 - No such file or directory)
+2019-06-05T17:56:44.735089Z 0 [ERROR] [MY-011263] [Server] Could not use '/var/log/mysql/slow.log'Â for logging (error 2 - No such file or directory). Turning logging off for the server process. To turn it on again: fix the cause, then either restart the query logging by using "SET GLOBAL SLOW_QUERY_LOG=ON" or restart the MySQL server.
+2019-06-05T17:56:44.810179Z 0 [Warning] [MY-010068] [Server] CA certificate ca.pem is self signed.
+2019-06-05T17:56:44.844913Z 0 [System] [MY-010931] [Server] /usr/sbin/mysqld: ready for connections. Version: '8.0.13'  socket: '/var/lib/mysql/mysql.sock'  port: 3306  MySQL Community Server - GPL.
+2019-06-05T17:56:44.976554Z 0 [System] [MY-011323] [Server] X Plugin ready for connections. Socket: '/var/run/mysqld/mysqlx.sock' bind-address: '::' port: 33060
+2019-06-05T18:13:55.743348Z 0 [System] [MY-010910] [Server] /usr/sbin/mysqld: Shutdown complete (mysqld 8.0.13)  MySQL Community Server - GPL.
+2019-06-05T18:14:04.435967Z 0 [System] [MY-010116] [Server] /usr/sbin/mysqld (mysqld 8.0.13) starting as process 1
+mysqld: File ''/var/log/mysql/slow.log'?' not found (OS errno 2 - No such file or directory)
+2019-06-05T18:14:04.689606Z 0 [ERROR] [MY-011263] [Server] Could not use '/var/log/mysql/slow.log'Â for logging (error 2 - No such file or directory). Turning logging off for the server process. To turn it on again: fix the cause, then either restart the query logging by using "SET GLOBAL SLOW_QUERY_LOG=ON" or restart the MySQL server.
+2019-06-05T18:14:04.756559Z 0 [Warning] [MY-010068] [Server] CA certificate ca.pem is self signed.
+2019-06-05T18:14:04.798729Z 0 [System] [MY-010931] [Server] /usr/sbin/mysqld: ready for connections. Version: '8.0.13'  socket: '/var/lib/mysql/mysql.sock'  port: 3306  MySQL Community Server - GPL.
+2019-06-05T18:14:04.930467Z 0 [System] [MY-011323] [Server] X Plugin ready for connections. Socket: '/var/run/mysqld/mysqlx.sock' bind-address: '::' port: 33060
+2019-06-05T19:17:22.899591Z 0 [System] [MY-010116] [Server] /usr/sbin/mysqld (mysqld 8.0.13) starting as process 1
+mysqld: File ''/var/log/mysql/slow.log'?' not found (OS errno 2 - No such file or directory)
+2019-06-05T19:17:23.278286Z 0 [ERROR] [MY-011263] [Server] Could not use '/var/log/mysql/slow.log'Â for logging (error 2 - No such file or directory). Turning logging off for the server process. To turn it on again: fix the cause, then either restart the query logging by using "SET GLOBAL SLOW_QUERY_LOG=ON" or restart the MySQL server.
+2019-06-05T19:17:23.278402Z 0 [System] [MY-010229] [Server] Starting crash recovery...
+2019-06-05T19:17:23.284704Z 0 [System] [MY-010232] [Server] Crash recovery finished.
+2019-06-05T19:17:23.347562Z 0 [Warning] [MY-010068] [Server] CA certificate ca.pem is self signed.
+2019-06-05T19:17:23.384068Z 0 [System] [MY-010931] [Server] /usr/sbin/mysqld: ready for connections. Version: '8.0.13'  socket: '/var/lib/mysql/mysql.sock'  port: 3306  MySQL Community Server - GPL.
+2019-06-05T19:17:23.516908Z 0 [System] [MY-011323] [Server] X Plugin ready for connections. Socket: '/var/run/mysqld/mysqlx.sock' bind-address: '::' port: 33060
+2019-06-05T19:25:33.156271Z 0 [System] [MY-010910] [Server] /usr/sbin/mysqld: Shutdown complete (mysqld 8.0.13)  MySQL Community Server - GPL.
+2019-06-05T19:25:39.880386Z 0 [System] [MY-010116] [Server] /usr/sbin/mysqld (mysqld 8.0.13) starting as process 1
+mysqld: File ''/var/log/mysql/slow.log'?' not found (OS errno 2 - No such file or directory)
+2019-06-05T19:25:40.140641Z 0 [ERROR] [MY-011263] [Server] Could not use '/var/log/mysql/slow.log'Â for logging (error 2 - No such file or directory). Turning logging off for the server process. To turn it on again: fix the cause, then either restart the query logging by using "SET GLOBAL SLOW_QUERY_LOG=ON" or restart the MySQL server.
+2019-06-05T19:25:40.213697Z 0 [Warning] [MY-010068] [Server] CA certificate ca.pem is self signed.
+2019-06-05T19:25:40.254668Z 0 [System] [MY-010931] [Server] /usr/sbin/mysqld: ready for connections. Version: '8.0.13'  socket: '/var/lib/mysql/mysql.sock'  port: 3306  MySQL Community Server - GPL.
+2019-06-05T19:25:40.375999Z 0 [System] [MY-011323] [Server] X Plugin ready for connections. Socket: '/var/run/mysqld/mysqlx.sock' bind-address: '::' port: 33060
+2019-06-05T19:30:51.608198Z 0 [System] [MY-010910] [Server] /usr/sbin/mysqld: Shutdown complete (mysqld 8.0.13)  MySQL Community Server - GPL.
+2019-06-05T19:30:56.843723Z 0 [System] [MY-010116] [Server] /usr/sbin/mysqld (mysqld 8.0.13) starting as process 1
+mysqld: File ''/var/log/mysql/slow.log'?' not found (OS errno 2 - No such file or directory)
+2019-06-05T19:30:57.139643Z 0 [ERROR] [MY-011263] [Server] Could not use '/var/log/mysql/slow.log'Â for logging (error 2 - No such file or directory). Turning logging off for the server process. To turn it on again: fix the cause, then either restart the query logging by using "SET GLOBAL SLOW_QUERY_LOG=ON" or restart the MySQL server.
+2019-06-05T19:30:57.207683Z 0 [Warning] [MY-010068] [Server] CA certificate ca.pem is self signed.
+2019-06-05T19:30:57.250479Z 0 [System] [MY-010931] [Server] /usr/sbin/mysqld: ready for connections. Version: '8.0.13'  socket: '/var/lib/mysql/mysql.sock'  port: 3306  MySQL Community Server - GPL.
+2019-06-05T19:30:57.379310Z 0 [System] [MY-011323] [Server] X Plugin ready for connections. Socket: '/var/run/mysqld/mysqlx.sock' bind-address: '::' port: 33060
+2019-06-05T19:31:07.530227Z 0 [System] [MY-010910] [Server] /usr/sbin/mysqld: Shutdown complete (mysqld 8.0.13)  MySQL Community Server - GPL.
+2019-06-05T19:32:19.295727Z 0 [System] [MY-010116] [Server] /usr/sbin/mysqld (mysqld 8.0.13) starting as process 1
+mysqld: File ''/var/log/mysql/slow.log'?' not found (OS errno 2 - No such file or directory)
+2019-06-05T19:32:19.523102Z 0 [ERROR] [MY-011263] [Server] Could not use '/var/log/mysql/slow.log'Â for logging (error 2 - No such file or directory). Turning logging off for the server process. To turn it on again: fix the cause, then either restart the query logging by using "SET GLOBAL SLOW_QUERY_LOG=ON" or restart the MySQL server.
+2019-06-05T19:32:19.587564Z 0 [Warning] [MY-010068] [Server] CA certificate ca.pem is self signed.
+2019-06-05T19:32:19.623785Z 0 [System] [MY-010931] [Server] /usr/sbin/mysqld: ready for connections. Version: '8.0.13'  socket: '/var/lib/mysql/mysql.sock'  port: 3306  MySQL Community Server - GPL.
+2019-06-05T19:32:19.766616Z 0 [System] [MY-011323] [Server] X Plugin ready for connections. Socket: '/var/run/mysqld/mysqlx.sock' bind-address: '::' port: 33060
+2019-06-05T19:35:59.063287Z 0 [System] [MY-010910] [Server] /usr/sbin/mysqld: Shutdown complete (mysqld 8.0.13)  MySQL Community Server - GPL.
+2019-06-05T19:36:03.940991Z 0 [System] [MY-010116] [Server] /usr/sbin/mysqld (mysqld 8.0.13) starting as process 1
+mysqld: File ''/var/log/mysql/slow.log'?' not found (OS errno 2 - No such file or directory)
+2019-06-05T19:36:04.194462Z 0 [ERROR] [MY-011263] [Server] Could not use '/var/log/mysql/slow.log'Â for logging (error 2 - No such file or directory). Turning logging off for the server process. To turn it on again: fix the cause, then either restart the query logging by using "SET GLOBAL SLOW_QUERY_LOG=ON" or restart the MySQL server.
+2019-06-05T19:36:04.257236Z 0 [Warning] [MY-010068] [Server] CA certificate ca.pem is self signed.
+2019-06-05T19:36:04.288578Z 0 [System] [MY-010931] [Server] /usr/sbin/mysqld: ready for connections. Version: '8.0.13'  socket: '/var/lib/mysql/mysql.sock'  port: 3306  MySQL Community Server - GPL.
+2019-06-05T19:36:04.437704Z 0 [System] [MY-011323] [Server] X Plugin ready for connections. Socket: '/var/run/mysqld/mysqlx.sock' bind-address: '::' port: 33060
+2019-06-05T19:47:46.376480Z 35 [Warning] [MY-010058] [Server] Hostname 'funcity-server' does not resolve to '172.19.0.1'.
+2019-06-05T20:05:07.824064Z 0 [System] [MY-010910] [Server] /usr/sbin/mysqld: Shutdown complete (mysqld 8.0.13)  MySQL Community Server - GPL.
+2019-06-05T20:09:09.428145Z 0 [System] [MY-010116] [Server] /usr/sbin/mysqld (mysqld 8.0.13) starting as process 1
+mysqld: File ''/var/log/mysql/slow.log'?' not found (OS errno 2 - No such file or directory)
+2019-06-05T20:09:09.670956Z 0 [ERROR] [MY-011263] [Server] Could not use '/var/log/mysql/slow.log'Â for logging (error 2 - No such file or directory). Turning logging off for the server process. To turn it on again: fix the cause, then either restart the query logging by using "SET GLOBAL SLOW_QUERY_LOG=ON" or restart the MySQL server.
+2019-06-05T20:09:09.745402Z 0 [Warning] [MY-010068] [Server] CA certificate ca.pem is self signed.
+2019-06-05T20:09:09.785088Z 0 [System] [MY-010931] [Server] /usr/sbin/mysqld: ready for connections. Version: '8.0.13'  socket: '/var/lib/mysql/mysql.sock'  port: 3306  MySQL Community Server - GPL.
+2019-06-05T20:09:09.911421Z 0 [System] [MY-011323] [Server] X Plugin ready for connections. Socket: '/var/run/mysqld/mysqlx.sock' bind-address: '::' port: 33060
+2019-06-05T20:09:50.565486Z 9 [Warning] [MY-010058] [Server] Hostname 'funcity-server' does not resolve to '172.19.0.1'.
+2019-06-06T01:32:02.719386Z 0 [System] [MY-010910] [Server] /usr/sbin/mysqld: Shutdown complete (mysqld 8.0.13)  MySQL Community Server - GPL.
